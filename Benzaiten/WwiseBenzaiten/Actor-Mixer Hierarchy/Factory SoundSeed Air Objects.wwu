@@ -1,0 +1,2140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BB5DD793-F285-4F74-8D1D-DF7A4B893280}" SchemaVersion="70">
+	<AudioObjects>
+		<WorkUnit Name="Factory SoundSeed Air Objects" ID="{BB5DD793-F285-4F74-8D1D-DF7A4B893280}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Static Presets (wave file substitutions)" ID="{AE666998-5535-4054-A25E-19ED850971D6}" ShortID="857713520">
+					<ChildrenList>
+						<Folder Name="Non-Windy Ambiences" ID="{D545F693-6420-4CA1-B3A4-94CF98BD0270}" ShortID="790355046">
+							<ChildrenList>
+								<BlendContainer Name="Urban Scene" ID="{E822729C-E154-4D72-93E3-05B184314726}" ShortID="397048977">
+									<Comment>Urban background noise with passing cars.
+An example of trajectories and positioning handled in Wwise as opposed to SS Air positioning</Comment>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Background City Noise" ID="{5067212F-90B9-4F2E-98D3-8DFED02BFED7}" ShortID="428427566" Type="SoundFX">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="Spatialization" Type="bool" Value="False"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Ville" ID="{77DC0743-48D5-430A-916C-3931BD56AA12}" ShortID="229589517" PluginName="SoundSeed Air/SoundSeed Wind" CompanyID="0" PluginID="119">
+													<PropertyList>
+														<Property Name="AttenuationRollOff" Type="Real32" Value="0.4"/>
+														<Property Name="AverageVelocity" Type="Real32" Value="1200"/>
+														<Property Name="AverageVelocityAutomate" Type="bool" Value="True"/>
+														<Property Name="ChannelMask" Type="int16" Value="0"/>
+														<Property Name="Duration" Type="Real64" Value="20"/>
+														<Property Name="DurationRandom" Type="Real32" Value="20"/>
+														<Property Name="FrequencyScaleAutomate" Type="bool" Value="True"/>
+														<Property Name="Gustiness" Type="Real32" Value="0.7"/>
+														<Property Name="MaxDistance" Type="Real32" Value="57"/>
+														<Property Name="MinDistance" Type="Real32" Value="13.3"/>
+														<Property Name="QFactorScaleAutomate" Type="bool" Value="True"/>
+														<Property Name="Variability" Type="Real32" Value="0.1"/>
+														<Property Name="VelocityDynamicRange" Type="Real32" Value="1"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<PluginData>
+	<CurveList Version="1">
+		<CurveInfo Name="AverageVelocity">
+			<Curve Name="" ID="{28DB2518-1D44-4528-ACE5-57B700849D90}">
+				<PropertyList>
+					<Property Name="Flags" Type="int32" Value="1"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>0</XPos>
+						<YPos>0</YPos>
+						<Flags>5</Flags>
+					</Point>
+					<Point>
+						<XPos>5.86491</XPos>
+						<YPos>-107.85017</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>14.97695</XPos>
+						<YPos>253.25958</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>20</XPos>
+						<YPos>0.24897</YPos>
+						<Flags>37</Flags>
+					</Point>
+				</PointList>
+			</Curve>
+		</CurveInfo>
+		<CurveInfo Name="Direction">
+			<Curve Name="" ID="{E79F3CFD-8874-454E-8585-D012ED8C5320}">
+				<PropertyList>
+					<Property Name="Flags" Type="int32" Value="1"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>0</XPos>
+						<YPos>0</YPos>
+						<Flags>5</Flags>
+					</Point>
+					<Point>
+						<XPos>20</XPos>
+						<YPos>0</YPos>
+						<Flags>37</Flags>
+					</Point>
+				</PointList>
+			</Curve>
+		</CurveInfo>
+		<CurveInfo Name="FrequencyScale">
+			<Curve Name="" ID="{521709DC-A94D-45A4-9882-54F43F8B9B9E}">
+				<PropertyList>
+					<Property Name="Flags" Type="int32" Value="1"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>0</XPos>
+						<YPos>0</YPos>
+						<Flags>5</Flags>
+					</Point>
+					<Point>
+						<XPos>6.06061</XPos>
+						<YPos>0.66939</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>14.80519</XPos>
+						<YPos>-0.37551</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>20</XPos>
+						<YPos>0</YPos>
+						<Flags>37</Flags>
+					</Point>
+				</PointList>
+			</Curve>
+		</CurveInfo>
+		<CurveInfo Name="GainOffset">
+			<Curve Name="" ID="{FCFA003C-9B6A-4D5E-ABDE-0989A2A87187}">
+				<PropertyList>
+					<Property Name="Flags" Type="int32" Value="1"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>0</XPos>
+						<YPos>0</YPos>
+						<Flags>5</Flags>
+					</Point>
+					<Point>
+						<XPos>3.44139705882353</XPos>
+						<YPos>-60.6972</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>7.38154411764706</XPos>
+						<YPos>24</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>20</XPos>
+						<YPos>0</YPos>
+						<Flags>37</Flags>
+					</Point>
+				</PointList>
+			</Curve>
+		</CurveInfo>
+		<CurveInfo Name="Gustiness">
+			<Curve Name="" ID="{27F6ACD2-5B72-4E07-A4B4-021D807BD965}">
+				<PropertyList>
+					<Property Name="Flags" Type="int32" Value="1"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>0</XPos>
+						<YPos>0</YPos>
+						<Flags>5</Flags>
+					</Point>
+					<Point>
+						<XPos>4.53865336658354</XPos>
+						<YPos>0</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>7.58104411764706</XPos>
+						<YPos>0.22118</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>11.8204485294118</XPos>
+						<YPos>-0.25545</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>14.5137157107232</XPos>
+						<YPos>0</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>20</XPos>
+						<YPos>0</YPos>
+						<Flags>37</Flags>
+					</Point>
+				</PointList>
+			</Curve>
+		</CurveInfo>
+		<CurveInfo Name="QFactorScale">
+			<Curve Name="" ID="{F9382FD0-A2A0-4559-B022-C1E041D66E97}">
+				<PropertyList>
+					<Property Name="Flags" Type="int32" Value="1"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>0</XPos>
+						<YPos>0</YPos>
+						<Flags>5</Flags>
+					</Point>
+					<Point>
+						<XPos>10</XPos>
+						<YPos>0.25</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>20</XPos>
+						<YPos>0</YPos>
+						<Flags>37</Flags>
+					</Point>
+				</PointList>
+			</Curve>
+		</CurveInfo>
+		<CurveInfo Name="Variability">
+			<Curve Name="" ID="{BAE786E6-F43E-4F07-81BF-17840CB1AEAC}">
+				<PropertyList>
+					<Property Name="Flags" Type="int32" Value="1"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>0</XPos>
+						<YPos>0</YPos>
+						<Flags>5</Flags>
+					</Point>
+					<Point>
+						<XPos>9.6758088235294</XPos>
+						<YPos>0.35981</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>20</XPos>
+						<YPos>0</YPos>
+						<Flags>37</Flags>
+					</Point>
+				</PointList>
+			</Curve>
+		</CurveInfo>
+	</CurveList>
+</PluginData>
+													<PluginInnerObjectList>
+														<List Name="Deflectors">
+															<PluginInnerObject Name="" ID="{4CEF337D-B5CE-462C-83B8-79DCC4E15559}" PluginName="Deflector" CompanyID="0" PluginID="121">
+																<PropertyList>
+																	<Property Name="Frequency" Type="Real32" Value="83"/>
+																	<Property Name="PanX" Type="Real64" Value="8.65671641791048"/>
+																	<Property Name="PanY" Type="Real64" Value="34.1317365269461"/>
+																	<Property Name="QFactor" Type="Real32" Value="0.5"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{2E280145-7856-4CDD-A434-E359D5B1BEC4}" PluginName="Deflector" CompanyID="0" PluginID="121">
+																<PropertyList>
+																	<Property Name="Frequency" Type="Real32" Value="33.5"/>
+																	<Property Name="PanY" Type="Real64" Value="7.18562874251497"/>
+																	<Property Name="QFactor" Type="Real32" Value="0.5"/>
+																</PropertyList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{3681FCC3-4781-4446-8169-739D13BBCF4B}" PluginName="Deflector" CompanyID="0" PluginID="121">
+																<PropertyList>
+																	<Property Name="Frequency" Type="Real32" Value="208.5"/>
+																	<Property Name="PanX" Type="Real64" Value="-17.6119402985074"/>
+																	<Property Name="PanY" Type="Real64" Value="40.1197604790419"/>
+																	<Property Name="QFactor" Type="Real32" Value="0.5"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ville" ID="{77DC0743-48D5-430A-916C-3931BD56AA12}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="Random Car Pass-by_02" ID="{ECD801B8-55DC-4EBA-98D2-11BEF1943085}" ShortID="890617072">
+											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Car Pass-by" ID="{81A676E3-DD6C-4382-94D6-D32EDF26850A}" ShortID="668799243" Type="SoundFX">
+													<PropertyList>
+														<Property Name="3DPositionSource" Type="int16" Value="0"/>
+														<Property Name="EnablePanner" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<Custom CreatedFrom="{1D8EB519-3867-4334-8F99-F79508493728}">
+																<Attenuation Name="Car Attenuation (Custom)" ID="{9A7BE6A2-EC08-4DF2-9192-C84135ADB839}" ShortID="715066685">
+																	<CurveUsageInfoList>
+																		<VolumeDryUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																				<Curve Name="VolumeDry" ID="{0E1EE345-38C1-4639-8131-5D1AC2440E37}">
+																					<PropertyList>
+																						<Property Name="Flags" Type="int32" Value="1"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>0</YPos>
+																							<Flags>5</Flags>
+																							<SegmentShape>Log3</SegmentShape>
+																						</Point>
+																						<Point>
+																							<XPos>100</XPos>
+																							<YPos>-24</YPos>
+																							<Flags>37</Flags>
+																						</Point>
+																					</PointList>
+																				</Curve>
+																			</CurveUsageInfo>
+																		</VolumeDryUsage>
+																		<VolumeWetGameUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetGameUsage>
+																		<VolumeWetUserUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetUserUsage>
+																		<LowPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</LowPassFilterUsage>
+																		<HighPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</HighPassFilterUsage>
+																		<SpreadUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</SpreadUsage>
+																		<FocusUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</FocusUsage>
+																	</CurveUsageInfoList>
+																</Attenuation>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="SoundSeed Woosh" ID="{F4E4F5F0-DE03-4EB3-8376-C0E3EC325850}" ShortID="685503655" PluginName="SoundSeed Air/SoundSeed Woosh" CompanyID="0" PluginID="120">
+															<PropertyList>
+																<Property Name="AttenuationRollOff" Type="Real32" Value="4"/>
+																<Property Name="DistanceAttenuation" Type="bool" Value="False"/>
+																<Property Name="Duration" Type="Real64" Value="5"/>
+																<Property Name="DurationRandom" Type="Real32" Value="2.5"/>
+																<Property Name="FrequencyScaleRandom" Type="Real32" Value="0.5"/>
+																<Property Name="MinDistance" Type="Real32" Value="23"/>
+																<Property Name="SpeedAutomate" Type="bool" Value="True"/>
+																<Property Name="SpeedPointSpeedRandom" Type="Real32" Value="2.5"/>
+																<Property Name="SpeedPointTimeRandom" Type="Real32" Value="0.33"/>
+																<Property Name="SpeedRandom" Type="Real32" Value="2.5"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<PluginData>
+	<WooshData>
+		<CurveList Version="1">
+			<CurveInfo Name="Speed">
+				<Curve Name="" ID="{A7AC77BA-CBD3-4574-BC3E-C646A380C5A6}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>70.06494</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>2.3</XPos>
+							<YPos>70.06494</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>2.7</XPos>
+							<YPos>60</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>5</XPos>
+							<YPos>60</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+		<Path Version="1">
+			<Path2D Name="" ID="{3B21974E-02AB-46A0-84DF-E03FCDBFC866}">
+				<PropertyList>
+					<Property Name="LinearTime" Type="bool" Value="False"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>-0.27701</XPos>
+						<YPos>0.59347</YPos>
+						<Flags>12</Flags>
+						<Time>0</Time>
+					</Point>
+				</PointList>
+			</Path2D>
+		</Path>
+	</WooshData>
+</PluginData>
+															<PluginInnerObjectList>
+																<List Name="Deflectors">
+																	<PluginInnerObject Name="" ID="{320A3DAA-D25F-4E5B-9431-5FC0B7AB36C6}" PluginName="Deflector" CompanyID="0" PluginID="122"/>
+																</List>
+															</PluginInnerObjectList>
+														</SourcePlugin>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{7ADEF056-527A-4D01-9407-F8637FF01406}"/>
+														<Position Name="" ID="{56E557D8-6698-47D1-ACD0-76654D38D735}">
+															<PropertyList>
+																<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="Car Pass-by_Path_06" ID="{2ECD8964-BEE8-40A4-B12D-7D283CE81673}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="10"/>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-48.10127</XPos>
+																			<YPos>55.06329</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>56.3291139240506</XPos>
+																			<YPos>-37.9746835443038</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_01" ID="{AEBE1F51-5E43-4BDB-A746-74919534D8AD}">
+																	<PointList>
+																		<Point>
+																			<XPos>-20.88608</XPos>
+																			<YPos>74.68354</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>24.0506329113924</XPos>
+																			<YPos>-46.8354430379747</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_02" ID="{7FEEF0F0-B2CE-4F1B-9060-0A120441C121}">
+																	<PointList>
+																		<Point>
+																			<XPos>34.81013</XPos>
+																			<YPos>-58.86076</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-41.7721518987342</XPos>
+																			<YPos>47.4683544303797</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_03" ID="{385851CD-166B-4284-ACDA-84F4D49BF27E}">
+																	<PointList>
+																		<Point>
+																			<XPos>72.1519</XPos>
+																			<YPos>34.17722</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-35.4430379746835</XPos>
+																			<YPos>-58.2278481012658</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_04" ID="{102645CB-1BC6-4E59-AB65-BA0F7DA65C9E}">
+																	<PointList>
+																		<Point>
+																			<XPos>36.70886</XPos>
+																			<YPos>51.26582</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>48.1012658227848</XPos>
+																			<YPos>-41.7721518987342</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_05" ID="{915B0FCA-51E3-49B7-B258-CD6DA063B592}">
+																	<PointList>
+																		<Point>
+																			<XPos>-58.86076</XPos>
+																			<YPos>43.67089</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-52.5316455696203</XPos>
+																			<YPos>-50.632911392405</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+													<ActiveSourceList>
+														<ActiveSource Name="SoundSeed Woosh" ID="{F4E4F5F0-DE03-4EB3-8376-C0E3EC325850}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Silence" ID="{DBD4A391-7FFD-43E6-AF05-AF0AEF62992D}" ShortID="484905988" Type="SoundFX">
+													<PropertyList>
+														<Property Name="3DPositionSource" Type="int16" Value="0"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="Wwise Silence" ID="{00E67864-B683-4882-B459-9C0D7B223A58}" ShortID="372799448" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+															<PropertyList>
+																<Property Name="Length" Type="Real32" Value="2"/>
+																<Property Name="LengthMax" Type="Real32" Value="4"/>
+																<Property Name="LengthMin" Type="Real32" Value="-2"/>
+															</PropertyList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<PositioningInfo>
+														<Position Name="" ID="{2A12C8A3-E89B-44B8-ABB9-7083B8A7CD37}">
+															<PropertyList>
+																<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="Sea_Path" ID="{1A3F4FA8-E12A-48E1-A917-9953A14EF746}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="100"/>
+																		<Property Name="RandomY" Type="Real64" Value="50"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>48.73418</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+													<ActiveSourceList>
+														<ActiveSource Name="Wwise Silence" ID="{00E67864-B683-4882-B459-9C0D7B223A58}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Random Car Pass-by_01" ID="{0D5054B0-209B-4657-97EE-5B51C0A2F9FD}" ShortID="488614094">
+											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Car Pass-by" ID="{E25A28F1-A141-4DBC-BF2B-5AB02CCB3754}" ShortID="981633129" Type="SoundFX">
+													<PropertyList>
+														<Property Name="3DPositionSource" Type="int16" Value="0"/>
+														<Property Name="EnablePanner" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<Custom CreatedFrom="{1D8EB519-3867-4334-8F99-F79508493728}">
+																<Attenuation Name="Car Attenuation (Custom)" ID="{2D6AAAFA-FFDE-4037-AD69-7005DE3DA840}" ShortID="45482595">
+																	<CurveUsageInfoList>
+																		<VolumeDryUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																				<Curve Name="VolumeDry" ID="{6F1F16FC-138E-4DBE-B7A0-5F71CCBFDF6A}">
+																					<PropertyList>
+																						<Property Name="Flags" Type="int32" Value="1"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>0</YPos>
+																							<Flags>5</Flags>
+																							<SegmentShape>Log3</SegmentShape>
+																						</Point>
+																						<Point>
+																							<XPos>100</XPos>
+																							<YPos>-24</YPos>
+																							<Flags>37</Flags>
+																						</Point>
+																					</PointList>
+																				</Curve>
+																			</CurveUsageInfo>
+																		</VolumeDryUsage>
+																		<VolumeWetGameUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetGameUsage>
+																		<VolumeWetUserUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetUserUsage>
+																		<LowPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</LowPassFilterUsage>
+																		<HighPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</HighPassFilterUsage>
+																		<SpreadUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</SpreadUsage>
+																		<FocusUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</FocusUsage>
+																	</CurveUsageInfoList>
+																</Attenuation>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="SoundSeed Woosh" ID="{3509AE92-C62E-4858-9459-8EEB971B6F91}" ShortID="356319053" PluginName="SoundSeed Air/SoundSeed Woosh" CompanyID="0" PluginID="120">
+															<PropertyList>
+																<Property Name="AttenuationRollOff" Type="Real32" Value="4"/>
+																<Property Name="DistanceAttenuation" Type="bool" Value="False"/>
+																<Property Name="Duration" Type="Real64" Value="5"/>
+																<Property Name="DurationRandom" Type="Real32" Value="2.5"/>
+																<Property Name="FrequencyScaleRandom" Type="Real32" Value="0.5"/>
+																<Property Name="MinDistance" Type="Real32" Value="23"/>
+																<Property Name="SpeedAutomate" Type="bool" Value="True"/>
+																<Property Name="SpeedPointSpeedRandom" Type="Real32" Value="2.5"/>
+																<Property Name="SpeedPointTimeRandom" Type="Real32" Value="0.33"/>
+																<Property Name="SpeedRandom" Type="Real32" Value="2.5"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<PluginData>
+	<WooshData>
+		<CurveList Version="1">
+			<CurveInfo Name="Speed">
+				<Curve Name="" ID="{A8ACC667-6E46-481F-B050-079062504DE0}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>70.06494</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>2.3</XPos>
+							<YPos>70.06494</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>2.7</XPos>
+							<YPos>60</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>5</XPos>
+							<YPos>60</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+		<Path Version="1">
+			<Path2D Name="" ID="{5035024B-D752-4180-A59D-E165896DFE4A}">
+				<PropertyList>
+					<Property Name="LinearTime" Type="bool" Value="False"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>-0.27701</XPos>
+						<YPos>0.59347</YPos>
+						<Flags>12</Flags>
+						<Time>0</Time>
+					</Point>
+				</PointList>
+			</Path2D>
+		</Path>
+	</WooshData>
+</PluginData>
+															<PluginInnerObjectList>
+																<List Name="Deflectors">
+																	<PluginInnerObject Name="" ID="{DCB0F330-84F6-4863-BD4C-57991E3CCBBF}" PluginName="Deflector" CompanyID="0" PluginID="122"/>
+																</List>
+															</PluginInnerObjectList>
+														</SourcePlugin>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{0AA24113-1FA7-498D-B5FE-BC18301C38CF}"/>
+														<Position Name="" ID="{BBBE086E-CF51-4532-864D-CF38AA36CD19}">
+															<PropertyList>
+																<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="Car Pass-by_Path_06" ID="{4D240302-943E-4850-825D-DA07ED04FFEB}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="10"/>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-48.10127</XPos>
+																			<YPos>55.06329</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>56.3291139240506</XPos>
+																			<YPos>-37.9746835443038</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_01" ID="{AB36064B-E768-4898-9A00-DA1BE2672B8D}">
+																	<PointList>
+																		<Point>
+																			<XPos>-20.88608</XPos>
+																			<YPos>74.68354</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>24.0506329113924</XPos>
+																			<YPos>-46.8354430379747</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_02" ID="{8B38534C-1231-4F9E-B668-E72DDFA581AA}">
+																	<PointList>
+																		<Point>
+																			<XPos>34.81013</XPos>
+																			<YPos>-58.86076</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-41.7721518987342</XPos>
+																			<YPos>47.4683544303797</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_03" ID="{326BE7F9-BF1B-4268-ADDC-277D8D8BCA20}">
+																	<PointList>
+																		<Point>
+																			<XPos>72.1519</XPos>
+																			<YPos>34.17722</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-35.4430379746835</XPos>
+																			<YPos>-58.2278481012658</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_04" ID="{A23B84FA-9A07-4B1E-B55C-548EE4F2490E}">
+																	<PointList>
+																		<Point>
+																			<XPos>36.70886</XPos>
+																			<YPos>51.26582</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>48.1012658227848</XPos>
+																			<YPos>-41.7721518987342</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_05" ID="{E9F29FDE-13E1-4338-B54E-BCB3D62350A9}">
+																	<PointList>
+																		<Point>
+																			<XPos>-58.86076</XPos>
+																			<YPos>43.67089</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-52.5316455696203</XPos>
+																			<YPos>-50.632911392405</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+													<ActiveSourceList>
+														<ActiveSource Name="SoundSeed Woosh" ID="{3509AE92-C62E-4858-9459-8EEB971B6F91}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Silence" ID="{C7745707-2BFC-4AAB-BA92-63DFD264A5F9}" ShortID="750240378" Type="SoundFX">
+													<PropertyList>
+														<Property Name="3DPositionSource" Type="int16" Value="0"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="Wwise Silence" ID="{27314E04-12E3-4FFD-A2BE-5EDEAA46175E}" ShortID="309043750" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+															<PropertyList>
+																<Property Name="Length" Type="Real32" Value="2"/>
+																<Property Name="LengthMax" Type="Real32" Value="4"/>
+																<Property Name="LengthMin" Type="Real32" Value="-2"/>
+															</PropertyList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<PositioningInfo>
+														<Position Name="" ID="{C901B4CD-2029-4886-88AD-2C69F496B962}">
+															<PropertyList>
+																<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="Sea_Path" ID="{40C5ECC3-815F-4F57-AF9F-70F73C65F546}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="100"/>
+																		<Property Name="RandomY" Type="Real64" Value="50"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>48.73418</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+													<ActiveSourceList>
+														<ActiveSource Name="Wwise Silence" ID="{27314E04-12E3-4FFD-A2BE-5EDEAA46175E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Random Car Pass-by_03" ID="{B27029E0-9CEC-461D-9B10-5C004817FED6}" ShortID="779667880">
+											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Car Pass-by" ID="{D3B9284D-7933-4657-9034-552AA53CB628}" ShortID="611149486" Type="SoundFX">
+													<PropertyList>
+														<Property Name="3DPositionSource" Type="int16" Value="0"/>
+														<Property Name="EnablePanner" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<Custom CreatedFrom="{1D8EB519-3867-4334-8F99-F79508493728}">
+																<Attenuation Name="Car Attenuation (Custom)" ID="{FD7FDE8F-74EA-4A38-ABBD-E5C68367AB9D}" ShortID="939736626">
+																	<CurveUsageInfoList>
+																		<VolumeDryUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																				<Curve Name="VolumeDry" ID="{87C2C8D9-BD9F-424D-8327-15455BBF6421}">
+																					<PropertyList>
+																						<Property Name="Flags" Type="int32" Value="1"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>0</YPos>
+																							<Flags>5</Flags>
+																							<SegmentShape>Log3</SegmentShape>
+																						</Point>
+																						<Point>
+																							<XPos>100</XPos>
+																							<YPos>-24</YPos>
+																							<Flags>37</Flags>
+																						</Point>
+																					</PointList>
+																				</Curve>
+																			</CurveUsageInfo>
+																		</VolumeDryUsage>
+																		<VolumeWetGameUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetGameUsage>
+																		<VolumeWetUserUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetUserUsage>
+																		<LowPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</LowPassFilterUsage>
+																		<HighPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</HighPassFilterUsage>
+																		<SpreadUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</SpreadUsage>
+																		<FocusUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</FocusUsage>
+																	</CurveUsageInfoList>
+																</Attenuation>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="SoundSeed Woosh" ID="{8C2A7B64-5000-4E8C-941E-69DA935F4576}" ShortID="365762760" PluginName="SoundSeed Air/SoundSeed Woosh" CompanyID="0" PluginID="120">
+															<PropertyList>
+																<Property Name="AttenuationRollOff" Type="Real32" Value="4"/>
+																<Property Name="DistanceAttenuation" Type="bool" Value="False"/>
+																<Property Name="Duration" Type="Real64" Value="5"/>
+																<Property Name="DurationRandom" Type="Real32" Value="2.5"/>
+																<Property Name="FrequencyScaleRandom" Type="Real32" Value="0.5"/>
+																<Property Name="MinDistance" Type="Real32" Value="23"/>
+																<Property Name="SpeedAutomate" Type="bool" Value="True"/>
+																<Property Name="SpeedPointSpeedRandom" Type="Real32" Value="2.5"/>
+																<Property Name="SpeedPointTimeRandom" Type="Real32" Value="0.33"/>
+																<Property Name="SpeedRandom" Type="Real32" Value="2.5"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<PluginData>
+	<WooshData>
+		<CurveList Version="1">
+			<CurveInfo Name="Speed">
+				<Curve Name="" ID="{B1FFE9C2-3285-4032-BE2E-3E27531962E3}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>70.06494</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>2.3</XPos>
+							<YPos>70.06494</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>2.7</XPos>
+							<YPos>60</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>5</XPos>
+							<YPos>60</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+		<Path Version="1">
+			<Path2D Name="" ID="{F9BA4134-0C68-4CE1-91F1-8AD13AEA6819}">
+				<PropertyList>
+					<Property Name="LinearTime" Type="bool" Value="False"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>-0.27701</XPos>
+						<YPos>0.59347</YPos>
+						<Flags>12</Flags>
+						<Time>0</Time>
+					</Point>
+				</PointList>
+			</Path2D>
+		</Path>
+	</WooshData>
+</PluginData>
+															<PluginInnerObjectList>
+																<List Name="Deflectors">
+																	<PluginInnerObject Name="" ID="{03A043C2-4FD7-4351-8618-FCF7CFDF0D4E}" PluginName="Deflector" CompanyID="0" PluginID="122"/>
+																</List>
+															</PluginInnerObjectList>
+														</SourcePlugin>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{10D40614-C07A-46CD-9ED8-07EFC7AD0F23}"/>
+														<Position Name="" ID="{C1E3F070-C7FF-4104-85AB-94E5FA5D8074}">
+															<PropertyList>
+																<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="Car Pass-by_Path_06" ID="{8F5EFB9B-1A1E-4194-A6D3-2FB71FF2EF8F}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="10"/>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-48.10127</XPos>
+																			<YPos>55.06329</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>56.3291139240506</XPos>
+																			<YPos>-37.9746835443038</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_01" ID="{AD24B8D2-10AF-4137-9D83-F1074BD6409B}">
+																	<PointList>
+																		<Point>
+																			<XPos>-20.88608</XPos>
+																			<YPos>74.68354</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>24.0506329113924</XPos>
+																			<YPos>-46.8354430379747</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_02" ID="{C0041CA1-56EB-47AA-AEBC-A2BCC3CD25C6}">
+																	<PointList>
+																		<Point>
+																			<XPos>34.81013</XPos>
+																			<YPos>-58.86076</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-41.7721518987342</XPos>
+																			<YPos>47.4683544303797</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_03" ID="{FDE61410-45F4-4F84-9DA8-47F38425FA9B}">
+																	<PointList>
+																		<Point>
+																			<XPos>72.1519</XPos>
+																			<YPos>34.17722</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-35.4430379746835</XPos>
+																			<YPos>-58.2278481012658</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_04" ID="{6BE8EB82-2F84-421F-A027-8231E78D2ECD}">
+																	<PointList>
+																		<Point>
+																			<XPos>36.70886</XPos>
+																			<YPos>51.26582</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>48.1012658227848</XPos>
+																			<YPos>-41.7721518987342</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_05" ID="{548D035B-6535-4085-90DB-19C9407743A0}">
+																	<PointList>
+																		<Point>
+																			<XPos>-58.86076</XPos>
+																			<YPos>43.67089</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-52.5316455696203</XPos>
+																			<YPos>-50.632911392405</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+													<ActiveSourceList>
+														<ActiveSource Name="SoundSeed Woosh" ID="{8C2A7B64-5000-4E8C-941E-69DA935F4576}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Silence" ID="{4B435235-7C05-4DFC-92EA-5F9248338FF8}" ShortID="960308271" Type="SoundFX">
+													<PropertyList>
+														<Property Name="3DPositionSource" Type="int16" Value="0"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="Wwise Silence" ID="{6B3BED6A-EBFC-4318-9240-F713C0C3BB18}" ShortID="790704623" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+															<PropertyList>
+																<Property Name="Length" Type="Real32" Value="2"/>
+																<Property Name="LengthMax" Type="Real32" Value="4"/>
+																<Property Name="LengthMin" Type="Real32" Value="-2"/>
+															</PropertyList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<PositioningInfo>
+														<Position Name="" ID="{18C69B23-A763-4B82-9E8C-092AE25AEBEA}">
+															<PropertyList>
+																<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="Sea_Path" ID="{C644C53F-1B37-4A7C-A33F-5B63A3671739}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="100"/>
+																		<Property Name="RandomY" Type="Real64" Value="50"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>48.73418</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+													<ActiveSourceList>
+														<ActiveSource Name="Wwise Silence" ID="{6B3BED6A-EBFC-4318-9240-F713C0C3BB18}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Random Car Pass-by_04" ID="{05BACEBC-416B-4770-8928-C1EB747B3EF3}" ShortID="132712205">
+											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Car Pass-by" ID="{F07A0940-9447-4DB7-8916-933609206F4A}" ShortID="1007213859" Type="SoundFX">
+													<PropertyList>
+														<Property Name="3DPositionSource" Type="int16" Value="0"/>
+														<Property Name="EnablePanner" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<Custom CreatedFrom="{1D8EB519-3867-4334-8F99-F79508493728}">
+																<Attenuation Name="Car Attenuation (Custom)" ID="{9A91BB68-59E1-44CC-B7CA-E008C1CC7542}" ShortID="456119573">
+																	<CurveUsageInfoList>
+																		<VolumeDryUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																				<Curve Name="VolumeDry" ID="{D7081182-A226-4E77-9AD7-5016D706B9FF}">
+																					<PropertyList>
+																						<Property Name="Flags" Type="int32" Value="1"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>0</YPos>
+																							<Flags>5</Flags>
+																							<SegmentShape>Log3</SegmentShape>
+																						</Point>
+																						<Point>
+																							<XPos>100</XPos>
+																							<YPos>-24</YPos>
+																							<Flags>37</Flags>
+																						</Point>
+																					</PointList>
+																				</Curve>
+																			</CurveUsageInfo>
+																		</VolumeDryUsage>
+																		<VolumeWetGameUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetGameUsage>
+																		<VolumeWetUserUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetUserUsage>
+																		<LowPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</LowPassFilterUsage>
+																		<HighPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</HighPassFilterUsage>
+																		<SpreadUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</SpreadUsage>
+																		<FocusUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</FocusUsage>
+																	</CurveUsageInfoList>
+																</Attenuation>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="SoundSeed Woosh" ID="{01C8E082-77CC-4107-BD3F-1993C6EC4E8D}" ShortID="188214797" PluginName="SoundSeed Air/SoundSeed Woosh" CompanyID="0" PluginID="120">
+															<PropertyList>
+																<Property Name="AttenuationRollOff" Type="Real32" Value="4"/>
+																<Property Name="DistanceAttenuation" Type="bool" Value="False"/>
+																<Property Name="Duration" Type="Real64" Value="5"/>
+																<Property Name="DurationRandom" Type="Real32" Value="2.5"/>
+																<Property Name="FrequencyScaleRandom" Type="Real32" Value="0.5"/>
+																<Property Name="MinDistance" Type="Real32" Value="23"/>
+																<Property Name="SpeedAutomate" Type="bool" Value="True"/>
+																<Property Name="SpeedPointSpeedRandom" Type="Real32" Value="2.5"/>
+																<Property Name="SpeedPointTimeRandom" Type="Real32" Value="0.33"/>
+																<Property Name="SpeedRandom" Type="Real32" Value="2.5"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<PluginData>
+	<WooshData>
+		<CurveList Version="1">
+			<CurveInfo Name="Speed">
+				<Curve Name="" ID="{8A49A2E8-6903-4E08-94E0-5C42DE172E40}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>70.06494</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>2.3</XPos>
+							<YPos>70.06494</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>2.7</XPos>
+							<YPos>60</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>5</XPos>
+							<YPos>60</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+		<Path Version="1">
+			<Path2D Name="" ID="{2C6BAC74-845C-442B-A1BD-4AD09B88C807}">
+				<PropertyList>
+					<Property Name="LinearTime" Type="bool" Value="False"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>-0.27701</XPos>
+						<YPos>0.59347</YPos>
+						<Flags>12</Flags>
+						<Time>0</Time>
+					</Point>
+				</PointList>
+			</Path2D>
+		</Path>
+	</WooshData>
+</PluginData>
+															<PluginInnerObjectList>
+																<List Name="Deflectors">
+																	<PluginInnerObject Name="" ID="{BE40FC24-FDC0-4DE8-95E9-68CA9DAD1CF3}" PluginName="Deflector" CompanyID="0" PluginID="122"/>
+																</List>
+															</PluginInnerObjectList>
+														</SourcePlugin>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{38774222-891D-474C-A2FD-DAC1B52750A2}"/>
+														<Position Name="" ID="{2233C38F-7B49-4F34-8A0C-F4152542B12B}">
+															<PropertyList>
+																<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="Car Pass-by_Path_06" ID="{9F4D42CE-CF19-4256-A386-C02C7A402091}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="10"/>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-48.10127</XPos>
+																			<YPos>55.06329</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>56.3291139240506</XPos>
+																			<YPos>-37.9746835443038</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_01" ID="{26877E2F-5D2A-4FFD-8526-2EAF020B4F80}">
+																	<PointList>
+																		<Point>
+																			<XPos>-20.88608</XPos>
+																			<YPos>74.68354</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>24.0506329113924</XPos>
+																			<YPos>-46.8354430379747</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_02" ID="{06368BA0-F3B0-42C7-A71E-A127AC6E0123}">
+																	<PointList>
+																		<Point>
+																			<XPos>34.81013</XPos>
+																			<YPos>-58.86076</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-41.7721518987342</XPos>
+																			<YPos>47.4683544303797</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_03" ID="{90A7D49E-B94E-43A6-97D6-E31DDE32D64D}">
+																	<PointList>
+																		<Point>
+																			<XPos>72.1519</XPos>
+																			<YPos>34.17722</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-35.4430379746835</XPos>
+																			<YPos>-58.2278481012658</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_04" ID="{FA6FD7BB-2123-4522-936F-44092AE72BE3}">
+																	<PointList>
+																		<Point>
+																			<XPos>36.70886</XPos>
+																			<YPos>51.26582</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>48.1012658227848</XPos>
+																			<YPos>-41.7721518987342</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_05" ID="{1366C79D-580A-430F-855E-58F766328771}">
+																	<PointList>
+																		<Point>
+																			<XPos>-58.86076</XPos>
+																			<YPos>43.67089</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-52.5316455696203</XPos>
+																			<YPos>-50.632911392405</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+													<ActiveSourceList>
+														<ActiveSource Name="SoundSeed Woosh" ID="{01C8E082-77CC-4107-BD3F-1993C6EC4E8D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Silence" ID="{6A24D3DD-7272-4060-926D-2E5E2D8AD618}" ShortID="375363231" Type="SoundFX">
+													<PropertyList>
+														<Property Name="3DPositionSource" Type="int16" Value="0"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="Wwise Silence" ID="{249DB03F-3C7E-45C3-A1B9-6A56B19C5603}" ShortID="504047276" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+															<PropertyList>
+																<Property Name="Length" Type="Real32" Value="2"/>
+																<Property Name="LengthMax" Type="Real32" Value="4"/>
+																<Property Name="LengthMin" Type="Real32" Value="-2"/>
+															</PropertyList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<PositioningInfo>
+														<Position Name="" ID="{CB1007FA-5C6D-4D13-8F62-627D50F68D74}">
+															<PropertyList>
+																<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="Sea_Path" ID="{0C6981AC-2ED7-4C69-8E9F-02B84056F382}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="100"/>
+																		<Property Name="RandomY" Type="Real64" Value="50"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>48.73418</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+													<ActiveSourceList>
+														<ActiveSource Name="Wwise Silence" ID="{249DB03F-3C7E-45C3-A1B9-6A56B19C5603}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Random Car Pass-by_05" ID="{210B9A18-8000-44EE-B2F8-F1CDB31F198E}" ShortID="615582668">
+											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Car Pass-by" ID="{AB3353DB-618A-4CAE-B983-65BF64B2E045}" ShortID="162622402" Type="SoundFX">
+													<PropertyList>
+														<Property Name="3DPositionSource" Type="int16" Value="0"/>
+														<Property Name="EnablePanner" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<Custom CreatedFrom="{1D8EB519-3867-4334-8F99-F79508493728}">
+																<Attenuation Name="Car Attenuation (Custom)" ID="{F88557F0-9577-4239-808E-57B2024286BC}" ShortID="562301921">
+																	<CurveUsageInfoList>
+																		<VolumeDryUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																				<Curve Name="VolumeDry" ID="{8C223454-72DF-4DE9-B0F5-39819F7A4096}">
+																					<PropertyList>
+																						<Property Name="Flags" Type="int32" Value="1"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>0</YPos>
+																							<Flags>5</Flags>
+																							<SegmentShape>Log3</SegmentShape>
+																						</Point>
+																						<Point>
+																							<XPos>100</XPos>
+																							<YPos>-24</YPos>
+																							<Flags>37</Flags>
+																						</Point>
+																					</PointList>
+																				</Curve>
+																			</CurveUsageInfo>
+																		</VolumeDryUsage>
+																		<VolumeWetGameUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetGameUsage>
+																		<VolumeWetUserUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetUserUsage>
+																		<LowPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</LowPassFilterUsage>
+																		<HighPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</HighPassFilterUsage>
+																		<SpreadUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</SpreadUsage>
+																		<FocusUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</FocusUsage>
+																	</CurveUsageInfoList>
+																</Attenuation>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="SoundSeed Woosh" ID="{4D94B2E1-060E-4581-8493-DCEFADADD36F}" ShortID="162772315" PluginName="SoundSeed Air/SoundSeed Woosh" CompanyID="0" PluginID="120">
+															<PropertyList>
+																<Property Name="AttenuationRollOff" Type="Real32" Value="4"/>
+																<Property Name="DistanceAttenuation" Type="bool" Value="False"/>
+																<Property Name="Duration" Type="Real64" Value="5"/>
+																<Property Name="DurationRandom" Type="Real32" Value="2.5"/>
+																<Property Name="FrequencyScaleRandom" Type="Real32" Value="0.5"/>
+																<Property Name="MinDistance" Type="Real32" Value="23"/>
+																<Property Name="SpeedAutomate" Type="bool" Value="True"/>
+																<Property Name="SpeedPointSpeedRandom" Type="Real32" Value="2.5"/>
+																<Property Name="SpeedPointTimeRandom" Type="Real32" Value="0.33"/>
+																<Property Name="SpeedRandom" Type="Real32" Value="2.5"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<PluginData>
+	<WooshData>
+		<CurveList Version="1">
+			<CurveInfo Name="Speed">
+				<Curve Name="" ID="{837293FF-20FE-4E90-89C2-8D0769192F53}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>70.06494</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>2.3</XPos>
+							<YPos>70.06494</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>2.7</XPos>
+							<YPos>60</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>5</XPos>
+							<YPos>60</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+		<Path Version="1">
+			<Path2D Name="" ID="{97E8B2BA-F1E1-4506-97CE-6300A65A6C27}">
+				<PropertyList>
+					<Property Name="LinearTime" Type="bool" Value="False"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>-0.27701</XPos>
+						<YPos>0.59347</YPos>
+						<Flags>12</Flags>
+						<Time>0</Time>
+					</Point>
+				</PointList>
+			</Path2D>
+		</Path>
+	</WooshData>
+</PluginData>
+															<PluginInnerObjectList>
+																<List Name="Deflectors">
+																	<PluginInnerObject Name="" ID="{CC8BCB70-06E8-4028-AB4E-850EF528A408}" PluginName="Deflector" CompanyID="0" PluginID="122"/>
+																</List>
+															</PluginInnerObjectList>
+														</SourcePlugin>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{B99BF3B4-FF6E-474B-81AF-6CFDD50AB69E}"/>
+														<Position Name="" ID="{2A8D100E-6611-4E29-9286-DE21981E13DD}">
+															<PropertyList>
+																<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="Car Pass-by_Path_06" ID="{3CDD56FA-35FD-47DB-9936-9F340F7AD9B4}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="10"/>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-48.10127</XPos>
+																			<YPos>55.06329</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>56.3291139240506</XPos>
+																			<YPos>-37.9746835443038</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_01" ID="{81BFF004-5AC4-41EE-BDC0-9738BB3021BC}">
+																	<PointList>
+																		<Point>
+																			<XPos>-20.88608</XPos>
+																			<YPos>74.68354</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>24.0506329113924</XPos>
+																			<YPos>-46.8354430379747</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_02" ID="{BFC3E5B2-9ACE-4D80-8121-0C0DA7C6CA63}">
+																	<PointList>
+																		<Point>
+																			<XPos>34.81013</XPos>
+																			<YPos>-58.86076</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-41.7721518987342</XPos>
+																			<YPos>47.4683544303797</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_03" ID="{53F970D5-F44C-4631-B798-4D34DA724798}">
+																	<PointList>
+																		<Point>
+																			<XPos>72.1519</XPos>
+																			<YPos>34.17722</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-35.4430379746835</XPos>
+																			<YPos>-58.2278481012658</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_04" ID="{CD10D39D-29A3-4342-AE06-062E245FD1FF}">
+																	<PointList>
+																		<Point>
+																			<XPos>36.70886</XPos>
+																			<YPos>51.26582</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>48.1012658227848</XPos>
+																			<YPos>-41.7721518987342</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_05" ID="{CE99BC51-E2E7-4F68-BF24-B1B81B017A84}">
+																	<PointList>
+																		<Point>
+																			<XPos>-58.86076</XPos>
+																			<YPos>43.67089</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-52.5316455696203</XPos>
+																			<YPos>-50.632911392405</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+													<ActiveSourceList>
+														<ActiveSource Name="SoundSeed Woosh" ID="{4D94B2E1-060E-4581-8493-DCEFADADD36F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Silence" ID="{9326F88B-EDAC-4E6D-BC2F-9C48FDD9C8BB}" ShortID="576996944" Type="SoundFX">
+													<PropertyList>
+														<Property Name="3DPositionSource" Type="int16" Value="0"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="Wwise Silence" ID="{AE934451-E1CD-4E05-AF3B-8F25AB5B96B8}" ShortID="773812617" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+															<PropertyList>
+																<Property Name="Length" Type="Real32" Value="2"/>
+																<Property Name="LengthMax" Type="Real32" Value="4"/>
+																<Property Name="LengthMin" Type="Real32" Value="-2"/>
+															</PropertyList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<PositioningInfo>
+														<Position Name="" ID="{5852DFC2-35E4-4CE6-950D-70B1A005264E}">
+															<PropertyList>
+																<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="Sea_Path" ID="{B13A40C2-9A09-401B-A82A-947C8FE23EA9}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="100"/>
+																		<Property Name="RandomY" Type="Real64" Value="50"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>48.73418</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+													<ActiveSourceList>
+														<ActiveSource Name="Wwise Silence" ID="{AE934451-E1CD-4E05-AF3B-8F25AB5B96B8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Random Car Pass-by_06" ID="{7405CDEC-3C94-4EDA-A848-9EB86A5239A6}" ShortID="76438939">
+											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Car Pass-by" ID="{FF17D38F-F0CB-483F-AA99-7B2BB8B1A0CE}" ShortID="886532961" Type="SoundFX">
+													<PropertyList>
+														<Property Name="3DPositionSource" Type="int16" Value="0"/>
+														<Property Name="EnablePanner" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<Custom CreatedFrom="{1D8EB519-3867-4334-8F99-F79508493728}">
+																<Attenuation Name="Car Attenuation (Custom)" ID="{612BB6DC-221B-4CBC-826C-8EBA5F13A12E}" ShortID="565388971">
+																	<CurveUsageInfoList>
+																		<VolumeDryUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																				<Curve Name="VolumeDry" ID="{8536F4D8-A914-4A7D-AD77-734D27B44A50}">
+																					<PropertyList>
+																						<Property Name="Flags" Type="int32" Value="1"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>0</YPos>
+																							<Flags>5</Flags>
+																							<SegmentShape>Log3</SegmentShape>
+																						</Point>
+																						<Point>
+																							<XPos>100</XPos>
+																							<YPos>-24</YPos>
+																							<Flags>37</Flags>
+																						</Point>
+																					</PointList>
+																				</Curve>
+																			</CurveUsageInfo>
+																		</VolumeDryUsage>
+																		<VolumeWetGameUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetGameUsage>
+																		<VolumeWetUserUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetUserUsage>
+																		<LowPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</LowPassFilterUsage>
+																		<HighPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</HighPassFilterUsage>
+																		<SpreadUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</SpreadUsage>
+																		<FocusUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</FocusUsage>
+																	</CurveUsageInfoList>
+																</Attenuation>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="SoundSeed Woosh" ID="{7B9D8CB9-F957-457D-A3AD-1660B8D8EBB9}" ShortID="949017482" PluginName="SoundSeed Air/SoundSeed Woosh" CompanyID="0" PluginID="120">
+															<PropertyList>
+																<Property Name="AttenuationRollOff" Type="Real32" Value="4"/>
+																<Property Name="DistanceAttenuation" Type="bool" Value="False"/>
+																<Property Name="Duration" Type="Real64" Value="5"/>
+																<Property Name="DurationRandom" Type="Real32" Value="2.5"/>
+																<Property Name="FrequencyScaleRandom" Type="Real32" Value="0.5"/>
+																<Property Name="MinDistance" Type="Real32" Value="23"/>
+																<Property Name="SpeedAutomate" Type="bool" Value="True"/>
+																<Property Name="SpeedPointSpeedRandom" Type="Real32" Value="2.5"/>
+																<Property Name="SpeedPointTimeRandom" Type="Real32" Value="0.33"/>
+																<Property Name="SpeedRandom" Type="Real32" Value="2.5"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<PluginData>
+	<WooshData>
+		<CurveList Version="1">
+			<CurveInfo Name="Speed">
+				<Curve Name="" ID="{E495FBE2-4885-44C0-9BA9-580773653E78}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>70.06494</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>2.3</XPos>
+							<YPos>70.06494</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>2.7</XPos>
+							<YPos>60</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>5</XPos>
+							<YPos>60</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+		<Path Version="1">
+			<Path2D Name="" ID="{1BC69BF6-56F6-424A-AAC2-5D3F3168AF25}">
+				<PropertyList>
+					<Property Name="LinearTime" Type="bool" Value="False"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>-0.27701</XPos>
+						<YPos>0.59347</YPos>
+						<Flags>12</Flags>
+						<Time>0</Time>
+					</Point>
+				</PointList>
+			</Path2D>
+		</Path>
+	</WooshData>
+</PluginData>
+															<PluginInnerObjectList>
+																<List Name="Deflectors">
+																	<PluginInnerObject Name="" ID="{35992647-D984-40B7-8B01-E2BBDED64DA9}" PluginName="Deflector" CompanyID="0" PluginID="122"/>
+																</List>
+															</PluginInnerObjectList>
+														</SourcePlugin>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{A3AD18E4-3200-4FDB-AC15-FCD57E14397D}"/>
+														<Position Name="" ID="{1CDB5E89-B549-4445-B816-39D128C02B83}">
+															<PropertyList>
+																<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="Car Pass-by_Path_06" ID="{501DF6A9-1998-4BC5-96C4-D14F125AB302}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="10"/>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-48.10127</XPos>
+																			<YPos>55.06329</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>56.3291139240506</XPos>
+																			<YPos>-37.9746835443038</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_01" ID="{C43C5195-A4A6-4C53-847C-30ECCCA90E32}">
+																	<PointList>
+																		<Point>
+																			<XPos>-20.88608</XPos>
+																			<YPos>74.68354</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>24.0506329113924</XPos>
+																			<YPos>-46.8354430379747</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_02" ID="{4F8ED2D6-2614-4EA0-A96E-CD2B48CD6FBE}">
+																	<PointList>
+																		<Point>
+																			<XPos>34.81013</XPos>
+																			<YPos>-58.86076</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-41.7721518987342</XPos>
+																			<YPos>47.4683544303797</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_03" ID="{435FA66A-1348-4057-ADFA-5779BDDD2D44}">
+																	<PointList>
+																		<Point>
+																			<XPos>72.1519</XPos>
+																			<YPos>34.17722</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-35.4430379746835</XPos>
+																			<YPos>-58.2278481012658</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_04" ID="{E1946712-2D7B-4B98-AA69-93823FFD9697}">
+																	<PointList>
+																		<Point>
+																			<XPos>36.70886</XPos>
+																			<YPos>51.26582</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>48.1012658227848</XPos>
+																			<YPos>-41.7721518987342</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Car Pass-by_Path_05" ID="{17B7888C-8B17-42B6-9DF9-578AB4ABE33A}">
+																	<PointList>
+																		<Point>
+																			<XPos>-58.86076</XPos>
+																			<YPos>43.67089</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-52.5316455696203</XPos>
+																			<YPos>-50.632911392405</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+													<ActiveSourceList>
+														<ActiveSource Name="SoundSeed Woosh" ID="{7B9D8CB9-F957-457D-A3AD-1660B8D8EBB9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Silence" ID="{6E2FA0D2-C9A0-4115-B6F0-294704E441BA}" ShortID="319368456" Type="SoundFX">
+													<PropertyList>
+														<Property Name="3DPositionSource" Type="int16" Value="0"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="Wwise Silence" ID="{EB9A54E3-93CD-4E26-B99A-AD32243B9974}" ShortID="745928427" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+															<PropertyList>
+																<Property Name="Length" Type="Real32" Value="2"/>
+																<Property Name="LengthMax" Type="Real32" Value="4"/>
+																<Property Name="LengthMin" Type="Real32" Value="-2"/>
+															</PropertyList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<PositioningInfo>
+														<Position Name="" ID="{60EA566B-1052-4621-8C6A-7B6163E8FC23}">
+															<PropertyList>
+																<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="Sea_Path" ID="{0661D6BA-1DC0-4DEB-AD07-D375E05CB8F8}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="100"/>
+																		<Property Name="RandomY" Type="Real64" Value="50"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>48.73418</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+													<ActiveSourceList>
+														<ActiveSource Name="Wwise Silence" ID="{EB9A54E3-93CD-4E26-B99A-AD32243B9974}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</BlendContainer>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

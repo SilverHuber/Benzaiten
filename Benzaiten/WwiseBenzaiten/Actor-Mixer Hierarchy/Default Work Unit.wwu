@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D3B3F84C-774D-4541-ADFE-4B7BE2805496}" SchemaVersion="70">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{D3B3F84C-774D-4541-ADFE-4B7BE2805496}" PersistMode="Standalone">
+			<ChildrenList>
+				<RandomSequenceContainer Name="Talk" ID="{55F7ACAA-3CF6-4865-83DC-D7362B3161B6}" ShortID="97884724">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>42</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F2DAA495-6FC4-4A79-A78A-6129BC7B6AE8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{0D585A55-CD34-4A7A-89EA-D5E94C35A13F}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Talk1" ID="{7A9815F8-6610-4ECE-B97B-2C5BB6865D99}" ShortID="670519161" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F2DAA495-6FC4-4A79-A78A-6129BC7B6AE8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Oldman1_pitched" ID="{8B9AE3BC-BB3D-43A0-81F1-33097A5D76D3}" ShortID="128400035">
+									<Language>SFX</Language>
+									<AudioFile>Oldman1_pitched.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Oldman1_pitched" ID="{8B9AE3BC-BB3D-43A0-81F1-33097A5D76D3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Talk2" ID="{302115F7-F8B4-45E9-9FEE-43B7437CCB4D}" ShortID="313385885" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F2DAA495-6FC4-4A79-A78A-6129BC7B6AE8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Oldman2_Pitched" ID="{E8796866-FDA6-43E1-A39C-4796D69B933A}" ShortID="110968287">
+									<Language>SFX</Language>
+									<AudioFile>Oldman2_Pitched.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Oldman2_Pitched" ID="{E8796866-FDA6-43E1-A39C-4796D69B933A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<Sound Name="Rain" ID="{74746D01-CAF0-4E3E-B66B-6C74D314AB16}" ShortID="880343337" Type="SoundFX">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F2DAA495-6FC4-4A79-A78A-6129BC7B6AE8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{025EA09E-B7D1-4A25-B4A1-F24F1596BC43}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_RainWind" ID="{1C36BE19-5C82-4D07-B5EF-F375ABE41620}" ShortID="416858663">
+							<Language>SFX</Language>
+							<AudioFile>SFX_RainWind.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_RainWind" ID="{1C36BE19-5C82-4D07-B5EF-F375ABE41620}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Shakuhachi_D" ID="{4D6CE31E-BD5B-436F-9E28-3335321E5996}" ShortID="526377006" Type="SoundFX">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F2DAA495-6FC4-4A79-A78A-6129BC7B6AE8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{0D585A55-CD34-4A7A-89EA-D5E94C35A13F}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Shakuhachi_D" ID="{A96B6A6C-B7D4-4E9A-AC38-F8607C0D6A76}" ShortID="797902614">
+							<Language>SFX</Language>
+							<AudioFile>Shakuhachi_D.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Shakuhachi_D" ID="{A96B6A6C-B7D4-4E9A-AC38-F8607C0D6A76}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Shakuhachi_Eb" ID="{9C2D51D0-4B82-407B-B814-E19A49C6EA48}" ShortID="439850196" Type="SoundFX">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F2DAA495-6FC4-4A79-A78A-6129BC7B6AE8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{0D585A55-CD34-4A7A-89EA-D5E94C35A13F}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Shakuhachi_Eb" ID="{962ECAC4-DF35-45E1-8BE9-9568C9BD484F}" ShortID="931839506">
+							<Language>SFX</Language>
+							<AudioFile>Shakuhachi_Eb.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Shakuhachi_Eb" ID="{962ECAC4-DF35-45E1-8BE9-9568C9BD484F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Shakuhachi_G" ID="{E212B339-4C65-4962-B66C-CEE4731681E1}" ShortID="175732186" Type="SoundFX">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F2DAA495-6FC4-4A79-A78A-6129BC7B6AE8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{0D585A55-CD34-4A7A-89EA-D5E94C35A13F}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Shakuhachi_G" ID="{BD08E752-D3AF-4964-98B1-6DA2EE3A46F4}" ShortID="607019101">
+							<Language>SFX</Language>
+							<AudioFile>Shakuhachi_G.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Shakuhachi_G" ID="{BD08E752-D3AF-4964-98B1-6DA2EE3A46F4}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Correct" ID="{AE8EF7C6-60C2-4D27-9BD1-ABF22FCE1736}" ShortID="916710486" Type="SoundFX">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F2DAA495-6FC4-4A79-A78A-6129BC7B6AE8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{0D585A55-CD34-4A7A-89EA-D5E94C35A13F}" WorkUnitID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_Correct" ID="{3FC871C6-0D94-4CE6-989A-DA7377CFE808}" ShortID="262704453">
+							<Language>SFX</Language>
+							<AudioFile>SFX_Correct.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_Correct" ID="{3FC871C6-0D94-4CE6-989A-DA7377CFE808}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

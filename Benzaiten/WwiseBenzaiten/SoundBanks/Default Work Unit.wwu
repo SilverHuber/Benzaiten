@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9B8C615E-9900-4C51-A027-E24A09158AA1}" SchemaVersion="70">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{9B8C615E-9900-4C51-A027-E24A09158AA1}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{57E2090E-DFCB-43EB-B65F-C62936DEFE2C}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Music" ID="{05FEDC2A-596B-49A2-A842-358077619E20}" WorkUnitID="{E8536A81-0CEB-490A-B618-24711AA6A8AA}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Shakuhachi" ID="{A83B6B33-EE2B-49C5-962A-CDCBD43588B2}" WorkUnitID="{E8536A81-0CEB-490A-B618-24711AA6A8AA}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="SFX" ID="{8D43CE50-F0B5-4D35-AED7-4C7FC7172A99}" WorkUnitID="{E8536A81-0CEB-490A-B618-24711AA6A8AA}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

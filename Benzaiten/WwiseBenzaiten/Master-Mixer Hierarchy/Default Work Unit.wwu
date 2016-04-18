@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}" SchemaVersion="70">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{1106A615-96E8-4D18-93C4-20C41ABF9A5F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="Effect0">
+							<Custom CreatedFrom="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}">
+								<Effect Name="Brick_Wall_Minus_1dB_Peak_Fast_Release (Custom)" ID="{BD46AB3D-94FD-49A9-A82E-097F8D9C81D4}" ShortID="999932374" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+									<PropertyList>
+										<Property Name="OutputGain" Type="Real32" Value="0.1"/>
+										<Property Name="Ratio" Type="Real32" Value="50"/>
+										<Property Name="ReleaseTime" Type="Real32" Value="0.02"/>
+										<Property Name="Threshold" Type="Real32" Value="-1"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="SFX" ID="{0D585A55-CD34-4A7A-89EA-D5E94C35A13F}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="Music" ID="{025EA09E-B7D1-4A25-B4A1-F24F1596BC43}"/>
+									<DuckingParam>
+										<Volume>-3</Volume>
+										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLog2</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
+						</Bus>
+						<Bus Name="Music" ID="{025EA09E-B7D1-4A25-B4A1-F24F1596BC43}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RecoveryTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+						</Bus>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Music_switch" ID="{CBF29617-1BB0-46E8-ACDA-26A761CA6FF1}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+					</StateInfo>
+				</Bus>
+				<Bus Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}"/>
+				<MotionBus Name="Master Motion Bus" ID="{20A630BA-3398-4676-B927-1004DFE41FD8}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

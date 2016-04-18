@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9F5DDC3C-8182-4D84-86B0-FC7EFC28698E}" SchemaVersion="70">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{9F5DDC3C-8182-4D84-86B0-FC7EFC28698E}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Music_switch" ID="{CBF29617-1BB0-46E8-ACDA-26A761CA6FF1}">
+					<ChildrenList>
+						<State Name="None" ID="{964D3D17-1AB9-486E-822A-0BDD462A57F0}"/>
+						<State Name="Main" ID="{2F39AA6A-2FA9-4F0B-8C91-17C284FE9DEB}"/>
+						<State Name="RainSong" ID="{6F7842D6-2827-4033-AB1B-CF9DB9054E22}"/>
+						<State Name="Intro" ID="{E5027E9A-7D5E-404E-9BC8-2B23E51EA36F}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Main" ID="{2F39AA6A-2FA9-4F0B-8C91-17C284FE9DEB}"/>
+							<EndState Name="RainSong" ID="{6F7842D6-2827-4033-AB1B-CF9DB9054E22}"/>
+							<Time>1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{964D3D17-1AB9-486E-822A-0BDD462A57F0}"/>
+							<EndState Name="Main" ID="{2F39AA6A-2FA9-4F0B-8C91-17C284FE9DEB}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{964D3D17-1AB9-486E-822A-0BDD462A57F0}"/>
+							<EndState Name="RainSong" ID="{6F7842D6-2827-4033-AB1B-CF9DB9054E22}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{964D3D17-1AB9-486E-822A-0BDD462A57F0}"/>
+							<EndState Name="Intro" ID="{E5027E9A-7D5E-404E-9BC8-2B23E51EA36F}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Main" ID="{2F39AA6A-2FA9-4F0B-8C91-17C284FE9DEB}"/>
+							<EndState Name="None" ID="{964D3D17-1AB9-486E-822A-0BDD462A57F0}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Main" ID="{2F39AA6A-2FA9-4F0B-8C91-17C284FE9DEB}"/>
+							<EndState Name="Intro" ID="{E5027E9A-7D5E-404E-9BC8-2B23E51EA36F}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="RainSong" ID="{6F7842D6-2827-4033-AB1B-CF9DB9054E22}"/>
+							<EndState Name="None" ID="{964D3D17-1AB9-486E-822A-0BDD462A57F0}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="RainSong" ID="{6F7842D6-2827-4033-AB1B-CF9DB9054E22}"/>
+							<EndState Name="Intro" ID="{E5027E9A-7D5E-404E-9BC8-2B23E51EA36F}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Intro" ID="{E5027E9A-7D5E-404E-9BC8-2B23E51EA36F}"/>
+							<EndState Name="None" ID="{964D3D17-1AB9-486E-822A-0BDD462A57F0}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Intro" ID="{E5027E9A-7D5E-404E-9BC8-2B23E51EA36F}"/>
+							<EndState Name="Main" ID="{2F39AA6A-2FA9-4F0B-8C91-17C284FE9DEB}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Intro" ID="{E5027E9A-7D5E-404E-9BC8-2B23E51EA36F}"/>
+							<EndState Name="RainSong" ID="{6F7842D6-2827-4033-AB1B-CF9DB9054E22}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

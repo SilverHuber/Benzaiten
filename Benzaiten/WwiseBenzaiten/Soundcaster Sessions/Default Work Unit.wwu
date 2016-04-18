@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5C9DD06B-1DC7-4712-8C9D-624BE003E618}" SchemaVersion="70">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{5C9DD06B-1DC7-4712-8C9D-624BE003E618}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{F3EB4EB1-6C74-43B8-857C-A96155A9091D}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="SFX_OldMan" ID="{07CB8C81-EA80-4540-8697-9DE7FDD19B71}" WorkUnitID="{E8536A81-0CEB-490A-B618-24711AA6A8AA}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music" ID="{05FEDC2A-596B-49A2-A842-358077619E20}" WorkUnitID="{E8536A81-0CEB-490A-B618-24711AA6A8AA}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SFX_Correct" ID="{3BC72E95-75EA-4CBF-AF59-AF69ECC9306C}" WorkUnitID="{E8536A81-0CEB-490A-B618-24711AA6A8AA}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SFX_Rain" ID="{F292E387-96A3-456F-A9AC-F9EFF1E18122}" WorkUnitID="{E8536A81-0CEB-490A-B618-24711AA6A8AA}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SFX_Shaku_Eb" ID="{BAE50473-2549-45AD-9D14-914DAFE1F7FD}" WorkUnitID="{E8536A81-0CEB-490A-B618-24711AA6A8AA}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SFX_Shaku_D" ID="{6E7E8659-56DC-41AA-887C-9D08B4136DED}" WorkUnitID="{E8536A81-0CEB-490A-B618-24711AA6A8AA}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SFX_Shaku_G" ID="{934A144D-C2D8-4085-A157-E0B3CEFB219D}" WorkUnitID="{E8536A81-0CEB-490A-B618-24711AA6A8AA}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Turbulence" ID="{EDA87B19-73AA-40A0-9F19-2073606DB710}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Freefall" ID="{2F2DFE37-4F9E-4D94-83D8-53CCA39781AD}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fear" ID="{F72E0659-4346-4E1C-A1B1-DAB46A05101E}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Storm" ID="{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="RainSong" ID="{6F7842D6-2827-4033-AB1B-CF9DB9054E22}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

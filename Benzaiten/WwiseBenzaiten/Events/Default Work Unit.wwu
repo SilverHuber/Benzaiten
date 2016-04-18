@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E8536A81-0CEB-490A-B618-24711AA6A8AA}" SchemaVersion="70">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{E8536A81-0CEB-490A-B618-24711AA6A8AA}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Music" ID="{05FEDC2A-596B-49A2-A842-358077619E20}">
+					<ChildrenList>
+						<Action Name="Play" ID="{0BB3C938-216B-483C-BE78-CCC6DAFBEC75}" ShortID="926660657" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{5087BCAC-2362-4987-9E54-7E58A1222285}" Global="false">
+									<ObjectRef Name="Music" ID="{291510E0-C36A-4A2F-BE16-86AF7408A67E}" WorkUnitID="{9D99DBD5-F323-4133-B77C-2AA73E19CD37}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Shakuhachi" ID="{A83B6B33-EE2B-49C5-962A-CDCBD43588B2}" ShortID="37898258">
+					<ChildrenList>
+						<Event Name="SFX_Shaku_Eb" ID="{BAE50473-2549-45AD-9D14-914DAFE1F7FD}">
+							<ChildrenList>
+								<Action Name="Play" ID="{B54A9523-FA98-41F6-828F-0F6DD9FAA21D}" ShortID="814094108" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{8ACA8F86-37E9-4237-8FDA-D3DC9AF2F75F}" Global="false">
+											<ObjectRef Name="Shakuhachi_Eb" ID="{9C2D51D0-4B82-407B-B814-E19A49C6EA48}" WorkUnitID="{D3B3F84C-774D-4541-ADFE-4B7BE2805496}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SFX_Shaku_D" ID="{6E7E8659-56DC-41AA-887C-9D08B4136DED}">
+							<ChildrenList>
+								<Action Name="Play" ID="{55000E85-E931-40FF-9A27-91D5F13A2ACA}" ShortID="968509646" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{5F47526B-D0B7-4BFE-AB83-3BCDEA76EAAC}" Global="false">
+											<ObjectRef Name="Shakuhachi_D" ID="{4D6CE31E-BD5B-436F-9E28-3335321E5996}" WorkUnitID="{D3B3F84C-774D-4541-ADFE-4B7BE2805496}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SFX_Shaku_G" ID="{934A144D-C2D8-4085-A157-E0B3CEFB219D}">
+							<ChildrenList>
+								<Action Name="Play" ID="{A1B0CF19-A89A-49A2-95B5-0CC39D5E461B}" ShortID="665672307" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{2B6BDA99-997B-4BD9-A207-633C197B3312}" Global="false">
+											<ObjectRef Name="Shakuhachi_G" ID="{E212B339-4C65-4962-B66C-CEE4731681E1}" WorkUnitID="{D3B3F84C-774D-4541-ADFE-4B7BE2805496}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_D" ID="{920E1068-7809-486A-A763-C578707A388D}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{0B8335EE-CEC7-41D4-BAA9-D95FAC745D63}" ShortID="859014720" Type="Stop" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{B30E8229-1CA9-4358-93A4-A67ABD630EB4}" Global="false">
+											<ObjectRef Name="Shakuhachi_D" ID="{4D6CE31E-BD5B-436F-9E28-3335321E5996}" WorkUnitID="{D3B3F84C-774D-4541-ADFE-4B7BE2805496}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Eb" ID="{849DFB26-2529-4211-A303-8A18770C1553}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{7CF06754-1CF1-4E23-9638-49A60D304552}" ShortID="444515025" Type="Stop" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{FD7A3DE0-FB1E-4996-AB92-46D4441C78F0}" Global="false">
+											<ObjectRef Name="Shakuhachi_Eb" ID="{9C2D51D0-4B82-407B-B814-E19A49C6EA48}" WorkUnitID="{D3B3F84C-774D-4541-ADFE-4B7BE2805496}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_G" ID="{24F54FFF-537E-4161-8093-145A726D4632}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{D4C5C937-6F7C-451F-A773-2BCA8FA05AF9}" ShortID="697027865" Type="Stop" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{CDB03D6D-F294-42FE-A688-57C9A7E3A1B9}" Global="false">
+											<ObjectRef Name="Shakuhachi_G" ID="{E212B339-4C65-4962-B66C-CEE4731681E1}" WorkUnitID="{D3B3F84C-774D-4541-ADFE-4B7BE2805496}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SFX" ID="{8D43CE50-F0B5-4D35-AED7-4C7FC7172A99}" ShortID="389409870">
+					<ChildrenList>
+						<Event Name="SFX_OldMan" ID="{07CB8C81-EA80-4540-8697-9DE7FDD19B71}">
+							<ChildrenList>
+								<Action Name="Play" ID="{5A7BF446-EB31-414F-9206-FEC02A112245}" ShortID="707448189" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{6625455C-17C6-427B-9EBB-1C31B0F35408}" Global="false">
+											<ObjectRef Name="Talk" ID="{55F7ACAA-3CF6-4865-83DC-D7362B3161B6}" WorkUnitID="{D3B3F84C-774D-4541-ADFE-4B7BE2805496}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SFX_Rain" ID="{F292E387-96A3-456F-A9AC-F9EFF1E18122}">
+							<ChildrenList>
+								<Action Name="Play" ID="{9F7AC5E5-9A14-4BFF-8D4D-AC306F2F127E}" ShortID="603299711" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{A6A4B989-FF3B-4D1D-ACFB-D5398075F0BD}" Global="false">
+											<ObjectRef Name="Rain" ID="{74746D01-CAF0-4E3E-B66B-6C74D314AB16}" WorkUnitID="{D3B3F84C-774D-4541-ADFE-4B7BE2805496}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SFX_Correct" ID="{3BC72E95-75EA-4CBF-AF59-AF69ECC9306C}">
+							<ChildrenList>
+								<Action Name="Play" ID="{1D7C007E-33AE-497C-B178-69A08305465A}" ShortID="1051236340" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{863DAA19-6FB3-458A-B7D3-B2C71A175D24}" Global="false">
+											<ObjectRef Name="Correct" ID="{AE8EF7C6-60C2-4D27-9BD1-ABF22FCE1736}" WorkUnitID="{D3B3F84C-774D-4541-ADFE-4B7BE2805496}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
