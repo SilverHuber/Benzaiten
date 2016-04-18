@@ -48,7 +48,8 @@
      <Compile Include="Assets\Scripts\ButtonMovement.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\FluteMode.cs" />
-     <Compile Include="Assets\Scripts\WwiseTest.cs" />
+     <Compile Include="Assets\Scripts\MainSoundScript.cs" />
+     <Compile Include="Assets\Scripts\StartMusicTemp.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AKRESULT.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkActionOnEventType.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkAudioFormat.cs" />

@@ -17,12 +17,13 @@ namespace AK
         static const AkUniqueID SFX_CORRECT = 212976137U;
         static const AkUniqueID SFX_OLDMAN = 528352284U;
         static const AkUniqueID SFX_RAIN = 1904851423U;
-        static const AkUniqueID SFX_SHAKU_D = 1123405176U;
-        static const AkUniqueID SFX_SHAKU_EB = 3790763289U;
-        static const AkUniqueID SFX_SHAKU_G = 1123405179U;
-        static const AkUniqueID STOP_D = 1452767820U;
-        static const AkUniqueID STOP_EB = 2641725269U;
-        static const AkUniqueID STOP_G = 1452767823U;
+        static const AkUniqueID SHAKU_A = 741713021U;
+        static const AkUniqueID SHAKU_BB = 376566328U;
+        static const AkUniqueID SHAKU_C = 741713023U;
+        static const AkUniqueID SHAKU_D = 741713016U;
+        static const AkUniqueID SHAKU_E = 741713017U;
+        static const AkUniqueID SHAKU_F = 741713018U;
+        static const AkUniqueID SHAKU_G = 741713019U;
     } // namespace EVENTS
 
     namespace STATES
@@ -67,6 +68,7 @@ namespace AK
         static const AkUniqueID MASTER_SECONDARY_BUS = 805203703U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID SFX = 393239870U;
+        static const AkUniqueID SHAKUHACHI = 1517619186U;
     } // namespace BUSSES
 
 }// namespace AK
