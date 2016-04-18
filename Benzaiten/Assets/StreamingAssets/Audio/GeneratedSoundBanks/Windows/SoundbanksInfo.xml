@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="10" SoundbankVersion="113">
+	<RootPaths>
+		<ProjectRoot>F:\OneDrive\WwiseBenzaiten\</ProjectRoot>
+		<SourceFilesRoot>F:\OneDrive\WwiseBenzaiten\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>F:\OneDrive\Benzaiten\Benzaiten\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>F:\OneDrive\WwiseBenzaiten\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3991942870" Name="Music"/>
+				<Event Id="212976137" Name="SFX_Correct"/>
+				<Event Id="528352284" Name="SFX_OldMan"/>
+				<Event Id="1904851423" Name="SFX_Rain"/>
+				<Event Id="1123405176" Name="SFX_Shaku_D"/>
+				<Event Id="3790763289" Name="SFX_Shaku_Eb"/>
+				<Event Id="1123405179" Name="SFX_Shaku_G"/>
+				<Event Id="1452767820" Name="Stop_D"/>
+				<Event Id="2641725269" Name="Stop_Eb"/>
+				<Event Id="1452767823" Name="Stop_G"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="103193336" Language="SFX">
+					<ShortName>Ambiance_full.wav</ShortName>
+					<Path>SFX\Ambiance_full_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="110968287" Language="SFX">
+					<ShortName>Oldman2_Pitched.wav</ShortName>
+					<Path>SFX\Oldman2_Pitched_9E69E797.wem</Path>
+				</File>
+				<File Id="117042780" Language="SFX">
+					<ShortName>Intro.wav</ShortName>
+					<Path>SFX\Intro_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="128400035" Language="SFX">
+					<ShortName>Oldman1_pitched.wav</ShortName>
+					<Path>SFX\Oldman1_pitched_9E69E797.wem</Path>
+				</File>
+				<File Id="262704453" Language="SFX">
+					<ShortName>SFX_Correct.wav</ShortName>
+					<Path>SFX\SFX_Correct_9E69E797.wem</Path>
+				</File>
+				<File Id="365121485" Language="SFX">
+					<ShortName>Rain_song.wav</ShortName>
+					<Path>SFX\Rain_song_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="416858663" Language="SFX">
+					<ShortName>SFX_RainWind.wav</ShortName>
+					<Path>SFX\SFX_RainWind_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="607019101" Language="SFX">
+					<ShortName>Shakuhachi_G.wav</ShortName>
+					<Path>SFX\Shakuhachi_G_9E69E797.wem</Path>
+				</File>
+				<File Id="797902614" Language="SFX">
+					<ShortName>Shakuhachi_D.wav</ShortName>
+					<Path>SFX\Shakuhachi_D_9E69E797.wem</Path>
+				</File>
+				<File Id="896207261" Language="SFX">
+					<ShortName>SFX_Crickets.wav</ShortName>
+					<Path>SFX\SFX_Crickets_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="918641897" Language="SFX">
+					<ShortName>Ambiance1_Loop.wav</ShortName>
+					<Path>SFX\Ambiance1_Loop_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="931839506" Language="SFX">
+					<ShortName>Shakuhachi_Eb.wav</ShortName>
+					<Path>SFX\Shakuhachi_Eb_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
