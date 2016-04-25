@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{50F82B59-9911-5916-FEBE-55A5453825EF}</ProjectGuid>
+    <ProjectGuid>{5AC1DB89-7BAE-75D2-18A9-94DD251AC462}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,6 +45,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Depth.cs" />
+     <Compile Include="Assets\DepthScanner.cs" />
      <Compile Include="Assets\Scripts\ButtonMovement.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\FluteMode.cs" />
