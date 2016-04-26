@@ -1,0 +1,39 @@
+Event	ID	Name			Wwise Object Path	Notes
+	212976137	SFX_Correct			\Default Work Unit\SFX\SFX_Correct	
+	376566328	Shaku_Bb			\Default Work Unit\Shakuhachi\Shaku_Bb	
+	528352284	SFX_OldMan			\Default Work Unit\SFX\SFX_OldMan	
+	741713016	Shaku_D			\Default Work Unit\Shakuhachi\Shaku_D	
+	741713017	Shaku_E			\Default Work Unit\Shakuhachi\Shaku_E	
+	741713018	Shaku_F			\Default Work Unit\Shakuhachi\Shaku_F	
+	741713019	Shaku_G			\Default Work Unit\Shakuhachi\Shaku_G	
+	741713021	Shaku_A			\Default Work Unit\Shakuhachi\Shaku_A	
+	741713023	Shaku_C			\Default Work Unit\Shakuhachi\Shaku_C	
+	1904851423	SFX_Rain			\Default Work Unit\SFX\SFX_Rain	
+	3991942870	Music			\Default Work Unit\Music	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	8452266	Shakuhachi_G_high - 1	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Shakuhachi_G_high - 1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_G\Shakuhachi_G_high - 1		177664
+	77180257	Shakuhachi_D_High - 1	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Shakuhachi_D_High - 1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_D\Shakuhachi_D_High - 1		174610
+	103193336	Ambiance_full	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Ambiance_full_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Music_Main\Ambiance\Ambiance_full		16549596
+	110968287	Talk2	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Oldman2_Pitched_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oldman_Talk\Talk2		99132
+	117042780	Intro	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Intro_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Intro\Intro\Intro		5773160
+	128400035	Talk1	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Oldman1_pitched_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oldman_Talk\Talk1		200932
+	139266227	Shakuhachi_C_high - 1	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Shakuhachi_C_high - 1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_C\Shakuhachi_C_high - 1		176632
+	199410004	Shakuhachi_C_high - 2	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Shakuhachi_C_high - 2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_C\Shakuhachi_C_high - 2		178312
+	262704453	Correct	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\SFX_Correct_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Other\Correct		473684
+	269071182	Shakuhachi_F_high - 1	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Shakuhachi_F_high - 1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_F\Shakuhachi_F_high - 1		195996
+	292645968	Shakuhachi_E_high - 2	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Shakuhachi_E_high - 2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_E\Shakuhachi_E_high - 2		175786
+	339617118	Shakuhachi_G_high - 2	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Shakuhachi_G_high - 2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_G\Shakuhachi_G_high - 2		193978
+	365121485	Rain_song	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Rain_song_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\RainSong\RainSong\Rain_song		3079048
+	366939536	Shakuhachi_Bb_high - 1	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Shakuhachi_Bb_high - 1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_Bb\Shakuhachi_Bb_high - 1		165216
+	416858663	Rain	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\SFX_RainWind_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Rain		3589112
+	440137585	Shakuhachi_D_High - 3	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Shakuhachi_D_High - 3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_D\Shakuhachi_D_High - 3		219644
+	481415566	Shakuhachi_E_high - 1	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Shakuhachi_E_high - 1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_E\Shakuhachi_E_high - 1		186738
+	536936578	Shakuhachi_A_high - 1	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Shakuhachi_A_high - 1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_A\Shakuhachi_A_high - 1		167978
+	640744220	Shakuhachi_G_high - 3	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Shakuhachi_G_high - 3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_G\Shakuhachi_G_high - 3		194680
+	774050759	Shakuhachi_A_high - 3	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Shakuhachi_A_high - 3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_A\Shakuhachi_A_high - 3		196948
+	896207261	SFX_Crickets	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\SFX_Crickets_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Music_Main\Ambiance\SFX_Crickets		1455256
+	916148243	Shakuhachi_A_high - 2	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Shakuhachi_A_high - 2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_A\Shakuhachi_A_high - 2		181062
+	918641897	Ambiance1_Loop	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Ambiance1_Loop_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Music_Main\Ambiance\Ambiance1_Loop		4419148
+	991249552	Shakuhachi_D_High - 2	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Shakuhachi_D_High - 2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_D\Shakuhachi_D_High - 2		227764
+

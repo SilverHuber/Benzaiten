@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="10" SoundbankVersion="113">
+	<RootPaths>
+		<ProjectRoot>F:\OneDrive\WwiseBenzaiten\</ProjectRoot>
+		<SourceFilesRoot>F:\OneDrive\WwiseBenzaiten\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>F:\OneDrive\Benzaiten\Benzaiten\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>F:\OneDrive\WwiseBenzaiten\GeneratedSoundBanks\Mac\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3991942870" Name="Music"/>
+				<Event Id="212976137" Name="SFX_Correct"/>
+				<Event Id="528352284" Name="SFX_OldMan"/>
+				<Event Id="1904851423" Name="SFX_Rain"/>
+				<Event Id="741713021" Name="Shaku_A"/>
+				<Event Id="376566328" Name="Shaku_Bb"/>
+				<Event Id="741713023" Name="Shaku_C"/>
+				<Event Id="741713016" Name="Shaku_D"/>
+				<Event Id="741713017" Name="Shaku_E"/>
+				<Event Id="741713018" Name="Shaku_F"/>
+				<Event Id="741713019" Name="Shaku_G"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="8452266" Language="SFX">
+					<ShortName>Shakuhachi_G_high - 1.wav</ShortName>
+					<Path>SFX\Shakuhachi_G_high - 1_9E69E797.wem</Path>
+				</File>
+				<File Id="77180257" Language="SFX">
+					<ShortName>Shakuhachi_D_High - 1.wav</ShortName>
+					<Path>SFX\Shakuhachi_D_High - 1_9E69E797.wem</Path>
+				</File>
+				<File Id="103193336" Language="SFX">
+					<ShortName>Ambiance_full.wav</ShortName>
+					<Path>SFX\Ambiance_full_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="110968287" Language="SFX">
+					<ShortName>Oldman2_Pitched.wav</ShortName>
+					<Path>SFX\Oldman2_Pitched_9E69E797.wem</Path>
+				</File>
+				<File Id="117042780" Language="SFX">
+					<ShortName>Intro.wav</ShortName>
+					<Path>SFX\Intro_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="128400035" Language="SFX">
+					<ShortName>Oldman1_pitched.wav</ShortName>
+					<Path>SFX\Oldman1_pitched_9E69E797.wem</Path>
+				</File>
+				<File Id="139266227" Language="SFX">
+					<ShortName>Shakuhachi_C_high - 1.wav</ShortName>
+					<Path>SFX\Shakuhachi_C_high - 1_9E69E797.wem</Path>
+				</File>
+				<File Id="199410004" Language="SFX">
+					<ShortName>Shakuhachi_C_high - 2.wav</ShortName>
+					<Path>SFX\Shakuhachi_C_high - 2_9E69E797.wem</Path>
+				</File>
+				<File Id="262704453" Language="SFX">
+					<ShortName>SFX_Correct.wav</ShortName>
+					<Path>SFX\SFX_Correct_9E69E797.wem</Path>
+				</File>
+				<File Id="269071182" Language="SFX">
+					<ShortName>Shakuhachi_F_high - 1.wav</ShortName>
+					<Path>SFX\Shakuhachi_F_high - 1_9E69E797.wem</Path>
+				</File>
+				<File Id="292645968" Language="SFX">
+					<ShortName>Shakuhachi_E_high - 2.wav</ShortName>
+					<Path>SFX\Shakuhachi_E_high - 2_9E69E797.wem</Path>
+				</File>
+				<File Id="339617118" Language="SFX">
+					<ShortName>Shakuhachi_G_high - 2.wav</ShortName>
+					<Path>SFX\Shakuhachi_G_high - 2_9E69E797.wem</Path>
+				</File>
+				<File Id="365121485" Language="SFX">
+					<ShortName>Rain_song.wav</ShortName>
+					<Path>SFX\Rain_song_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="366939536" Language="SFX">
+					<ShortName>Shakuhachi_Bb_high - 1.wav</ShortName>
+					<Path>SFX\Shakuhachi_Bb_high - 1_9E69E797.wem</Path>
+				</File>
+				<File Id="416858663" Language="SFX">
+					<ShortName>SFX_RainWind.wav</ShortName>
+					<Path>SFX\SFX_RainWind_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="440137585" Language="SFX">
+					<ShortName>Shakuhachi_D_High - 3.wav</ShortName>
+					<Path>SFX\Shakuhachi_D_High - 3_9E69E797.wem</Path>
+				</File>
+				<File Id="481415566" Language="SFX">
+					<ShortName>Shakuhachi_E_high - 1.wav</ShortName>
+					<Path>SFX\Shakuhachi_E_high - 1_9E69E797.wem</Path>
+				</File>
+				<File Id="536936578" Language="SFX">
+					<ShortName>Shakuhachi_A_high - 1.wav</ShortName>
+					<Path>SFX\Shakuhachi_A_high - 1_9E69E797.wem</Path>
+				</File>
+				<File Id="640744220" Language="SFX">
+					<ShortName>Shakuhachi_G_high - 3.wav</ShortName>
+					<Path>SFX\Shakuhachi_G_high - 3_9E69E797.wem</Path>
+				</File>
+				<File Id="774050759" Language="SFX">
+					<ShortName>Shakuhachi_A_high - 3.wav</ShortName>
+					<Path>SFX\Shakuhachi_A_high - 3_9E69E797.wem</Path>
+				</File>
+				<File Id="896207261" Language="SFX">
+					<ShortName>SFX_Crickets.wav</ShortName>
+					<Path>SFX\SFX_Crickets_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="916148243" Language="SFX">
+					<ShortName>Shakuhachi_A_high - 2.wav</ShortName>
+					<Path>SFX\Shakuhachi_A_high - 2_9E69E797.wem</Path>
+				</File>
+				<File Id="918641897" Language="SFX">
+					<ShortName>Ambiance1_Loop.wav</ShortName>
+					<Path>SFX\Ambiance1_Loop_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="991249552" Language="SFX">
+					<ShortName>Shakuhachi_D_High - 2.wav</ShortName>
+					<Path>SFX\Shakuhachi_D_High - 2_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
