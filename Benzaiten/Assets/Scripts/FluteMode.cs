@@ -126,6 +126,8 @@ public class FluteMode : MonoBehaviour
 				// ANIM: play sequence animation
 				print ("equal to restore");
 				interactiveObject.GetComponent <RestoreObject> ().blessed = true;
+				flutemode = false;
+				currentSequence.Clear ();
 			}
 
 			if (IsListEqual (currentSequence, shortSequence))
