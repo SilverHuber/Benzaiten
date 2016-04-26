@@ -6,7 +6,7 @@ public class FluteMode : MonoBehaviour
 {
 	
 	public bool flutemode = false;
-
+	public GameObject interactiveObject;
 
 	private int currentSequenceNote;
 	private float timeSinceLastNote;
@@ -109,32 +109,33 @@ public class FluteMode : MonoBehaviour
 
 
 
-			if (timeSinceLastNote > 4 || currentSequenceNote == 5)
+		
+			print ("check");
+
+			if (IsListEqual (currentSequence, healingSequence))
 			{
-				print ("check");
-
-				if (IsListEqual (currentSequence, healingSequence))
-				{
-					// SOUND : Play healing sequence
-					// ANIM: play sequence animation
-					print ("equal to healing");
-				}
-
-				if (IsListEqual (currentSequence, restoreSequence))
-				{
-					// SOUND : Play restore sequence
-					// ANIM: play sequence animation
-					print ("equal to restore");
-				}
-
-				if (IsListEqual (currentSequence, shortSequence))
-				{
-					// SOUND : Play short sequence
-					// ANIM: play sequence animation
-					print ("equal to short");
-				}
+				// SOUND : Play healing sequence
+				// ANIM: play sequence animation
+				print ("equal to healing");
 			
 			}
+
+			if (IsListEqual (currentSequence, restoreSequence))
+			{
+				// SOUND : Play restore sequence
+				// ANIM: play sequence animation
+				print ("equal to restore");
+				interactiveObject.GetComponent <RestoreObject> ().blessed = true;
+			}
+
+			if (IsListEqual (currentSequence, shortSequence))
+			{
+				// SOUND : Play short sequence
+				// ANIM: play sequence animation
+				print ("equal to short");
+			}
+			
+
 		}
 
 	}

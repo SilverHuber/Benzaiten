@@ -4,14 +4,14 @@ using System.Collections;
 public class ButtonMovement : MonoBehaviour
 {
 	public float speed;
-	private Animator thisAnimator;
+	//	private Animator thisAnimator;
 	private SpriteRenderer thisSpriteRenderer;
 
 	private void Start ()
 	{
-		thisAnimator = this.gameObject.GetComponent <Animator> ();
+		//	thisAnimator = this.gameObject.GetComponent <Animator> ();
 		thisSpriteRenderer = this.gameObject.GetComponent <SpriteRenderer> ();
-		speed = 3f;
+		speed = 4f;
 	}
 
 

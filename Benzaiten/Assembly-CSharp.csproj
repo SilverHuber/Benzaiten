@@ -45,11 +45,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Depth.cs" />
-     <Compile Include="Assets\DepthScanner.cs" />
+     <Compile Include="Assets\InterActionScanner.cs" />
      <Compile Include="Assets\Scripts\ButtonMovement.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\Depth.cs" />
+     <Compile Include="Assets\Scripts\DepthScanner.cs" />
      <Compile Include="Assets\Scripts\FluteMode.cs" />
+     <Compile Include="Assets\Scripts\RestoreObject.cs" />
+     <Compile Include="Assets\Tree.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
