@@ -21,6 +21,9 @@
 			<IncludedEvents>
 				<Event Id="3991942870" Name="Music"/>
 				<Event Id="212976137" Name="SFX_Correct"/>
+				<Event Id="2540880908" Name="SFX_FluteMode"/>
+				<Event Id="2372439676" Name="SFX_Footstep_Wood_Start"/>
+				<Event Id="2330462416" Name="SFX_Footstep_Wood_Stop"/>
 				<Event Id="528352284" Name="SFX_OldMan"/>
 				<Event Id="1904851423" Name="SFX_Rain"/>
 				<Event Id="741713021" Name="Shaku_A"/>
@@ -30,8 +33,14 @@
 				<Event Id="741713017" Name="Shaku_E"/>
 				<Event Id="741713018" Name="Shaku_F"/>
 				<Event Id="741713019" Name="Shaku_G"/>
+				<Event Id="4207414713" Name="Shakuryu_Speak_Start"/>
+				<Event Id="3333863699" Name="Shakuryu_Speak_Stop"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="1002332" Language="SFX">
+					<ShortName>Footstep_Benzaiten_Wood2.wav</ShortName>
+					<Path>SFX\Footstep_Benzaiten_Wood2_9E69E797.wem</Path>
+				</File>
 				<File Id="8452266" Language="SFX">
 					<ShortName>Shakuhachi_G_high - 1.wav</ShortName>
 					<Path>SFX\Shakuhachi_G_high - 1_9E69E797.wem</Path>
@@ -64,6 +73,10 @@
 					<ShortName>Shakuhachi_C_high - 2.wav</ShortName>
 					<Path>SFX\Shakuhachi_C_high - 2_9E69E797.wem</Path>
 				</File>
+				<File Id="240247341" Language="SFX">
+					<ShortName>Shaku_Mordent_D - 1.wav</ShortName>
+					<Path>SFX\Shaku_Mordent_D - 1_9E69E797.wem</Path>
+				</File>
 				<File Id="262704453" Language="SFX">
 					<ShortName>SFX_Correct.wav</ShortName>
 					<Path>SFX\SFX_Correct_9E69E797.wem</Path>
@@ -75,6 +88,10 @@
 				<File Id="292645968" Language="SFX">
 					<ShortName>Shakuhachi_E_high - 2.wav</ShortName>
 					<Path>SFX\Shakuhachi_E_high - 2_9E69E797.wem</Path>
+				</File>
+				<File Id="327835315" Language="SFX">
+					<ShortName>Shaku_Mordent_C - 1.wav</ShortName>
+					<Path>SFX\Shaku_Mordent_C - 1_9E69E797.wem</Path>
 				</File>
 				<File Id="339617118" Language="SFX">
 					<ShortName>Shakuhachi_G_high - 2.wav</ShortName>
@@ -100,6 +117,10 @@
 					<ShortName>Shakuhachi_E_high - 1.wav</ShortName>
 					<Path>SFX\Shakuhachi_E_high - 1_9E69E797.wem</Path>
 				</File>
+				<File Id="528492684" Language="SFX">
+					<ShortName>Shaku_Mordent_F - 1.wav</ShortName>
+					<Path>SFX\Shaku_Mordent_F - 1_9E69E797.wem</Path>
+				</File>
 				<File Id="536936578" Language="SFX">
 					<ShortName>Shakuhachi_A_high - 1.wav</ShortName>
 					<Path>SFX\Shakuhachi_A_high - 1_9E69E797.wem</Path>
@@ -108,13 +129,33 @@
 					<ShortName>Shakuhachi_G_high - 3.wav</ShortName>
 					<Path>SFX\Shakuhachi_G_high - 3_9E69E797.wem</Path>
 				</File>
+				<File Id="665453822" Language="SFX">
+					<ShortName>Shaku_Mordent_A - 1.wav</ShortName>
+					<Path>SFX\Shaku_Mordent_A - 1_9E69E797.wem</Path>
+				</File>
+				<File Id="738150169" Language="SFX">
+					<ShortName>Dragon_Speak.wav</ShortName>
+					<Path>SFX\Dragon_Speak_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="760930338" Language="SFX">
+					<ShortName>Shaku_Mordent_E - 1.wav</ShortName>
+					<Path>SFX\Shaku_Mordent_E - 1_9E69E797.wem</Path>
+				</File>
 				<File Id="774050759" Language="SFX">
 					<ShortName>Shakuhachi_A_high - 3.wav</ShortName>
 					<Path>SFX\Shakuhachi_A_high - 3_9E69E797.wem</Path>
 				</File>
+				<File Id="855598409" Language="SFX">
+					<ShortName>StartFluteMode2.wav</ShortName>
+					<Path>SFX\StartFluteMode2_9E69E797.wem</Path>
+				</File>
 				<File Id="896207261" Language="SFX">
 					<ShortName>SFX_Crickets.wav</ShortName>
 					<Path>SFX\SFX_Crickets_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="897381903" Language="SFX">
+					<ShortName>StartFluteMode1.wav</ShortName>
+					<Path>SFX\StartFluteMode1_9E69E797.wem</Path>
 				</File>
 				<File Id="916148243" Language="SFX">
 					<ShortName>Shakuhachi_A_high - 2.wav</ShortName>
@@ -124,9 +165,17 @@
 					<ShortName>Ambiance1_Loop.wav</ShortName>
 					<Path>SFX\Ambiance1_Loop_4B8CC0C5.wem</Path>
 				</File>
+				<File Id="954789857" Language="SFX">
+					<ShortName>Footstep_Benzaiten_Wood1.wav</ShortName>
+					<Path>SFX\Footstep_Benzaiten_Wood1_9E69E797.wem</Path>
+				</File>
 				<File Id="991249552" Language="SFX">
 					<ShortName>Shakuhachi_D_High - 2.wav</ShortName>
 					<Path>SFX\Shakuhachi_D_High - 2_9E69E797.wem</Path>
+				</File>
+				<File Id="1017298035" Language="SFX">
+					<ShortName>Shaku_Mordent_G - 1.wav</ShortName>
+					<Path>SFX\Shaku_Mordent_G - 1_9E69E797.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
