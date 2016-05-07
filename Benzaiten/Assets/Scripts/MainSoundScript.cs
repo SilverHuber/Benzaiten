@@ -23,6 +23,8 @@ public class MainSoundScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+		musicSwitchGroup = "Music_switch";
+
 		//Start Music and set Intro state
 		//PlayMusic("Music");
 		//SetMusicState ("Intro", true, 2);

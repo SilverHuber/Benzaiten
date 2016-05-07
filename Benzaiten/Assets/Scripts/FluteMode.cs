@@ -26,6 +26,8 @@ public class FluteMode : MonoBehaviour
 	private string d = "D";
 	private string e = "E";
 
+	private bool SeqCorrect = false;
+
 	private void Start ()
 	{
 		currentSequenceNote = 0;
@@ -43,6 +45,7 @@ public class FluteMode : MonoBehaviour
 			flutemode = true;
 			currentSequenceNote = 0;
 			currentSequence.Clear ();
+			SeqCorrect = false;
 
 			// ANIM: grab flute
 		} else if ((Input.GetKeyDown (KeyCode.Q) && flutemode == true))
@@ -59,6 +62,7 @@ public class FluteMode : MonoBehaviour
 			if (Input.GetKeyDown (KeyCode.Alpha1) && currentSequenceNote < 5)
 			{
 				//SOUND: play Note A
+				print ("check");
 				MainSoundScript.Instance.PlaySFX("Shaku_D");
 
 				// ANIM: play flute
@@ -115,21 +119,14 @@ public class FluteMode : MonoBehaviour
 
 
 
+	
 
-
-
-
-
-		
-			print ("check");
-
-			if (IsListEqual (currentSequence, healingSequence))
+			if (timeSinceLastNote > 1.5f && currentSequenceNote >= 3 )
 			{
-<<<<<<< HEAD
+
 				// SOUND : Play healing sequence
 				// ANIM: play sequence animation
-				print ("equal to healing");
-=======
+
 				print ("check");
 
 				if (IsListEqual (currentSequence, healingSequence))
@@ -142,6 +139,7 @@ public class FluteMode : MonoBehaviour
 
 					// ANIM: play sequence animation
 					print ("equal to healing");
+					SeqCorrect = true;
 					flutemode = false;
 				}
 
@@ -150,6 +148,7 @@ public class FluteMode : MonoBehaviour
 					// SOUND : Play restore sequence
 					// ANIM: play sequence animation
 					print ("equal to restore");
+					SeqCorrect = true;
 					flutemode = false;
 
 				}
@@ -159,29 +158,39 @@ public class FluteMode : MonoBehaviour
 					// SOUND : Play short sequence
 					// ANIM: play sequence animation
 					print ("equal to short");
+					SeqCorrect = true;
 					flutemode = false;
 
 				}
->>>>>>> 9b3508457076731195c8f5f91bd430644cd1bc0f
+
+				if ((timeSinceLastNote > 1.5f && currentSequenceNote >= 5 && SeqCorrect == false) || timeSinceLastNote > 4.0f ) {
+				flutemode = false;
+					print ("sequence is wrong");
+					MainSoundScript.Instance.PlaySFX("SFX_NotCorrect");
+
+				}
+
 			
 			}
 
-			if (IsListEqual (currentSequence, restoreSequence))
-			{
-				// SOUND : Play restore sequence
-				// ANIM: play sequence animation
-				print ("equal to restore");
-				interactiveObject.GetComponent <RestoreObject> ().blessed = true;
-				flutemode = false;
-				currentSequence.Clear ();
-			}
 
-			if (IsListEqual (currentSequence, shortSequence))
-			{
-				// SOUND : Play short sequence
-				// ANIM: play sequence animation
-				print ("equal to short");
-			}
+
+//			if (IsListEqual (currentSequence, restoreSequence))
+//			{
+//				// SOUND : Play restore sequence
+//				// ANIM: play sequence animation
+//				print ("equal to restore");
+//				interactiveObject.GetComponent <RestoreObject> ().blessed = true;
+//				flutemode = false;
+//				currentSequence.Clear ();
+//			}
+//
+//			if (IsListEqual (currentSequence, shortSequence))
+//			{
+//				// SOUND : Play short sequence
+//				// ANIM: play sequence animation
+//				print ("equal to short");
+//			}
 			
 
 		}
@@ -198,7 +207,7 @@ public class FluteMode : MonoBehaviour
 		// Als de count niet even lang is zijn ze sowieso niet equal
 		if (x.Count != y.Count)
 		{
-			flutemode = false;
+			
 			return false;
 		}
 
@@ -206,7 +215,7 @@ public class FluteMode : MonoBehaviour
 		{
 			if (!x [i].Equals (y [i]))
 			{
-				flutemode = false;
+				
 				return false;
 
 			}
