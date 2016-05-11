@@ -15,9 +15,17 @@ public class FluteMode : MonoBehaviour
 	public List<string> currentSequence = new List <string> ();
 
 	// de sequences die corresponderen met een effect
-	public List<string> healingSequence = new List<string> ();
+
+	//Restoration Song
+	[Header("Songs")]
+	[Tooltip("Restoration Song")]
 	public List<string> restoreSequence = new List<string> ();
-	public List<string> shortSequence = new List<string> ();
+	[Tooltip("Healing Song")]
+	public List<string> healingSequence = new List<string> ();
+	[Tooltip("Build Song")]
+	public List<string> buildSequence = new List<string> ();
+	[Tooltip("Test Song")]
+	public List<string> testSequence = new List<string> ();
 
 	// voor het gemak even variabelen van gemaakt
 	private string a = "A";
@@ -32,8 +40,9 @@ public class FluteMode : MonoBehaviour
 	{
 		currentSequenceNote = 0;
 
-		healingSequence.InsertRange (healingSequence.Count, new string[] { a, b, c, d, e });
-		restoreSequence.InsertRange (restoreSequence.Count, new string[] { a, a, b, a, a });
+		//healingSequence.InsertRange (healingSequence.Count, new string[] { b, a, d });
+		//restoreSequence.InsertRange (restoreSequence.Count, new string[] { d, e, c });
+		//buildSequence.InsertRange (buildSequence.Count, new string[] { b, a, d , d, e, c });
 	}
 	
 	// Update is called once per frame
@@ -46,6 +55,9 @@ public class FluteMode : MonoBehaviour
 			currentSequenceNote = 0;
 			currentSequence.Clear ();
 			SeqCorrect = false;
+			timeSinceLastNote = 0;
+
+			MainSoundScript.Instance.PlaySFX ("SFX_FluteMode");
 
 			// ANIM: grab flute
 		} else if ((Input.GetKeyDown (KeyCode.Q) && flutemode == true))
@@ -59,7 +71,7 @@ public class FluteMode : MonoBehaviour
 		{
 			timeSinceLastNote += Time.deltaTime;
 
-			if (Input.GetKeyDown (KeyCode.Alpha1) && currentSequenceNote < 5)
+			if (Input.GetKeyDown (KeyCode.Alpha1) && currentSequenceNote < 6)
 			{
 				//SOUND: play Note A
 				print ("check");
@@ -71,7 +83,7 @@ public class FluteMode : MonoBehaviour
 				timeSinceLastNote = 0;
 			}
 
-			if (Input.GetKeyDown (KeyCode.Alpha2) && currentSequenceNote < 5)
+			if (Input.GetKeyDown (KeyCode.Alpha2) && currentSequenceNote < 6)
 			{
 				//SOUND: play Note B
 				MainSoundScript.Instance.PlaySFX("Shaku_F");
@@ -82,7 +94,7 @@ public class FluteMode : MonoBehaviour
 				timeSinceLastNote = 0;
 			}
 
-			if (Input.GetKeyDown (KeyCode.Alpha3) && currentSequenceNote < 5)
+			if (Input.GetKeyDown (KeyCode.Alpha3) && currentSequenceNote < 6)
 			{
 				//SOUND: play Note C
 				MainSoundScript.Instance.PlaySFX("Shaku_G");
@@ -92,7 +104,7 @@ public class FluteMode : MonoBehaviour
 				currentSequenceNote++;
 				timeSinceLastNote = 0;
 			}
-			if (Input.GetKeyDown (KeyCode.Alpha4) && currentSequenceNote < 5)
+			if (Input.GetKeyDown (KeyCode.Alpha4) && currentSequenceNote < 6)
 			{
 				//SOUND: play Note D
 				MainSoundScript.Instance.PlaySFX("Shaku_A");
@@ -103,7 +115,7 @@ public class FluteMode : MonoBehaviour
 				timeSinceLastNote = 0;
 			}
 
-			if (Input.GetKeyDown (KeyCode.Alpha5) && currentSequenceNote < 5)
+			if (Input.GetKeyDown (KeyCode.Alpha5) && currentSequenceNote < 6)
 			{
 				//SOUND: play Note E
 				MainSoundScript.Instance.PlaySFX("Shaku_C");
@@ -121,7 +133,7 @@ public class FluteMode : MonoBehaviour
 
 	
 
-			if (timeSinceLastNote > 1.5f && currentSequenceNote >= 3 )
+			if (timeSinceLastNote > 1.5f && currentSequenceNote >= 2 )
 			{
 
 				// SOUND : Play healing sequence
@@ -132,13 +144,12 @@ public class FluteMode : MonoBehaviour
 				if (IsListEqual (currentSequence, healingSequence))
 				{
 					// SOUND : Play healing sequence
-					//PLACEHOLDER
-					MainSoundScript.Instance.SetMusicState("RainSong", true, 3);
+					MainSoundScript.Instance.SetMusicState("HealingSong", true, 3);
 					MainSoundScript.Instance.PlaySFX("SFX_Correct");
 
 
 					// ANIM: play sequence animation
-					print ("equal to healing");
+					print ("equal to healing song");
 					SeqCorrect = true;
 					flutemode = false;
 				}
@@ -146,31 +157,57 @@ public class FluteMode : MonoBehaviour
 				if (IsListEqual (currentSequence, restoreSequence))
 				{
 					// SOUND : Play restore sequence
+					MainSoundScript.Instance.SetMusicState("RestorationSong", true, 3);
+					MainSoundScript.Instance.PlaySFX("SFX_Correct");
+
 					// ANIM: play sequence animation
-					print ("equal to restore");
+					print ("equal to restoration song");
 					SeqCorrect = true;
 					flutemode = false;
 
 				}
 
-				if (IsListEqual (currentSequence, shortSequence))
+				if (IsListEqual (currentSequence, buildSequence))
+				{
+					// SOUND : Play restore sequence
+					MainSoundScript.Instance.PlaySFX("SFX_Correct");
+
+					//Placeholder
+					MainSoundScript.Instance.SetMusicState("RainSong", true, 3);
+					// ANIM: play sequence animation
+					print ("equal to build song // still a placeholder ");
+					SeqCorrect = true;
+					flutemode = false;
+
+				}
+
+				if (IsListEqual (currentSequence, testSequence))
 				{
 					// SOUND : Play short sequence
+
+					MainSoundScript.Instance.PlaySFX("SFX_Correct");
+
 					// ANIM: play sequence animation
-					print ("equal to short");
+					print ("equal to test");
 					SeqCorrect = true;
 					flutemode = false;
 
 				}
 
-				if ((timeSinceLastNote > 1.5f && currentSequenceNote >= 5 && SeqCorrect == false) || timeSinceLastNote > 4.0f ) {
+				if ((timeSinceLastNote > 1.5f && currentSequenceNote >= 6 && SeqCorrect == false) || timeSinceLastNote > 4.0f ) {
 				flutemode = false;
-					print ("sequence is wrong");
+					print ("sequence is wrong or waited to long");
 					MainSoundScript.Instance.PlaySFX("SFX_NotCorrect");
 
 				}
 
+
 			
+			}
+			if (timeSinceLastNote > 5.0f) {
+				flutemode = false;
+				print ("sequence is wrong or waited too long");
+				MainSoundScript.Instance.PlaySFX ("SFX_NotCorrect");
 			}
 
 

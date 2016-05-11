@@ -20,13 +20,17 @@
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3991942870" Name="Music"/>
+				<Event Id="3227181061" Name="Music_Stop"/>
+				<Event Id="3674563696" Name="SFX_CityAmbience"/>
 				<Event Id="212976137" Name="SFX_Correct"/>
 				<Event Id="2540880908" Name="SFX_FluteMode"/>
 				<Event Id="2372439676" Name="SFX_Footstep_Wood_Start"/>
 				<Event Id="2330462416" Name="SFX_Footstep_Wood_Stop"/>
+				<Event Id="3225443594" Name="SFX_NotCorrect"/>
 				<Event Id="528352284" Name="SFX_OldMan"/>
 				<Event Id="1904851423" Name="SFX_Rain"/>
 				<Event Id="741713021" Name="Shaku_A"/>
+				<Event Id="741713022" Name="Shaku_B"/>
 				<Event Id="376566328" Name="Shaku_Bb"/>
 				<Event Id="741713023" Name="Shaku_C"/>
 				<Event Id="741713016" Name="Shaku_D"/>
@@ -65,6 +69,10 @@
 					<ShortName>Oldman1_pitched.wav</ShortName>
 					<Path>SFX\Oldman1_pitched_9E69E797.wem</Path>
 				</File>
+				<File Id="130970819" Language="SFX">
+					<ShortName>Nature_Crickets_Loop.wav</ShortName>
+					<Path>SFX\Nature_Crickets_Loop_4B8CC0C5.wem</Path>
+				</File>
 				<File Id="139266227" Language="SFX">
 					<ShortName>Shakuhachi_C_high - 1.wav</ShortName>
 					<Path>SFX\Shakuhachi_C_high - 1_9E69E797.wem</Path>
@@ -84,6 +92,10 @@
 				<File Id="269071182" Language="SFX">
 					<ShortName>Shakuhachi_F_high - 1.wav</ShortName>
 					<Path>SFX\Shakuhachi_F_high - 1_9E69E797.wem</Path>
+				</File>
+				<File Id="284710974" Language="SFX">
+					<ShortName>Shakuhachi_B_high - 2.wav</ShortName>
+					<Path>SFX\Shakuhachi_B_high - 2_9E69E797.wem</Path>
 				</File>
 				<File Id="292645968" Language="SFX">
 					<ShortName>Shakuhachi_E_high - 2.wav</ShortName>
@@ -133,6 +145,10 @@
 					<ShortName>Shaku_Mordent_A - 1.wav</ShortName>
 					<Path>SFX\Shaku_Mordent_A - 1_9E69E797.wem</Path>
 				</File>
+				<File Id="712022223" Language="SFX">
+					<ShortName>SFX_NotCorrect.wav</ShortName>
+					<Path>SFX\SFX_NotCorrect_9E69E797.wem</Path>
+				</File>
 				<File Id="738150169" Language="SFX">
 					<ShortName>Dragon_Speak.wav</ShortName>
 					<Path>SFX\Dragon_Speak_4B8CC0C5.wem</Path>
@@ -145,9 +161,21 @@
 					<ShortName>Shakuhachi_A_high - 3.wav</ShortName>
 					<Path>SFX\Shakuhachi_A_high - 3_9E69E797.wem</Path>
 				</File>
+				<File Id="779752323" Language="SFX">
+					<ShortName>Shakuhachi_B_high - 1.wav</ShortName>
+					<Path>SFX\Shakuhachi_B_high - 1_9E69E797.wem</Path>
+				</File>
+				<File Id="841479861" Language="SFX">
+					<ShortName>Song_Healing_110BPM.wav</ShortName>
+					<Path>SFX\Song_Healing_110BPM_4B8CC0C5.wem</Path>
+				</File>
 				<File Id="855598409" Language="SFX">
 					<ShortName>StartFluteMode2.wav</ShortName>
 					<Path>SFX\StartFluteMode2_9E69E797.wem</Path>
+				</File>
+				<File Id="895407349" Language="SFX">
+					<ShortName>hall ambiance people far st.wav</ShortName>
+					<Path>SFX\hall ambiance people far st_1003EE24.wem</Path>
 				</File>
 				<File Id="896207261" Language="SFX">
 					<ShortName>SFX_Crickets.wav</ShortName>
@@ -164,6 +192,14 @@
 				<File Id="918641897" Language="SFX">
 					<ShortName>Ambiance1_Loop.wav</ShortName>
 					<Path>SFX\Ambiance1_Loop_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="923528686" Language="SFX">
+					<ShortName>Song_Restoration_110BPM.wav</ShortName>
+					<Path>SFX\Song_Restoration_110BPM_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="945561084" Language="SFX">
+					<ShortName>Birds_2.wav</ShortName>
+					<Path>SFX\Birds_2_642BA7B4.wem</Path>
 				</File>
 				<File Id="954789857" Language="SFX">
 					<ShortName>Footstep_Benzaiten_Wood1.wav</ShortName>
