@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class ButtonMovement : MonoBehaviour
@@ -6,6 +6,7 @@ public class ButtonMovement : MonoBehaviour
 	public float speed;
 	//	private Animator thisAnimator;
 	private SpriteRenderer thisSpriteRenderer;
+// hallo 
 
 	private void Start ()
 	{
