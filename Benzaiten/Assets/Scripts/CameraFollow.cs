@@ -4,13 +4,15 @@ using System.Collections;
 public class CameraFollow : MonoBehaviour
 {
 	public bool shouldFollow = true;
-	private Transform Player;
-	private Vector3 Player_Pos;
-	private float Smooth = 0.07f;
+	private Transform player;
+	public Transform target;
+	private Vector3 player_Pos;
+	private Vector3 targetPos;
+	private float smooth = 0.07f;
 
 	private void Start ()
 	{
-		Player = GameObject.FindGameObjectWithTag ("Player").transform;
+		player = GameObject.FindGameObjectWithTag ("Player").transform;
 	}
 
 
@@ -18,12 +20,23 @@ public class CameraFollow : MonoBehaviour
 	{
 		if (shouldFollow)
 		{
-			Player_Pos.x = Player.position.x;
-			Player_Pos.y = Player.position.y;
-			Player_Pos.z = transform.position.z;
-			transform.position = Vector3.Lerp (transform.position, Player_Pos, Smooth);    
+			if (target = null)
+			{ 
+
+				player_Pos.x = player.position.x;
+				player_Pos.y = player.position.y;
+				player_Pos.z = transform.position.z;
+				transform.position = Vector3.Lerp (transform.position, player_Pos, smooth);   
+			} else if (target != null)
+			{
+				targetPos.x = target.position.x;
+				targetPos.y = target.position.y;
+				targetPos.z = transform.position.z;
+				transform.position = Vector3.Lerp (transform.position, targetPos, smooth);   
+			}
 		} else
 		{
+			
 			//stay
 		}
 

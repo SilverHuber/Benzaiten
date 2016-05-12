@@ -21,7 +21,7 @@ public class InterActionScanner : MonoBehaviour
 	{
 		if (other.tag == "RestoreObject")
 		{
-			GetComponentInParent <FluteMode> ().interactiveObject = other.gameObject;
+			GetComponentInParent <FluteMode> ().interactiveObjects.Add (other.gameObject);
 		}
 	}
 
@@ -30,7 +30,8 @@ public class InterActionScanner : MonoBehaviour
 	{
 		if (other.tag == "RestoreObject")
 		{
-			GetComponentInParent <FluteMode> ().interactiveObject = null;
+			//	GameObject itemToDelete = GetComponentInParent <FluteMode> ().interactiveObjects.Contains (other.name);
+			GetComponentInParent <FluteMode> ().interactiveObjects.Remove (other.gameObject);
 		}
 	}
 }

@@ -4,12 +4,17 @@ using System.Collections.Generic;
 
 public class FluteMode : MonoBehaviour
 {
-	
+	private Animator thisAnimator;
 	public bool flutemode = false;
-	public GameObject interactiveObject;
+	public List <GameObject> interactiveObjects;
 
 	private int currentSequenceNote;
 	private float timeSinceLastNote;
+
+	public bool Arduino1pressed;
+	public bool Arduino2pressed;
+	public bool Arduino3pressed;
+	public bool Arduino4pressed;
 
 	// de sequence die door de speler word ingetypt
 	public List<string> currentSequence = new List <string> ();
@@ -17,14 +22,14 @@ public class FluteMode : MonoBehaviour
 	// de sequences die corresponderen met een effect
 
 	//Restoration Song
-	[Header("Songs")]
-	[Tooltip("Restoration Song")]
+	[Header ("Songs")]
+	[Tooltip ("Restoration Song")]
 	public List<string> restoreSequence = new List<string> ();
-	[Tooltip("Healing Song")]
+	[Tooltip ("Healing Song")]
 	public List<string> healingSequence = new List<string> ();
-	[Tooltip("Build Song")]
+	[Tooltip ("Build Song")]
 	public List<string> buildSequence = new List<string> ();
-	[Tooltip("Test Song")]
+	[Tooltip ("Test Song")]
 	public List<string> testSequence = new List<string> ();
 
 	// voor het gemak even variabelen van gemaakt
@@ -38,8 +43,12 @@ public class FluteMode : MonoBehaviour
 
 	private void Start ()
 	{
+		thisAnimator = GetComponent <Animator> ();
 		currentSequenceNote = 0;
-
+		Arduino1pressed = false;
+		Arduino2pressed = false;
+		Arduino3pressed = false;
+		Arduino4pressed = false;
 		//healingSequence.InsertRange (healingSequence.Count, new string[] { b, a, d });
 		//restoreSequence.InsertRange (restoreSequence.Count, new string[] { d, e, c });
 		//buildSequence.InsertRange (buildSequence.Count, new string[] { b, a, d , d, e, c });
@@ -59,11 +68,11 @@ public class FluteMode : MonoBehaviour
 
 			MainSoundScript.Instance.PlaySFX ("SFX_FluteMode");
 
-			// ANIM: grab flute
+			thisAnimator.SetBool ("PlayingFlute", true);
 		} else if ((Input.GetKeyDown (KeyCode.Q) && flutemode == true))
 		{
 			flutemode = false;
-			// ANIM: deposit flute
+			thisAnimator.SetBool ("PlayingFlute", false);
 		}
 
 
@@ -71,11 +80,11 @@ public class FluteMode : MonoBehaviour
 		{
 			timeSinceLastNote += Time.deltaTime;
 
-			if (Input.GetKeyDown (KeyCode.Alpha1) && currentSequenceNote < 6)
+			if (Input.GetKeyDown (KeyCode.Alpha1) || Arduino1pressed && (currentSequenceNote < 6))
 			{
 				//SOUND: play Note A
 				print ("check");
-				MainSoundScript.Instance.PlaySFX("Shaku_D");
+				MainSoundScript.Instance.PlaySFX ("Shaku_D");
 
 				// ANIM: play flute
 				currentSequence.Add (a);
@@ -83,10 +92,10 @@ public class FluteMode : MonoBehaviour
 				timeSinceLastNote = 0;
 			}
 
-			if (Input.GetKeyDown (KeyCode.Alpha2) && currentSequenceNote < 6)
+			if (Input.GetKeyDown (KeyCode.Alpha2) || Arduino2pressed && currentSequenceNote < 6)
 			{
 				//SOUND: play Note B
-				MainSoundScript.Instance.PlaySFX("Shaku_F");
+				MainSoundScript.Instance.PlaySFX ("Shaku_F");
 
 				// ANIM: play flute
 				currentSequence.Add (b);
@@ -97,7 +106,7 @@ public class FluteMode : MonoBehaviour
 			if (Input.GetKeyDown (KeyCode.Alpha3) && currentSequenceNote < 6)
 			{
 				//SOUND: play Note C
-				MainSoundScript.Instance.PlaySFX("Shaku_G");
+				MainSoundScript.Instance.PlaySFX ("Shaku_G");
 
 				// ANIM: play flute
 				currentSequence.Add (c);
@@ -107,7 +116,7 @@ public class FluteMode : MonoBehaviour
 			if (Input.GetKeyDown (KeyCode.Alpha4) && currentSequenceNote < 6)
 			{
 				//SOUND: play Note D
-				MainSoundScript.Instance.PlaySFX("Shaku_A");
+				MainSoundScript.Instance.PlaySFX ("Shaku_A");
 
 				// ANIM: play flute
 				currentSequence.Add (d);
@@ -118,7 +127,7 @@ public class FluteMode : MonoBehaviour
 			if (Input.GetKeyDown (KeyCode.Alpha5) && currentSequenceNote < 6)
 			{
 				//SOUND: play Note E
-				MainSoundScript.Instance.PlaySFX("Shaku_C");
+				MainSoundScript.Instance.PlaySFX ("Shaku_C");
 
 				// ANIM: play flute
 				currentSequence.Add (e);
@@ -133,7 +142,7 @@ public class FluteMode : MonoBehaviour
 
 	
 
-			if (timeSinceLastNote > 1.5f && currentSequenceNote >= 2 )
+			if (timeSinceLastNote > 1.5f && currentSequenceNote >= 2)
 			{
 
 				// SOUND : Play healing sequence
@@ -144,8 +153,8 @@ public class FluteMode : MonoBehaviour
 				if (IsListEqual (currentSequence, healingSequence))
 				{
 					// SOUND : Play healing sequence
-					MainSoundScript.Instance.SetMusicState("HealingSong", true, 3);
-					MainSoundScript.Instance.PlaySFX("SFX_Correct");
+					MainSoundScript.Instance.SetMusicState ("HealingSong", true, 3);
+					MainSoundScript.Instance.PlaySFX ("SFX_Correct");
 
 
 					// ANIM: play sequence animation
@@ -157,23 +166,29 @@ public class FluteMode : MonoBehaviour
 				if (IsListEqual (currentSequence, restoreSequence))
 				{
 					// SOUND : Play restore sequence
-					MainSoundScript.Instance.SetMusicState("RestorationSong", true, 3);
-					MainSoundScript.Instance.PlaySFX("SFX_Correct");
+					MainSoundScript.Instance.SetMusicState ("RestorationSong", true, 3);
+					MainSoundScript.Instance.PlaySFX ("SFX_Correct");
 
 					// ANIM: play sequence animation
 					print ("equal to restoration song");
 					SeqCorrect = true;
 					flutemode = false;
 
+
+					foreach (GameObject restoreObject in interactiveObjects)
+					{
+						restoreObject.GetComponent <RestoreObject> ().blessed = true;
+					}
+
 				}
 
 				if (IsListEqual (currentSequence, buildSequence))
 				{
 					// SOUND : Play restore sequence
-					MainSoundScript.Instance.PlaySFX("SFX_Correct");
+					MainSoundScript.Instance.PlaySFX ("SFX_Correct");
 
 					//Placeholder
-					MainSoundScript.Instance.SetMusicState("RainSong", true, 3);
+					MainSoundScript.Instance.SetMusicState ("RainSong", true, 3);
 					// ANIM: play sequence animation
 					print ("equal to build song // still a placeholder ");
 					SeqCorrect = true;
@@ -185,7 +200,7 @@ public class FluteMode : MonoBehaviour
 				{
 					// SOUND : Play short sequence
 
-					MainSoundScript.Instance.PlaySFX("SFX_Correct");
+					MainSoundScript.Instance.PlaySFX ("SFX_Correct");
 
 					// ANIM: play sequence animation
 					print ("equal to test");
@@ -194,23 +209,32 @@ public class FluteMode : MonoBehaviour
 
 				}
 
-				if ((timeSinceLastNote > 1.5f && currentSequenceNote >= 6 && SeqCorrect == false) || timeSinceLastNote > 4.0f ) {
-				flutemode = false;
+				if ((timeSinceLastNote > 1.5f && currentSequenceNote >= 6 && SeqCorrect == false) || timeSinceLastNote > 4.0f)
+				{
+					flutemode = false;
 					print ("sequence is wrong or waited to long");
-					MainSoundScript.Instance.PlaySFX("SFX_NotCorrect");
+					MainSoundScript.Instance.PlaySFX ("SFX_NotCorrect");
+					thisAnimator.SetBool ("PlayingFlute", false);
 
 				}
 
 
 			
 			}
-			if (timeSinceLastNote > 5.0f) {
+			if (timeSinceLastNote > 5.0f)
+			{
 				flutemode = false;
 				print ("sequence is wrong or waited too long");
 				MainSoundScript.Instance.PlaySFX ("SFX_NotCorrect");
+				thisAnimator.SetBool ("PlayingFlute", false);
+
 			}
 
+			if (flutemode == false)
+			{
+				thisAnimator.SetBool ("PlayingFlute", false);
 
+			}
 
 //			if (IsListEqual (currentSequence, restoreSequence))
 //			{

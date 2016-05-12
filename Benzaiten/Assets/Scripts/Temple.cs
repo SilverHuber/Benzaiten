@@ -2,12 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class Tree : MonoBehaviour
+public class Temple : MonoBehaviour
 {
 
 	private RestoreObject thisRO;
 
-	public List<SpriteRenderer> leavesRenderers = new List<SpriteRenderer> ();
+	public List<SpriteRenderer> scratches = new List<SpriteRenderer> ();
 
 	// Use this for initialization
 	void Start ()
@@ -16,7 +16,7 @@ public class Tree : MonoBehaviour
 
 		foreach (Transform child in transform)
 		{
-			leavesRenderers.Add (child.GetComponent <SpriteRenderer> ());
+			scratches.Add (child.GetComponent <SpriteRenderer> ());
 
 		}
 	}
@@ -28,10 +28,10 @@ public class Tree : MonoBehaviour
 		if (thisRO.blessed == true)
 		{
 			print ("leaves");
-			foreach (SpriteRenderer sR in leavesRenderers)
+			foreach (SpriteRenderer sR in scratches)
 			{
 				Color color = sR.color;
-				color.a += 0.03f;
+				color.a -= 0.03f;
 				sR.color = color;
 			}
 		}
