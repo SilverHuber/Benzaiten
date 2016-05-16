@@ -22,7 +22,6 @@ public class Portal : MonoBehaviour
 
 	void OnTriggerEnter2D (Collider2D other)
 	{
-		print ("playa");
 		
 		if (other.name == "Player")
 		{
