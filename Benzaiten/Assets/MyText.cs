@@ -58,7 +58,7 @@ public class MyText : MonoBehaviour
 
 	IEnumerator TypeText ()
 	{
-		characterImage = kenjiPortrait;
+//		characterImage = kenjiPortrait;
 		foreach (GameObject uiObject in uiGameobjects)
 		{
 			Color visible = new Color (0, 0, 0, 1);
