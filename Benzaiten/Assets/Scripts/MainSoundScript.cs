@@ -19,6 +19,9 @@ public class MainSoundScript : MonoBehaviour {
 	//stategroup of music
 	public string musicSwitchGroup;
 
+	[HideInInspector]
+	public string currentAmbientMain = "Temple_Mystery";
+
 
 	// Use this for initialization
 	void Start () {
@@ -73,7 +76,7 @@ public class MainSoundScript : MonoBehaviour {
 					yield return new WaitForSeconds (3);
 
 				}
-				AkSoundEngine.SetState (musicSwitchGroup, "Main");
+				AkSoundEngine.SetState (musicSwitchGroup, currentAmbientMain);
 			}
 		
 		

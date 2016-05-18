@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID MUSIC_STOP = 3227181061U;
         static const AkUniqueID SFX_CITYAMBIENCE = 3674563696U;
+        static const AkUniqueID SFX_CITYAMBIENCE_STOP = 1481213823U;
         static const AkUniqueID SFX_CORRECT = 212976137U;
         static const AkUniqueID SFX_FLUTEMODE = 2540880908U;
         static const AkUniqueID SFX_FOOTSTEP_WOOD_START = 2372439676U;
@@ -23,6 +24,10 @@ namespace AK
         static const AkUniqueID SFX_NOTCORRECT = 3225443594U;
         static const AkUniqueID SFX_OLDMAN = 528352284U;
         static const AkUniqueID SFX_RAIN = 1904851423U;
+        static const AkUniqueID SFX_TEMPLEAMBIENCE = 2443815734U;
+        static const AkUniqueID SFX_TEMPLEAMBIENCE_STOP = 3082996645U;
+        static const AkUniqueID SFX_WATERSTREAM = 2379149370U;
+        static const AkUniqueID SFX_WATERSTREAM_STOP = 1161576905U;
         static const AkUniqueID SHAKU_A = 741713021U;
         static const AkUniqueID SHAKU_B = 741713022U;
         static const AkUniqueID SHAKU_BB = 376566328U;
@@ -43,11 +48,13 @@ namespace AK
 
             namespace STATE
             {
+                static const AkUniqueID CITY = 3888786832U;
                 static const AkUniqueID HEALINGSONG = 3137575518U;
                 static const AkUniqueID INTRO = 1125500713U;
-                static const AkUniqueID MAIN = 3161908922U;
                 static const AkUniqueID RAINSONG = 405763060U;
                 static const AkUniqueID RESTORATIONSONG = 2631709116U;
+                static const AkUniqueID TEMPLE_MAIN = 2791456550U;
+                static const AkUniqueID TEMPLE_MYSTERY = 504713792U;
             } // namespace STATE
         } // namespace MUSIC_SWITCH
 
