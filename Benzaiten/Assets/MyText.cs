@@ -10,8 +10,12 @@ public class MyText : MonoBehaviour
 	private float letterPause = 0.03f;
 	public bool typing = false;
 
+	public Image portrait;
+
 	public Sprite benzaitenPortrait;
 	public Sprite kenjiPortrait;
+	public Sprite femArchPortrait;
+	public Sprite maleArchPortrait;
 
 
 	public List<GameObject> uiGameobjects;
@@ -51,14 +55,24 @@ public class MyText : MonoBehaviour
 		{
 			if (Input.GetKeyDown (KeyCode.Space))
 			{
-				TypeLine ("I love you my love", this.gameObject);
+				TypeLine ("I love you my love", "Kenji");
+			}
+
+			if (Input.GetKeyDown (KeyCode.V))
+			{
+				TypeLine ("Data is corrupted", "FemaleArch");
+			}
+
+			if (Input.GetKeyDown (KeyCode.C))
+			{
+				TypeLine ("OMG... The bridge is kapot... What nu?", "MaleArch");
 			}
 		}
 	}
 
 	IEnumerator TypeText ()
 	{
-//		characterImage = kenjiPortrait;
+
 		foreach (GameObject uiObject in uiGameobjects)
 		{
 			Color visible = new Color (0, 0, 0, 1);
@@ -74,7 +88,6 @@ public class MyText : MonoBehaviour
 			yield return 0;
 			yield return new WaitForSeconds (letterPause);
 		}
-		typing = false;
 
 		yield return new WaitForSeconds (4);
 
@@ -84,13 +97,33 @@ public class MyText : MonoBehaviour
 			uiObject.SetActive (false);
 			textComp.color = invisible;
 		}
+		typing = false;
+
 	}
 
-
-	void TypeLine (string textToType, GameObject character)
+	/// <summary>
+	/// Types the line.
+	/// </summary>
+	/// <param name="textToType">Text to type.</param>
+	/// <param name="character">Name of the Character.</param>
+	public void TypeLine (string textToType, string character)
 	{
+		if (character == "Kenji")
+		{
+			portrait.sprite = kenjiPortrait;
+		}
+		if (character == "FemaleArch")
+		{
+			portrait.sprite = femArchPortrait;
+		}
+		if (character == "MaleArch")
+		{
+			portrait.sprite = maleArchPortrait;
+		}
+
 		textComp.text = "";
 		message = textToType;
+		portrait.SetNativeSize ();
 		StartCoroutine (TypeText ());
 	}
 

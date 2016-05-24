@@ -2,16 +2,18 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyText.cs">
     <Files>
-      <File FileName="Assets/MyText.cs" Line="61" Column="3" />
+      <File FileName="Assets/MyText.cs" Line="101" Column="3" />
+      <File FileName="Assets/Scripts/Temple.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/NPCBehave.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ButtonMovement.cs" Line="1" Column="1" />
       <File FileName="Assets/textLerp.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Arduino.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/FluteMode.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ButtonMovement.cs" Line="1" Column="1" />
       <File FileName="Assets/InterActionScanner.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Temple.cs" Line="1" Column="1" />
       <File FileName="Assets/Portal.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Tree.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/CameraFollow.cs" Line="1" Column="1" />
+      <File FileName="Assets/Wwise/Deployment/Components/AkGameObj.cs" Line="305" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

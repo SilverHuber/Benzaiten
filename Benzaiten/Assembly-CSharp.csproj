@@ -55,6 +55,8 @@
      <Compile Include="Assets\Scripts\DepthScanner.cs" />
      <Compile Include="Assets\Scripts\FluteMode.cs" />
      <Compile Include="Assets\Scripts\MainSoundScript.cs" />
+     <Compile Include="Assets\Scripts\MusicStateSwitch.cs" />
+     <Compile Include="Assets\Scripts\NPCBehave.cs" />
      <Compile Include="Assets\Scripts\RestoreObject.cs" />
      <Compile Include="Assets\Scripts\StartMusicTemp.cs" />
      <Compile Include="Assets\Scripts\Temple.cs" />

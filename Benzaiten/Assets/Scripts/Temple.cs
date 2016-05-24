@@ -7,7 +7,9 @@ public class Temple : MonoBehaviour
 
 	private RestoreObject thisRO;
 
-	public List<SpriteRenderer> scratches = new List<SpriteRenderer> ();
+	public List<SpriteRenderer> itemsToFadeAway = new List<SpriteRenderer> ();
+	public List<SpriteRenderer> itemsToFadeIn = new List<SpriteRenderer> ();
+
 
 	// Use this for initialization
 	void Start ()
@@ -16,7 +18,7 @@ public class Temple : MonoBehaviour
 
 		foreach (Transform child in transform)
 		{
-			scratches.Add (child.GetComponent <SpriteRenderer> ());
+			itemsToFadeAway.Add (child.GetComponent <SpriteRenderer> ());
 
 		}
 	}
@@ -28,10 +30,18 @@ public class Temple : MonoBehaviour
 		if (thisRO.blessed == true)
 		{
 			print ("leaves");
-			foreach (SpriteRenderer sR in scratches)
+			foreach (SpriteRenderer sR in itemsToFadeAway)
 			{
 				Color color = sR.color;
 				color.a -= 0.03f;
+				sR.color = color;
+			}
+
+			print ("leaves");
+			foreach (SpriteRenderer sR in itemsToFadeIn)
+			{
+				Color color = sR.color;
+				color.a += 0.03f;
 				sR.color = color;
 			}
 		}
