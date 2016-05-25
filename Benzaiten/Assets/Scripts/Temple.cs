@@ -36,7 +36,7 @@ public class Temple : MonoBehaviour
 				color.a -= 0.03f;
 				sR.color = color;
 			}
-
+			Invoke ("ChangeMusicState", 3.0f);
 			print ("leaves");
 			foreach (SpriteRenderer sR in itemsToFadeIn)
 			{
@@ -46,5 +46,13 @@ public class Temple : MonoBehaviour
 			}
 		}
 
+	}
+
+	void ChangeMusicState ()
+	{
+	
+		MainSoundScript.Instance.SetMusicState ("Temple_Main", false, 2);
+
+	
 	}
 }

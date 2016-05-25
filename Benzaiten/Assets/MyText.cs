@@ -20,33 +20,42 @@ public class MyText : MonoBehaviour
 
 	public List<GameObject> uiGameobjects;
 	string message;
-	private Text textComp;
+	private Text textComponent;
 
 	private Color invisible;
 	private Color visble;
-	// Use this for initialization
-	void Start ()
+
+
+
+
+	void Awake ()
 	{
 		foreach (Transform child in transform.parent)
 		{
+			if (child.name != "Text")
+			{
+				uiGameobjects.Add (child.gameObject);
+			}
 			if (child.name == "Character")
 			{
 				characterImage = child.GetComponent <Image> ();
 			}
 		}
 		invisible = new Color (1, 1, 1, 0);
-		textComp = GetComponent<Text> ();
-		message = "Ik ben Ben-Ben-Ben... Ik Stotter hihihi. Ik ben Ben-Ben-Benzaiten. Ik zeg altijd YOLO. Dat betekend; Your Octopus Likes Owls.";
-		textComp.text = "";
-		//StartCoroutine (TypeText ());
+		textComponent = GetComponent<Text> ();
+		textComponent.text = "";
 		foreach (GameObject uiObject in uiGameobjects)
 		{
 
 			uiObject.SetActive (false);
-			textComp.color = invisible;
+			textComponent.color = invisible;
 		}
 	}
 
+
+	void Start ()
+	{
+	}
 
 
 	void Update ()
@@ -77,17 +86,18 @@ public class MyText : MonoBehaviour
 		{
 			Color visible = new Color (0, 0, 0, 1);
 			uiObject.SetActive (true);
-			textComp.color = visible;
+			textComponent.color = visible;
 		}
 
 		foreach (char letter in message.ToCharArray())
 		{
 			typing = true;
-			textComp.text += letter;
+			textComponent.text += letter;
 			//sound of character
 			yield return 0;
 			yield return new WaitForSeconds (letterPause);
 		}
+		typing = false;
 
 		yield return new WaitForSeconds (4);
 
@@ -95,9 +105,8 @@ public class MyText : MonoBehaviour
 		{
 			
 			uiObject.SetActive (false);
-			textComp.color = invisible;
+			textComponent.color = invisible;
 		}
-		typing = false;
 
 	}
 
@@ -121,7 +130,7 @@ public class MyText : MonoBehaviour
 			portrait.sprite = maleArchPortrait;
 		}
 
-		textComp.text = "";
+		textComponent.text = "";
 		message = textToType;
 		portrait.SetNativeSize ();
 		StartCoroutine (TypeText ());

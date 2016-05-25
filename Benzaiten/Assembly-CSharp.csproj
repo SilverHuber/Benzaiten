@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\StartMusicTemp.cs" />
      <Compile Include="Assets\Scripts\Temple.cs" />
      <Compile Include="Assets\Scripts\Tree.cs" />
+     <Compile Include="Assets\TextManager.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AKRESULT.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkActionOnEventType.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkAudioFormat.cs" />
