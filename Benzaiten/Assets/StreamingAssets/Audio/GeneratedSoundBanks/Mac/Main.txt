@@ -1,7 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
+	72131951	Talk_Archeologist_Female			\Default Work Unit\SFX\Talk\Talk_Archeologist_Female	
+	126254636	Talk_Archeologist_Male			\Default Work Unit\SFX\Talk\Talk_Archeologist_Male	
 	212976137	SFX_Correct			\Default Work Unit\SFX\Other\SFX_Correct	
+	333759533	Talk_Spirit			\Default Work Unit\SFX\Talk\Talk_Spirit	
 	376566328	Shaku_Bb			\Default Work Unit\Shakuhachi\Shaku_Bb	
+	402657552	Talk_Boy			\Default Work Unit\SFX\Talk\Talk_Boy	
 	528352284	SFX_OldMan			\Default Work Unit\SFX\Characters\SFX_OldMan	
+	646107962	Footstep_Start			\Default Work Unit\SFX\Footsteps\Footstep_Start	
 	741713016	Shaku_D			\Default Work Unit\Shakuhachi\Shaku_D	
 	741713017	Shaku_E			\Default Work Unit\Shakuhachi\Shaku_E	
 	741713018	Shaku_F			\Default Work Unit\Shakuhachi\Shaku_F	
@@ -9,11 +14,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	741713021	Shaku_A			\Default Work Unit\Shakuhachi\Shaku_A	
 	741713022	Shaku_B			\Default Work Unit\Shakuhachi\Shaku_B	
 	741713023	Shaku_C			\Default Work Unit\Shakuhachi\Shaku_C	
+	1052734239	Talk_Kenji			\Default Work Unit\SFX\Talk\Talk_Kenji	
 	1161576905	SFX_WaterStream_Stop			\Default Work Unit\SFX\Ambience\SFX_WaterStream_Stop	
 	1481213823	SFX_CityAmbience_Stop			\Default Work Unit\SFX\Ambience\SFX_CityAmbience_Stop	
 	1904851423	SFX_Rain			\Default Work Unit\SFX\Ambience\SFX_Rain	
-	2330462416	SFX_Footstep_Wood_Stop			\Default Work Unit\SFX\Footsteps\SFX_Footstep_Wood_Stop	
-	2372439676	SFX_Footstep_Wood_Start			\Default Work Unit\SFX\Footsteps\SFX_Footstep_Wood_Start	
+	2135324925	Talk_Yanmei			\Default Work Unit\SFX\Talk\Talk_Yanmei	
 	2379149370	SFX_WaterStream			\Default Work Unit\SFX\Ambience\SFX_WaterStream	
 	2443815734	SFX_TempleAmbience			\Default Work Unit\SFX\Ambience\SFX_TempleAmbience	
 	2540880908	SFX_FluteMode			\Default Work Unit\SFX\Other\SFX_FluteMode	
@@ -23,13 +28,23 @@ Event	ID	Name			Wwise Object Path	Notes
 	3333863699	Shakuryu_Speak_Stop			\Default Work Unit\SFX\Talk\Shakuryu_Speak_Stop	
 	3674563696	SFX_CityAmbience			\Default Work Unit\SFX\Ambience\SFX_CityAmbience	
 	3991942870	Music			\Default Work Unit\Music\Music	
+	4175340882	Footstep_Stop			\Default Work Unit\SFX\Footsteps\Footstep_Stop	
 	4207414713	Shakuryu_Speak_Start			\Default Work Unit\SFX\Talk\Shakuryu_Speak_Start	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1866025847	Footstep			\Default Work Unit\Footstep	
+
+Switch	ID	Name	Switch Group			Notes
+	1216965916	Stone	Footstep			
+	2068062714	Bridge	Footstep			
+	2323193050	Temple	Footstep			
+	4248645337	Grass	Footstep			
 
 Effect plug-ins	ID	Name	Type				Notes
 	514424553	Wwise Compressor (Custom)	Wwise Compressor			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	1002332	Footstep_Benzaiten_Wood2	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Footstep_Benzaiten_Wood2_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\FootSteps\Benzaiten_Wood\Footstep_Benzaiten_Wood2		2184
+	1002332	Footstep_Benzaiten_Wood2	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Footstep_Benzaiten_Wood2_1953F9DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\FootSteps\Footstep\Benzaiten_Wood\Footstep_Benzaiten_Wood2		1124
 	8452266	Shakuhachi_G_high - 1	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Shakuhachi_G_high - 1_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_G\Shakuhachi_G_high - 1		16360
 	77180257	Shakuhachi_D_High - 1	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Shakuhachi_D_High - 1_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_D\Shakuhachi_D_High - 1		15356
 	103193336	Ambiance_full	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Ambiance_full_6848314D.wem		\Interactive Music Hierarchy\Default Work Unit\Music\City\Ambiance\Ambiance_full		12008792
@@ -38,27 +53,41 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	128400035	Talk1	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Oldman1_pitched_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oldman_Talk\Talk1		11399
 	130970819	Nature_Crickets_Loop	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Nature_Crickets_Loop_E600AF7B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Animals\Nature_Crickets_Loop		326251
 	139266227	Shakuhachi_C_high - 1	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Shakuhachi_C_high - 1_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_C\Shakuhachi_C_high - 1		16024
+	179520027	Talk_Dragon	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Talk_Dragon_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Talk\Talk7\Talk_Dragon		6888
 	199410004	Shakuhachi_C_high - 2	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Shakuhachi_C_high - 2_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_C\Shakuhachi_C_high - 2		16592
 	199686452	Temple_Music_Main	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Temple_Music_Main2_6848314D.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Temple_Main\New Music Segment\Temple_Music_Main		13494924
 	207644107	Water_streaming	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Water_streaming_2C8AFF34.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Water_streaming		270936
+	215763114	Footsteps_Outside3	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Footsteps_Outside3_1953F9DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\FootSteps\Footstep\Grass\Footsteps_Outside3		68044
 	240247341	Shaku_Mordent_D - 1	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Shaku_Mordent_D - 1_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_D\Shaku_Mordent_D - 1		18158
 	262704453	Correct	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\SFX_Correct_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Other\Correct		28787
+	265142693	Footsteps_Outside5	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Footsteps_Outside5_1953F9DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\FootSteps\Footstep\Grass\Footsteps_Outside5		83328
 	269071182	Shakuhachi_F_high - 1	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Shakuhachi_F_high - 1_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_F\Shakuhachi_F_high - 1		17647
 	284710974	Shakuhachi_B_high - 2	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Shakuhachi_B_high - 2_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_B\Shakuhachi_B_high - 2		16399
+	286522458	Talk_Neutral5	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Talk_Neutral5_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Talk\Talk5\Talk_Neutral5		17544
 	292645968	Shakuhachi_E_high - 2	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Shakuhachi_E_high - 2_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_E\Shakuhachi_E_high - 2		15625
 	327835315	Shaku_Mordent_C - 1	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Shaku_Mordent_C - 1_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_C\Shaku_Mordent_C - 1		17842
 	339617118	Shakuhachi_G_high - 2	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Shakuhachi_G_high - 2_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_G\Shakuhachi_G_high - 2		17890
+	344490364	Footsteps_Outside1	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Footsteps_Outside1_1953F9DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\FootSteps\Footstep\Grass\Footsteps_Outside1		70680
 	365121485	Rain_song	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Rain_song_6848314D.wem		\Interactive Music Hierarchy\Default Work Unit\Music\RainSong\RainSong\Rain_song		3079048
 	366939536	Shakuhachi_Bb_high - 1	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Shakuhachi_Bb_high - 1_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_Bb\Shakuhachi_Bb_high - 1		15342
 	416858663	Rain	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\SFX_RainWind_1F561A99.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Weather\Rain		3589112
 	440137585	Shakuhachi_D_High - 3	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Shakuhachi_D_High - 3_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_D\Shakuhachi_D_High - 3		19229
 	474636387	Temple_Music_Introduction_Mystery	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Temple_Music_Introduction_Mystery_6848314D.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Temple_Mystery\New Music Segment\Temple_Music_Introduction_Mystery		9408068
+	476700764	Talk_Neutral2	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Talk_Neutral2_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Talk\Talk3_High\Talk_Neutral2		14780
 	481415566	Shakuhachi_E_high - 1	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Shakuhachi_E_high - 1_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_E\Shakuhachi_E_high - 1		16670
+	507161377	Footsteps_Bridge2	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Footsteps_Bridge2_624FCED7.wem		\Actor-Mixer Hierarchy\Default Work Unit\FootSteps\Footstep\Bridge\Footsteps_Bridge2		42580
 	528492684	Shaku_Mordent_F - 1	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Shaku_Mordent_F - 1_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_F\Shaku_Mordent_F - 1		19283
 	536936578	Shakuhachi_A_high - 1	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Shakuhachi_A_high - 1_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_A\Shakuhachi_A_high - 1		15337
+	587969214	Talk_Neutral	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Talk_Neutral_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Talk\Talk2\Talk_Neutral		16394
+	594599267	Talk_Neutral6	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Talk_Neutral6_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Talk\Talk6\Talk_Neutral6		8250
+	594977080	Footsteps_Outside2	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Footsteps_Outside2_1953F9DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\FootSteps\Footstep\Grass\Footsteps_Outside2		83324
+	624172329	Footsteps_Stone1	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Footsteps_Stone1_71A9E2BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\FootSteps\Footstep\Stone\Footsteps_Stone1		70736
 	640744220	Shakuhachi_G_high - 3	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Shakuhachi_G_high - 3_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_G\Shakuhachi_G_high - 3		17600
 	665453822	Shaku_Mordent_A - 1	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Shaku_Mordent_A - 1_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_A\Shaku_Mordent_A - 1		18107
+	672656860	Footsteps_Bridge1	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Footsteps_Bridge1_358FF6EC.wem		\Actor-Mixer Hierarchy\Default Work Unit\FootSteps\Footstep\Bridge\Footsteps_Bridge1		25080
+	687693962	Footsteps_Outside4	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Footsteps_Outside4_1953F9DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\FootSteps\Footstep\Grass\Footsteps_Outside4		74892
 	712022223	SFX_NotCorrect	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\SFX_NotCorrect_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Other\SFX_NotCorrect		7645
+	712615846	Footsteps_Stone3	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Footsteps_Stone3_F01528EF.wem		\Actor-Mixer Hierarchy\Default Work Unit\FootSteps\Footstep\Stone\Footsteps_Stone3		24468
 	738150169	Shakuryu_Speak	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Dragon_Speak_1F561A99.wem		\Actor-Mixer Hierarchy\Default Work Unit\Talk\Shakuryu_Speak		1676424
 	760930338	Shaku_Mordent_E - 1	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Shaku_Mordent_E - 1_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_E\Shaku_Mordent_E - 1		22579
 	774050759	Shakuhachi_A_high - 3	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Shakuhachi_A_high - 3_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_A\Shakuhachi_A_high - 3		17897
@@ -72,7 +101,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	918641897	Ambiance1_Loop	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Ambiance1_Loop_6848314D.wem		\Interactive Music Hierarchy\Default Work Unit\Music\City\Ambiance\Ambiance1_Loop		601296
 	923528686	Song_Restoration_110BPM	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Song_Restoration_110BPM_6848314D.wem		\Interactive Music Hierarchy\Default Work Unit\Music\RestorationSong\1\Song_Restoration_110BPM		2886612
 	945561084	Birds_2	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Birds_2_DFC0C018.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Animals\Birds_2		534064
-	954789857	Footstep_Benzaiten_Wood1	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Footstep_Benzaiten_Wood1_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\FootSteps\Benzaiten_Wood\Footstep_Benzaiten_Wood1		2496
+	954789857	Footstep_Benzaiten_Wood1	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Footstep_Benzaiten_Wood1_1953F9DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\FootSteps\Footstep\Benzaiten_Wood\Footstep_Benzaiten_Wood1		976
+	977132199	Footsteps_Bridge3	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Footsteps_Bridge3_9175FE53.wem		\Actor-Mixer Hierarchy\Default Work Unit\FootSteps\Footstep\Bridge\Footsteps_Bridge3		20216
+	980861840	Footsteps_Stone2	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Footsteps_Stone2_F795ACC3.wem		\Actor-Mixer Hierarchy\Default Work Unit\FootSteps\Footstep\Stone\Footsteps_Stone2		54668
 	991249552	Shakuhachi_D_High - 2	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Shakuhachi_D_High - 2_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_D\Shakuhachi_D_High - 2		20054
 	1017298035	Shaku_Mordent_G - 1	F:\OneDrive\WwiseBenzaiten\.cache\Mac\SFX\Shaku_Mordent_G - 1_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_G\Shaku_Mordent_G - 1		19902
 

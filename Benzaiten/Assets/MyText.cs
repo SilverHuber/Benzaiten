@@ -7,7 +7,7 @@ using System.Collections.Generic;
 public class MyText : MonoBehaviour
 {
 	private Image characterImage;
-	private float letterPause = 0.03f;
+	private float letterPause = 0.065f;
 	public bool typing = false;
 
 	public Image portrait;
@@ -79,7 +79,7 @@ public class MyText : MonoBehaviour
 		}
 	}
 
-	IEnumerator TypeText ()
+	IEnumerator TypeText (string character)
 	{
 
 		foreach (GameObject uiObject in uiGameobjects)
@@ -94,6 +94,8 @@ public class MyText : MonoBehaviour
 			typing = true;
 			textComponent.text += letter;
 			//sound of character
+			MainSoundScript.Instance.PlayTalkSFX (character);
+
 			yield return 0;
 			yield return new WaitForSeconds (letterPause);
 		}
@@ -133,7 +135,7 @@ public class MyText : MonoBehaviour
 		textComponent.text = "";
 		message = textToType;
 		portrait.SetNativeSize ();
-		StartCoroutine (TypeText ());
+		StartCoroutine (TypeText (character));
 	}
 
 

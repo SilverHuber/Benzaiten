@@ -13,14 +13,14 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID FOOTSTEP_START = 646107962U;
+        static const AkUniqueID FOOTSTEP_STOP = 4175340882U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID MUSIC_STOP = 3227181061U;
         static const AkUniqueID SFX_CITYAMBIENCE = 3674563696U;
         static const AkUniqueID SFX_CITYAMBIENCE_STOP = 1481213823U;
         static const AkUniqueID SFX_CORRECT = 212976137U;
         static const AkUniqueID SFX_FLUTEMODE = 2540880908U;
-        static const AkUniqueID SFX_FOOTSTEP_WOOD_START = 2372439676U;
-        static const AkUniqueID SFX_FOOTSTEP_WOOD_STOP = 2330462416U;
         static const AkUniqueID SFX_NOTCORRECT = 3225443594U;
         static const AkUniqueID SFX_OLDMAN = 528352284U;
         static const AkUniqueID SFX_RAIN = 1904851423U;
@@ -38,6 +38,12 @@ namespace AK
         static const AkUniqueID SHAKU_G = 741713019U;
         static const AkUniqueID SHAKURYU_SPEAK_START = 4207414713U;
         static const AkUniqueID SHAKURYU_SPEAK_STOP = 3333863699U;
+        static const AkUniqueID TALK_ARCHEOLOGIST_FEMALE = 72131951U;
+        static const AkUniqueID TALK_ARCHEOLOGIST_MALE = 126254636U;
+        static const AkUniqueID TALK_BOY = 402657552U;
+        static const AkUniqueID TALK_KENJI = 1052734239U;
+        static const AkUniqueID TALK_SPIRIT = 333759533U;
+        static const AkUniqueID TALK_YANMEI = 2135324925U;
     } // namespace EVENTS
 
     namespace STATES
@@ -59,6 +65,23 @@ namespace AK
         } // namespace MUSIC_SWITCH
 
     } // namespace STATES
+
+    namespace SWITCHES
+    {
+        namespace FOOTSTEP
+        {
+            static const AkUniqueID GROUP = 1866025847U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BRIDGE = 2068062714U;
+                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID STONE = 1216965916U;
+                static const AkUniqueID TEMPLE = 2323193050U;
+            } // namespace SWITCH
+        } // namespace FOOTSTEP
+
+    } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {

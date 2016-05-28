@@ -6,6 +6,8 @@ public class ButtonMovement : MonoBehaviour
 	public float speed;
 	private Animator thisAnimator;
 	private SpriteRenderer thisSpriteRenderer;
+	bool footStepOn = false;
+
 	// hallo
 
 	private void Start ()
@@ -15,6 +17,29 @@ public class ButtonMovement : MonoBehaviour
 		speed = 4f;
 	}
 
+	void Update (){
+		
+	//sound footsteps
+		if (Input.GetKey (KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) {
+			//print ("input");
+			if (MainSoundScript.Instance.FootStepOn == false) {
+				print ("footsteps are on");
+				MainSoundScript.Instance.PlaySFX ("Footstep_Start");
+				MainSoundScript.Instance.FootStepOn = true;
+			}
+		} else 
+		{
+			//print ("NOinput");
+			if (MainSoundScript.Instance.FootStepOn == true) {
+				MainSoundScript.Instance.PlaySFX ("Footstep_Stop");
+				MainSoundScript.Instance.FootStepOn = false;
+				print ("footsteps are off");
+			}
+
+
+		}
+	
+	}
 
 	private void FixedUpdate ()
 	{
@@ -48,6 +73,8 @@ public class ButtonMovement : MonoBehaviour
 				transform.position += Vector3.up * speed * Time.deltaTime;
 				thisAnimator.SetBool ("Walking", true);
 			}
+
+
 				
 
 		} else

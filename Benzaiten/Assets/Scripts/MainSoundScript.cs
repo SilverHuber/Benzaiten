@@ -15,6 +15,8 @@ public class MainSoundScript : MonoBehaviour {
 	}
 
 	//parameters
+	public string currentFootStepSwitchGroup;
+	public bool FootStepOn = false;
 
 	//stategroup of music
 	public string musicSwitchGroup;
@@ -27,6 +29,7 @@ public class MainSoundScript : MonoBehaviour {
 	void Start () {
 
 		musicSwitchGroup = "Music_switch";
+
 
 		//Start Music and set Intro state
 		//PlayMusic("Music");
@@ -42,12 +45,25 @@ public class MainSoundScript : MonoBehaviour {
 		}
 	}
 
+	public void PlayTalkSFX(string characterName) {
+		if (characterName != null) {
+			if (characterName == "Kenji"){
+				AkSoundEngine.PostEvent ("Talk_Kenji", this.gameObject);
+			}
+			if (characterName == "FemaleArch"){
+				AkSoundEngine.PostEvent ("Talk_Archeologist_Female", this.gameObject);
+			}
+			if (characterName == "MaleArch"){
+				AkSoundEngine.PostEvent ("Talk_Archeologist_Male", this.gameObject);
+			}
+
+		}
+	}
 
 
 	//play Certain musiccontainers
 	public void PlayMusic(string musicName) {
 		if (musicName != null) {
-			
 			AkSoundEngine.PostEvent (musicName, gameObject);
 		}
 	}
@@ -55,33 +71,37 @@ public class MainSoundScript : MonoBehaviour {
 	//Stes used for songs and adaptive music
 	public void SetMusicState(string stateName, bool toMain, int waitForSec ) {
 		if (stateName != null) {
-
 			StartCoroutine(SetMusicStateCoroutine(stateName, toMain, waitForSec));
 		}
 	}
+
+	public void SetFootstepSwitch(string switchName) {
+		AkSoundEngine.SetSwitch("Footstep", switchName, gameObject);
+		if (currentFootStepSwitchGroup != switchName) {
+			AkSoundEngine.PostEvent ("Footstep_Stop", gameObject);
+			FootStepOn = false;
+		}
+		currentFootStepSwitchGroup = switchName;
+	}
+		
+
+
+
 		
 	
 	//Coroutine for States/Songs
 	IEnumerator SetMusicStateCoroutine(string stateName, bool toMain, int waitForSec)
 	{
-
 		if (stateName != null) {
-			
 			AkSoundEngine.SetState (musicSwitchGroup, stateName);
-
 			if (toMain) {
 				if (waitForSec > 0) {
 					yield return new WaitForSeconds (waitForSec);
 				} else {
 					yield return new WaitForSeconds (3);
-
 				}
 				AkSoundEngine.SetState (musicSwitchGroup, currentAmbientMain);
 			}
-		
-		
 		}
-
-	}
-					
+	}		
 }

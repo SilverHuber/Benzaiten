@@ -19,14 +19,14 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="646107962" Name="Footstep_Start"/>
+				<Event Id="4175340882" Name="Footstep_Stop"/>
 				<Event Id="3991942870" Name="Music"/>
 				<Event Id="3227181061" Name="Music_Stop"/>
 				<Event Id="3674563696" Name="SFX_CityAmbience"/>
 				<Event Id="1481213823" Name="SFX_CityAmbience_Stop"/>
 				<Event Id="212976137" Name="SFX_Correct"/>
 				<Event Id="2540880908" Name="SFX_FluteMode"/>
-				<Event Id="2372439676" Name="SFX_Footstep_Wood_Start"/>
-				<Event Id="2330462416" Name="SFX_Footstep_Wood_Stop"/>
 				<Event Id="3225443594" Name="SFX_NotCorrect"/>
 				<Event Id="528352284" Name="SFX_OldMan"/>
 				<Event Id="1904851423" Name="SFX_Rain"/>
@@ -44,11 +44,17 @@
 				<Event Id="741713019" Name="Shaku_G"/>
 				<Event Id="4207414713" Name="Shakuryu_Speak_Start"/>
 				<Event Id="3333863699" Name="Shakuryu_Speak_Stop"/>
+				<Event Id="72131951" Name="Talk_Archeologist_Female"/>
+				<Event Id="126254636" Name="Talk_Archeologist_Male"/>
+				<Event Id="402657552" Name="Talk_Boy"/>
+				<Event Id="1052734239" Name="Talk_Kenji"/>
+				<Event Id="333759533" Name="Talk_Spirit"/>
+				<Event Id="2135324925" Name="Talk_Yanmei"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="1002332" Language="SFX">
 					<ShortName>Footstep_Benzaiten_Wood2.wav</ShortName>
-					<Path>SFX\Footstep_Benzaiten_Wood2_BD8333EB.wem</Path>
+					<Path>SFX\Footstep_Benzaiten_Wood2_1953F9DF.wem</Path>
 				</File>
 				<File Id="8452266" Language="SFX">
 					<ShortName>Shakuhachi_G_high - 1.wav</ShortName>
@@ -82,6 +88,10 @@
 					<ShortName>Shakuhachi_C_high - 1.wav</ShortName>
 					<Path>SFX\Shakuhachi_C_high - 1_A65A97ED.wem</Path>
 				</File>
+				<File Id="179520027" Language="SFX">
+					<ShortName>Talk_Dragon.wav</ShortName>
+					<Path>SFX\Talk_Dragon_BD8333EB.wem</Path>
+				</File>
 				<File Id="199410004" Language="SFX">
 					<ShortName>Shakuhachi_C_high - 2.wav</ShortName>
 					<Path>SFX\Shakuhachi_C_high - 2_A65A97ED.wem</Path>
@@ -94,6 +104,10 @@
 					<ShortName>Water_streaming.wav</ShortName>
 					<Path>SFX\Water_streaming_2C8AFF34.wem</Path>
 				</File>
+				<File Id="215763114" Language="SFX">
+					<ShortName>Footsteps_Outside3.wav</ShortName>
+					<Path>SFX\Footsteps_Outside3_1953F9DF.wem</Path>
+				</File>
 				<File Id="240247341" Language="SFX">
 					<ShortName>Shaku_Mordent_D - 1.wav</ShortName>
 					<Path>SFX\Shaku_Mordent_D - 1_A65A97ED.wem</Path>
@@ -102,6 +116,10 @@
 					<ShortName>SFX_Correct.wav</ShortName>
 					<Path>SFX\SFX_Correct_A65A97ED.wem</Path>
 				</File>
+				<File Id="265142693" Language="SFX">
+					<ShortName>Footsteps_Outside5.wav</ShortName>
+					<Path>SFX\Footsteps_Outside5_1953F9DF.wem</Path>
+				</File>
 				<File Id="269071182" Language="SFX">
 					<ShortName>Shakuhachi_F_high - 1.wav</ShortName>
 					<Path>SFX\Shakuhachi_F_high - 1_A65A97ED.wem</Path>
@@ -109,6 +127,10 @@
 				<File Id="284710974" Language="SFX">
 					<ShortName>Shakuhachi_B_high - 2.wav</ShortName>
 					<Path>SFX\Shakuhachi_B_high - 2_A65A97ED.wem</Path>
+				</File>
+				<File Id="286522458" Language="SFX">
+					<ShortName>Talk_Neutral5.wav</ShortName>
+					<Path>SFX\Talk_Neutral5_BD8333EB.wem</Path>
 				</File>
 				<File Id="292645968" Language="SFX">
 					<ShortName>Shakuhachi_E_high - 2.wav</ShortName>
@@ -121,6 +143,10 @@
 				<File Id="339617118" Language="SFX">
 					<ShortName>Shakuhachi_G_high - 2.wav</ShortName>
 					<Path>SFX\Shakuhachi_G_high - 2_A65A97ED.wem</Path>
+				</File>
+				<File Id="344490364" Language="SFX">
+					<ShortName>Footsteps_Outside1.wav</ShortName>
+					<Path>SFX\Footsteps_Outside1_1953F9DF.wem</Path>
 				</File>
 				<File Id="365121485" Language="SFX">
 					<ShortName>Rain_song.wav</ShortName>
@@ -142,9 +168,17 @@
 					<ShortName>Temple_Music_Introduction_Mystery.wav</ShortName>
 					<Path>SFX\Temple_Music_Introduction_Mystery_6848314D.wem</Path>
 				</File>
+				<File Id="476700764" Language="SFX">
+					<ShortName>Talk_Neutral2.wav</ShortName>
+					<Path>SFX\Talk_Neutral2_BD8333EB.wem</Path>
+				</File>
 				<File Id="481415566" Language="SFX">
 					<ShortName>Shakuhachi_E_high - 1.wav</ShortName>
 					<Path>SFX\Shakuhachi_E_high - 1_A65A97ED.wem</Path>
+				</File>
+				<File Id="507161377" Language="SFX">
+					<ShortName>Footsteps_Bridge2.wav</ShortName>
+					<Path>SFX\Footsteps_Bridge2_624FCED7.wem</Path>
 				</File>
 				<File Id="528492684" Language="SFX">
 					<ShortName>Shaku_Mordent_F - 1.wav</ShortName>
@@ -154,6 +188,22 @@
 					<ShortName>Shakuhachi_A_high - 1.wav</ShortName>
 					<Path>SFX\Shakuhachi_A_high - 1_A65A97ED.wem</Path>
 				</File>
+				<File Id="587969214" Language="SFX">
+					<ShortName>Talk_Neutral.wav</ShortName>
+					<Path>SFX\Talk_Neutral_BD8333EB.wem</Path>
+				</File>
+				<File Id="594599267" Language="SFX">
+					<ShortName>Talk_Neutral6.wav</ShortName>
+					<Path>SFX\Talk_Neutral6_BD8333EB.wem</Path>
+				</File>
+				<File Id="594977080" Language="SFX">
+					<ShortName>Footsteps_Outside2.wav</ShortName>
+					<Path>SFX\Footsteps_Outside2_1953F9DF.wem</Path>
+				</File>
+				<File Id="624172329" Language="SFX">
+					<ShortName>Footsteps_Stone1.wav</ShortName>
+					<Path>SFX\Footsteps_Stone1_71A9E2BA.wem</Path>
+				</File>
 				<File Id="640744220" Language="SFX">
 					<ShortName>Shakuhachi_G_high - 3.wav</ShortName>
 					<Path>SFX\Shakuhachi_G_high - 3_A65A97ED.wem</Path>
@@ -162,9 +212,21 @@
 					<ShortName>Shaku_Mordent_A - 1.wav</ShortName>
 					<Path>SFX\Shaku_Mordent_A - 1_A65A97ED.wem</Path>
 				</File>
+				<File Id="672656860" Language="SFX">
+					<ShortName>Footsteps_Bridge1.wav</ShortName>
+					<Path>SFX\Footsteps_Bridge1_358FF6EC.wem</Path>
+				</File>
+				<File Id="687693962" Language="SFX">
+					<ShortName>Footsteps_Outside4.wav</ShortName>
+					<Path>SFX\Footsteps_Outside4_1953F9DF.wem</Path>
+				</File>
 				<File Id="712022223" Language="SFX">
 					<ShortName>SFX_NotCorrect.wav</ShortName>
 					<Path>SFX\SFX_NotCorrect_A65A97ED.wem</Path>
+				</File>
+				<File Id="712615846" Language="SFX">
+					<ShortName>Footsteps_Stone3.wav</ShortName>
+					<Path>SFX\Footsteps_Stone3_F01528EF.wem</Path>
 				</File>
 				<File Id="738150169" Language="SFX">
 					<ShortName>Dragon_Speak.wav</ShortName>
@@ -220,7 +282,15 @@
 				</File>
 				<File Id="954789857" Language="SFX">
 					<ShortName>Footstep_Benzaiten_Wood1.wav</ShortName>
-					<Path>SFX\Footstep_Benzaiten_Wood1_BD8333EB.wem</Path>
+					<Path>SFX\Footstep_Benzaiten_Wood1_1953F9DF.wem</Path>
+				</File>
+				<File Id="977132199" Language="SFX">
+					<ShortName>Footsteps_Bridge3.wav</ShortName>
+					<Path>SFX\Footsteps_Bridge3_9175FE53.wem</Path>
+				</File>
+				<File Id="980861840" Language="SFX">
+					<ShortName>Footsteps_Stone2.wav</ShortName>
+					<Path>SFX\Footsteps_Stone2_F795ACC3.wem</Path>
 				</File>
 				<File Id="991249552" Language="SFX">
 					<ShortName>Shakuhachi_D_High - 2.wav</ShortName>
