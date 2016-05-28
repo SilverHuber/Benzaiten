@@ -49,6 +49,7 @@
      <Compile Include="Assets\MyText.cs" />
      <Compile Include="Assets\Portal.cs" />
      <Compile Include="Assets\Scripts\Arduino.cs" />
+     <Compile Include="Assets\Scripts\Audio_FootStepScript.cs" />
      <Compile Include="Assets\Scripts\ButtonMovement.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Depth.cs" />
@@ -57,6 +58,7 @@
      <Compile Include="Assets\Scripts\MainSoundScript.cs" />
      <Compile Include="Assets\Scripts\MusicStateSwitch.cs" />
      <Compile Include="Assets\Scripts\NPCBehave.cs" />
+     <Compile Include="Assets\Scripts\Player_FootStepScript.cs" />
      <Compile Include="Assets\Scripts\RestoreObject.cs" />
      <Compile Include="Assets\Scripts\StartMusicTemp.cs" />
      <Compile Include="Assets\Scripts\Temple.cs" />
