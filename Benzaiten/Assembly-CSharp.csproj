@@ -51,7 +51,7 @@
      <Compile Include="Assets\Scripts\Arduino.cs" />
      <Compile Include="Assets\Scripts\Audio_FootStepScript.cs" />
      <Compile Include="Assets\Scripts\ButtonMovement.cs" />
-     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\CameraScript.cs" />
      <Compile Include="Assets\Scripts\Depth.cs" />
      <Compile Include="Assets\Scripts\DepthScanner.cs" />
      <Compile Include="Assets\Scripts\FluteMode.cs" />
@@ -63,7 +63,6 @@
      <Compile Include="Assets\Scripts\StartMusicTemp.cs" />
      <Compile Include="Assets\Scripts\Temple.cs" />
      <Compile Include="Assets\Scripts\Tree.cs" />
-     <Compile Include="Assets\TextManager.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AKRESULT.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkActionOnEventType.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkAudioFormat.cs" />
@@ -165,6 +164,7 @@
      <Compile Include="Assets\Wwise\Deployment\Components\AkTriggerMouseUp.cs" />
      <Compile Include="Assets\Wwise\Deployment\Components\AkUnityEventHandler.cs" />
      <Compile Include="Assets\Wwise\Deployment\Components\AkUtilities.cs" />
+     <Compile Include="Assets\movie.cs" />
      <Compile Include="Assets\textLerp.cs" />
      <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\Main.txt" />
      <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Main.txt" />

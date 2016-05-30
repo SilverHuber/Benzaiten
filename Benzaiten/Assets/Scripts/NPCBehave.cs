@@ -71,32 +71,9 @@ public class NPCBehave : MonoBehaviour
 	}
 
 
-	private IEnumerator Talking (GameObject encounter)
-	{
-
-		thisAnimator.SetBool ("Walking", false); 
-		thisAnimator.SetBool ("Greet", true);
-		yield return new WaitForSeconds (2f);
-		thisAnimator.SetBool ("Greet", false);
-		Debug.Log ("talking");
-		yield return new WaitForSeconds (10);
-		StartCoroutine (Talking (encounter));
-	}
 
 
 
-
-
-
-	//
-	//	void OnTriggerEnter2D (Collider2D otherCol)
-	//	{
-	//		if (otherCol.gameObject.tag == "Native" || otherCol.gameObject.tag == "Player")
-	//		{
-	//			StopAllCoroutines ();
-	//			StartCoroutine (Talking (otherCol.gameObject));
-	//		}
-	//	}
 
 
 

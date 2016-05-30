@@ -9,6 +9,8 @@ public class Temple : MonoBehaviour
 
 	public List<SpriteRenderer> itemsToFadeAway = new List<SpriteRenderer> ();
 	public List<SpriteRenderer> itemsToFadeIn = new List<SpriteRenderer> ();
+	public List<GameObject> ObjectsToDeactivate = new List<GameObject> ();
+	public List<GameObject> ObjectsToActivate = new List<GameObject> ();
 
 
 	// Use this for initialization
@@ -44,8 +46,19 @@ public class Temple : MonoBehaviour
 				color.a += 0.03f;
 				sR.color = color;
 			}
+
+			foreach (GameObject Obj in ObjectsToDeactivate)
+			{
+				Obj.SetActive (false);
+			}
+
+			foreach (GameObject Obj in ObjectsToActivate)
+			{
+				Obj.SetActive (true);
+			}
 		}
 
+	
 	}
 
 	void ChangeMusicState ()
