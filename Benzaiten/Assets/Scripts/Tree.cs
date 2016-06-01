@@ -17,7 +17,7 @@ public class Tree : MonoBehaviour
 		foreach (Transform child in transform)
 		{
 			leavesRenderers.Add (child.GetComponent <SpriteRenderer> ());
-
+			child.GetComponent<SpriteRenderer> ().sortingLayerName = GetComponent <SpriteRenderer> ().sortingLayerName;
 		}
 	}
 	

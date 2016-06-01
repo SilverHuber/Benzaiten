@@ -6,11 +6,12 @@ public class Portal : MonoBehaviour
 
 	public Transform moveTo;
 	public SpriteRenderer blackscreen;
+	public Camera mainCam;
+	public string cameraMode;
 
-	// Use this for initialization
 	void Start ()
 	{
-	
+		mainCam = Camera.main;
 	}
 	
 	// Update is called once per frame
@@ -41,6 +42,19 @@ public class Portal : MonoBehaviour
 			blackscreen.color = color;
 			yield return null;
 		}
+		if (cameraMode == "Road")
+		{
+			mainCam.GetComponent <CameraScript> ().currentCameraMode = CameraScript.CameraModes.Road;
+		}
+		if (cameraMode == "Temple")
+		{
+			mainCam.GetComponent <CameraScript> ().currentCameraMode = CameraScript.CameraModes.Follow;
+		}
+		if (cameraMode == "City")
+		{
+			mainCam.GetComponent <CameraScript> ().currentCameraMode = CameraScript.CameraModes.City;
+		}
+
 
 		yield return new WaitForSeconds (0.5f);
 

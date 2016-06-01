@@ -95,6 +95,7 @@ public class FluteMode : MonoBehaviour
 			currentSequence.Clear ();
 			SeqCorrect = false;
 			timeSinceLastNote = 0;
+			thisAnimator.SetBool ("SummonDrake", false);
 
 			MainSoundScript.Instance.PlaySFX ("SFX_FluteMode");
 
@@ -194,6 +195,9 @@ public class FluteMode : MonoBehaviour
 
 
 
+
+
+
 	
 
 			if (timeSinceLastNote > 1.5f && currentSequenceNote >= 2)
@@ -220,6 +224,7 @@ public class FluteMode : MonoBehaviour
 							NoteSymbols [i].sprite = succesNotes [4];
 					}
 					StartCoroutine (FadeSymbols ());
+					thisAnimator.SetBool ("SummonDrake", true);
 
 					// ANIM: play sequence animation
 					print ("equal to healing song");
@@ -232,6 +237,7 @@ public class FluteMode : MonoBehaviour
 					// SOUND : Play restore sequence
 					MainSoundScript.Instance.SetMusicState ("RestorationSong", true, 3);
 					MainSoundScript.Instance.PlaySFX ("SFX_Correct");
+					thisAnimator.SetBool ("SummonDrake", true);
 
 					// ANIM: play sequence animation
 					print ("equal to restoration song");
@@ -265,6 +271,7 @@ public class FluteMode : MonoBehaviour
 				{
 					// SOUND : Play restore sequence
 					MainSoundScript.Instance.PlaySFX ("SFX_Correct");
+					thisAnimator.SetBool ("SummonDrake", true);
 
 					//Placeholder
 					MainSoundScript.Instance.SetMusicState ("RainSong", true, 3);
