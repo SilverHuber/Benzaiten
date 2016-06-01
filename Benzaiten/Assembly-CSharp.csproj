@@ -62,10 +62,10 @@
      <Compile Include="Assets\Scripts\RestoreObject.cs" />
      <Compile Include="Assets\Scripts\StartMusicTemp.cs" />
      <Compile Include="Assets\Scripts\Temple.cs" />
+     <Compile Include="Assets\Scripts\Text_TempleBlock.cs" />
      <Compile Include="Assets\Scripts\Tree.cs" />
      <Compile Include="Assets\Scripts\movie.cs" />
      <Compile Include="Assets\Scripts\textLerp.cs" />
-     <Compile Include="Assets\Text_TempleBlock.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AKRESULT.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkActionOnEventType.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkAudioFormat.cs" />
