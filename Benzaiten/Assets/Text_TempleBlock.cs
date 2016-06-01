@@ -26,16 +26,21 @@ public class Text_TempleBlock : MonoBehaviour
 
 	}
 
-	void OnTriggerEnter2D ()
+	void OnTriggerEnter2D (Collider2D other)
 	{
-		if (onTriggertext)
-			textTypeScript.TypeLine (textToType, character);
-	
+		if (other.name == "Player")
+		{
+			if (onTriggertext)
+				textTypeScript.TypeLine (textToType, character);
+		}
 	}
 
 	void OnCollisionEnter2D ()
 	{
+		
+		print ("fda"); 
 		if (onTriggertext == false)
 			textTypeScript.TypeLine (textToType, character);
+		
 	}
 }
