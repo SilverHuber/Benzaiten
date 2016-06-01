@@ -61,6 +61,7 @@ namespace AK
                 static const AkUniqueID RESTORATIONSONG = 2631709116U;
                 static const AkUniqueID TEMPLE_MAIN = 2791456550U;
                 static const AkUniqueID TEMPLE_MYSTERY = 504713792U;
+                static const AkUniqueID YANMEI = 2829892590U;
             } // namespace STATE
         } // namespace MUSIC_SWITCH
 

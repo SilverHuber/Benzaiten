@@ -27,7 +27,7 @@ public class Tree : MonoBehaviour
 	
 		if (thisRO.blessed == true)
 		{
-			print ("leaves");
+			//print ("leaves");
 			foreach (SpriteRenderer sR in leavesRenderers)
 			{
 				Color color = sR.color;

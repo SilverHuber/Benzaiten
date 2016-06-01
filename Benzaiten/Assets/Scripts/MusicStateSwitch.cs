@@ -21,21 +21,26 @@ public class MusicStateSwitch : MonoBehaviour
 			{
 				MainSoundScript.Instance.PlaySFX ("SFX_TempleAmbience_Stop");
 				MainSoundScript.Instance.PlaySFX ("SFX_CityAmbience");
-				MainSoundScript.Instance.SetMusicState (ChangeToState, true, 2);
+				MainSoundScript.Instance.SetMusicState ("City", false, 2);
 				MainSoundScript.Instance.currentAmbientMain = "City";
+				print ("changed state to" + ChangeToState);
 			}
 			if (ChangeToState == "Temple_Main")
 			{
 				MainSoundScript.Instance.PlaySFX ("SFX_CityAmbience_Stop");
 				MainSoundScript.Instance.PlaySFX ("SFX_TempleAmbience");
-				MainSoundScript.Instance.SetMusicState (ChangeToState, false, 2);
+				MainSoundScript.Instance.SetMusicState ("Temple_Main", false, 2);
 				MainSoundScript.Instance.currentAmbientMain = "Temple_Main";
 				//MainSoundScript.Instance.PlaySFX ("SFX_WaterStream_Stop");
+				print ("changed state to" + ChangeToState);
+
 
 			}
 			if (ChangeToState == "Temple_Inside")
 			{
 				MainSoundScript.Instance.PlaySFX ("SFX_TempleAmbience_Stop");
+				print ("changed state to" + ChangeToState);
+
 
 
 			}

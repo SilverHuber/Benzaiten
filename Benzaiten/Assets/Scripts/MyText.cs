@@ -7,7 +7,7 @@ using System.Collections.Generic;
 public class MyText : MonoBehaviour
 {
 	private Image characterImage;
-	private float letterPause = 0.065f;
+	private float letterPause = 0.03f;
 	public bool typing = false;
 
 	public Image portrait;
@@ -83,7 +83,7 @@ public class MyText : MonoBehaviour
 
 	IEnumerator TypeText (string character)
 	{
-
+		bool playCharSound = true;
 		foreach (GameObject uiObject in uiGameobjects)
 		{
 			Color visible = new Color (0, 0, 0, 1);
@@ -96,7 +96,13 @@ public class MyText : MonoBehaviour
 			typing = true;
 			textComponent.text += letter;
 			//sound of character
-			MainSoundScript.Instance.PlayTalkSFX (character);
+			if (playCharSound) {
+				MainSoundScript.Instance.PlayTalkSFX (character);
+				playCharSound = false;
+			} else {
+				playCharSound = true;
+			}
+				
 
 			yield return 0;
 			yield return new WaitForSeconds (letterPause);

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
+
 public class Temple : MonoBehaviour
 {
 
@@ -11,6 +12,9 @@ public class Temple : MonoBehaviour
 	public List<SpriteRenderer> itemsToFadeIn = new List<SpriteRenderer> ();
 	public List<GameObject> ObjectsToDeactivate = new List<GameObject> ();
 	public List<GameObject> ObjectsToActivate = new List<GameObject> ();
+
+	bool _changedMusic = false;
+
 
 
 	// Use this for initialization
@@ -31,15 +35,18 @@ public class Temple : MonoBehaviour
 	
 		if (thisRO.blessed == true)
 		{
-			print ("leaves");
+			//print ("leaves");
 			foreach (SpriteRenderer sR in itemsToFadeAway)
 			{
 				Color color = sR.color;
 				color.a -= 0.03f;
 				sR.color = color;
 			}
-			Invoke ("ChangeMusicState", 3.0f);
-			print ("leaves");
+			if (!_changedMusic) {
+				Invoke ("ChangeMusicState", 3.0f);
+				_changedMusic = true;
+			}
+			//print ("leaves");
 			foreach (SpriteRenderer sR in itemsToFadeIn)
 			{
 				Color color = sR.color;
@@ -65,7 +72,7 @@ public class Temple : MonoBehaviour
 	{
 	
 		MainSoundScript.Instance.SetMusicState ("Temple_Main", false, 2);
-
+		MainSoundScript.Instance.currentAmbientMain = "Temple_Main";
 	
 	}
 }

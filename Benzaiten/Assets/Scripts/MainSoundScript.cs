@@ -22,7 +22,7 @@ public class MainSoundScript : MonoBehaviour {
 	public string musicSwitchGroup;
 
 	[HideInInspector]
-	public string currentAmbientMain = "Temple_Mystery";
+	public string currentAmbientMain;
 
 
 	// Use this for initialization
@@ -35,6 +35,11 @@ public class MainSoundScript : MonoBehaviour {
 		//PlayMusic("Music");
 		//SetMusicState ("Intro", true, 2);
 	
+	}
+
+	void Update () {
+
+
 	}
 
 
@@ -71,7 +76,12 @@ public class MainSoundScript : MonoBehaviour {
 	//Stes used for songs and adaptive music
 	public void SetMusicState(string stateName, bool toMain, int waitForSec ) {
 		if (stateName != null) {
-			StartCoroutine(SetMusicStateCoroutine(stateName, toMain, waitForSec));
+			AkSoundEngine.SetState (musicSwitchGroup, stateName);
+			print ("setting state to" + stateName);
+			StopCoroutine ("SetMusicStateCoroutine");
+			if (toMain) {
+				StartCoroutine (SetMusicStateCoroutine (stateName, toMain, waitForSec));
+			}
 		}
 	}
 
@@ -86,22 +96,24 @@ public class MainSoundScript : MonoBehaviour {
 		
 
 
-
+	void SetToMain (){
+		AkSoundEngine.SetState (musicSwitchGroup, currentAmbientMain);
+	
+	}
 		
 	
 	//Coroutine for States/Songs
 	IEnumerator SetMusicStateCoroutine(string stateName, bool toMain, int waitForSec)
 	{
-		if (stateName != null) {
-			AkSoundEngine.SetState (musicSwitchGroup, stateName);
-			if (toMain) {
+		//if (stateName != null) {}
 				if (waitForSec > 0) {
 					yield return new WaitForSeconds (waitForSec);
 				} else {
 					yield return new WaitForSeconds (3);
 				}
-				AkSoundEngine.SetState (musicSwitchGroup, currentAmbientMain);
-			}
-		}
-	}		
+		SetToMain ();
+	}
+		
+
+			
 }
