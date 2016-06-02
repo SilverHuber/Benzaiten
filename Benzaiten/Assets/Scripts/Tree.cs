@@ -18,6 +18,8 @@ public class Tree : MonoBehaviour
 		{
 			leavesRenderers.Add (child.GetComponent <SpriteRenderer> ());
 			child.GetComponent<SpriteRenderer> ().sortingLayerName = GetComponent <SpriteRenderer> ().sortingLayerName;
+			child.GetComponent<SpriteRenderer> ().sortingOrder = GetComponent <SpriteRenderer> ().sortingOrder + 1;
+
 		}
 	}
 	

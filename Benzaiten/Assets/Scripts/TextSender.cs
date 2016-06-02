@@ -11,9 +11,12 @@ public class TextSender : MonoBehaviour
 	public bool colliderNeeded;
 	public bool sendText;
 	private bool textHasBeenSended;
+	public bool TextOnlyOnce;
+	private bool allreadySaid;
 
 	void Start ()
 	{
+		allreadySaid = false;
 		textHasBeenSended = false;
 		if (colliderNeeded)
 		{
@@ -45,21 +48,26 @@ public class TextSender : MonoBehaviour
 
 	void OnTriggerEnter2D (Collider2D other)
 	{
-		if (other.name == "Player")
+		if (other.name == "Player" && allreadySaid == false)
 		{
 			if (onTriggertext)
-			if (textTypeScript.typing == false)
+			{
 				textTypeScript.TypeLine (textToType, character);
+				if (TextOnlyOnce)
+					allreadySaid = true;
+			}
 		}
 	}
 
-	void OnCollisionEnter2D ()
+	void OnCollisionEnter2D (Collision2D other)
 	{
-		
-		print ("fda"); 
+		if (other.gameObject.name == "Player" && allreadySaid == false)
 		if (onTriggertext == false)
-		if (textTypeScript.typing == false)
+		{
 			textTypeScript.TypeLine (textToType, character);
-		
+			if (TextOnlyOnce)
+				allreadySaid = true;
+		}
+
 	}
 }

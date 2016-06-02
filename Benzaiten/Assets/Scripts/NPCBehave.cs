@@ -13,18 +13,26 @@ public class NPCBehave : MonoBehaviour
 	public float walkingRadius;
 	public int timeBetweenWalks;
 	public float speed;
+	private bool moving;
 
 	void Start ()
 	{
-		speed = 3;
+		//speed = 3;
 		thisAnimator = GetComponent <Animator> ();
 		thisSpriteRenderer = GetComponent <SpriteRenderer> ();
 
-		if (!staticCharacter)
-			StartCoroutine (Wandering (new Vector2 (centerOfWalkingRadius.position.x + Random.Range (-walkingRadius, walkingRadius), centerOfWalkingRadius.position.y + Random.Range (-walkingRadius, walkingRadius))));
+//		if (!staticCharacter)
+//			StartCoroutine (Wandering (new Vector2 (centerOfWalkingRadius.position.x + Random.Range (-walkingRadius, walkingRadius), centerOfWalkingRadius.position.y + Random.Range (-walkingRadius, walkingRadius))));
 	}
 
-
+	void Update ()
+	{
+		if (!staticCharacter && moving == false)
+		{
+			moving = true;
+			StartCoroutine (Wandering (new Vector2 (centerOfWalkingRadius.position.x + Random.Range (-walkingRadius, walkingRadius), centerOfWalkingRadius.position.y + Random.Range (-walkingRadius, walkingRadius))));
+		}
+	}
 
 
 	/// <summary>
