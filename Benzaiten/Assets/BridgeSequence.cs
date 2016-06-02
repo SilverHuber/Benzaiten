@@ -7,6 +7,9 @@ public class BridgeSequence : MonoBehaviour
 	public Transform kenji;
 	public Transform maleArch;
 	public GameObject player;
+	public Transform kenjibenzPos;
+	public Transform malebenzPos;
+
 	public Transform finalRoadDestination;
 	private bool scenePlayed;
 	private MyText textTypeScript;
@@ -80,11 +83,14 @@ public class BridgeSequence : MonoBehaviour
 		yield return new WaitForSeconds (3f);
 		player.GetComponent <Animator> ().SetBool ("Walking", false);
 		yield return new WaitForSeconds (0.2f);
-		kenji.GetComponent <NPCBehave> ().centerOfWalkingRadius = player.transform;
-		maleArch.GetComponent <NPCBehave> ().centerOfWalkingRadius = player.transform;
+
+		kenji.GetComponent <NPCBehave> ().centerOfWalkingRadius = kenjibenzPos;
+		maleArch.GetComponent <NPCBehave> ().centerOfWalkingRadius = malebenzPos;
 		maleArch.GetComponent <NPCBehave> ().walkingRadius = 0;
 		maleArch.GetComponent <NPCBehave> ().walkingRadius = 0;
 		yield return new WaitForSeconds (6);
+
+		player.GetComponent <SpriteRenderer> ().flipX = true;
 		textTypeScript.TypeLine ("The Bridge... It has been restored... Lady, have you seen what happened?", "Kenji");
 		textTypeScript.TypeLine ("....... (What is happening! I can't talk!)", "Benzaiten");
 		textTypeScript.TypeLine ("Hmmm? Can't speak? If I can help you with anything, holler at ya boy. ", "Kenji");
@@ -92,6 +98,7 @@ public class BridgeSequence : MonoBehaviour
 		kenji.GetComponent <NPCBehave> ().centerOfWalkingRadius = finalRoadDestination;
 		maleArch.GetComponent <NPCBehave> ().centerOfWalkingRadius = finalRoadDestination;
 		yield return new WaitForSeconds (3);
+		player.GetComponent <SpriteRenderer> ().flipX = false;
 		player.GetComponent <ButtonMovement> ().enabled = true;
 		player.GetComponent <FluteMode> ().enabled = true;
 		player.GetComponent <BoxCollider2D> ().enabled = true;

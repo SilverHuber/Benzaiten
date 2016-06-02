@@ -14,7 +14,7 @@ public class CameraScript : MonoBehaviour
 		Follow,
 		Road,
 		City,
-
+		FinalRoad,
 	}
 
 	;
@@ -53,10 +53,10 @@ public class CameraScript : MonoBehaviour
 			{
 				targetPos.x = 79.5f;
 			}
-			if (targetPos.x < 67.5f)
+			if (targetPos.x < 67.7f)
 			{
 				
-				targetPos.x = 67.5f;
+				targetPos.x = 67.7f;
 			}
 			transform.position = Vector3.Lerp (transform.position, targetPos, smooth);   
 
@@ -86,10 +86,37 @@ public class CameraScript : MonoBehaviour
 			}
 			transform.position = Vector3.Lerp (transform.position, targetPos, smooth);   
 			break;
-		
+		case CameraModes.FinalRoad:
+			targetPos.x = target.position.x;
+			targetPos.y = target.position.y;
+			targetPos.z = transform.position.z;
+			if (targetPos.x > -41.20012f)
+			{
+				targetPos.x = -41.20012f;
+			}
+			if (targetPos.x < -53.2784f)
+			{
+
+				targetPos.x = -53.2784f;
+			}
+
+			if (targetPos.y > -1.635244f)
+			{
+				targetPos.y = -1.635244f;
+			}
+			if (targetPos.y < -3.58f)
+			{
+
+				targetPos.y = -3.58f;
+			}
+			transform.position = Vector3.Lerp (transform.position, targetPos, smooth);   
+			break;
+
 		}
-
-
-
+		
 	}
+
+
+
 }
+

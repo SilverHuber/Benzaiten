@@ -1,12 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Tree.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Portal.cs">
     <Files>
-      <File FileName="Assets/BridgeSequence.cs" Line="94" Column="39" />
-      <File FileName="Assets/Bridge.cs" Line="26" Column="82" />
+      <File FileName="Assets/Scripts/CameraScript.cs" Line="104" Column="5" />
+      <File FileName="Assets/BridgeSequence.cs" Line="92" Column="3" />
+      <File FileName="Assets/Bridge.cs" Line="1" Column="1" />
       <File FileName="Assets/IntroText.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/TextSender.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/CameraScript.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/MyText.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Temple.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/NPCBehave.cs" Line="1" Column="1" />
@@ -15,7 +15,7 @@
       <File FileName="Assets/Scripts/MainSoundScript.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/FluteMode.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Tree.cs" Line="21" Column="106" />
-      <File FileName="Assets/Scripts/Portal.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Portal.cs" Line="59" Column="97" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

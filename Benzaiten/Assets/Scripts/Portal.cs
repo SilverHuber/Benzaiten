@@ -54,7 +54,10 @@ public class Portal : MonoBehaviour
 		{
 			mainCam.GetComponent <CameraScript> ().currentCameraMode = CameraScript.CameraModes.City;
 		}
-
+		if (cameraMode == "FinalRoad")
+		{
+			mainCam.GetComponent <CameraScript> ().currentCameraMode = CameraScript.CameraModes.FinalRoad;
+		}
 
 		yield return new WaitForSeconds (0.5f);
 
