@@ -3,11 +3,23 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
+public class UIText
+{
+	public string characterName;
+	public string textToType;
+
+	public UIText (string text, string name)
+	{
+		characterName = name;
+		textToType = text;
+	}
+}
 
 public class MyText : MonoBehaviour
 {
 	private Image characterImage;
-	private float letterPause = 0.03f;
+	private Image background;
+	private float letterPause = 0.01f;
 	public bool typing = false;
 
 	public Image portrait;
@@ -17,9 +29,12 @@ public class MyText : MonoBehaviour
 	public Sprite femArchPortrait;
 	public Sprite maleArchPortrait;
 
+	public Sprite benzaitenBackground;
+	public Sprite kenjiBackground;
+	public Sprite femArchBackground;
+	public Sprite maleArchBackground;
 
 	public List<GameObject> uiGameobjects;
-	public List<GameObject> textsToType;
 
 	string message;
 	private Text textComponent;
@@ -27,6 +42,7 @@ public class MyText : MonoBehaviour
 	private Color invisible;
 	private Color visble;
 
+	public List<UIText> textsToType = new List<UIText> ();
 
 
 
@@ -41,6 +57,10 @@ public class MyText : MonoBehaviour
 			if (child.name == "Character")
 			{
 				characterImage = child.GetComponent <Image> ();
+			}
+			if (child.name == "Background")
+			{
+				background = child.GetComponent <Image> ();
 			}
 		}
 		invisible = new Color (1, 1, 1, 0);
@@ -57,27 +77,61 @@ public class MyText : MonoBehaviour
 
 	void Start ()
 	{
-	}
+		//textsToType.Add (new UIText ("Ik wou dat ik een dolfijn was met augurken als rot toch eens op, hufter", "FemaleArch"));
 
+
+	}
 
 	void Update ()
 	{
-		if (typing == false)
+		if (Input.GetKeyDown (KeyCode.Space))
+			TypeLine ("i just wanna love you", "FemaleArch");
+
+		if (Input.GetKeyDown (KeyCode.R))
+			TypeLine ("inshalallalala", "Kenji");
+
+		if (Input.GetKeyDown (KeyCode.T))
+			TypeLine ("kdjfkjdskfjdlfnsdlkfjkldjfkl", "MaleArch");
+			
+		Debug.Log (textsToType.Count);
+
+		print (textsToType [0]);
+	}
+
+
+
+
+	public void TypeLine (string textToType, string character)
+	{
+		if (typing == true)
 		{
-			if (Input.GetKeyDown (KeyCode.Space))
+			textsToType.Add (new UIText (textToType, character));
+		} else
+		{
+
+			if (character == "Kenji")
 			{
-				TypeLine ("I love you my love", "Kenji");
+				portrait.sprite = kenjiPortrait;
+				background.sprite = kenjiBackground;
+			} else if (character == "FemaleArch")
+			{
+				portrait.sprite = femArchPortrait;
+				background.sprite = femArchBackground;
+
+			} else if (character == "MaleArch")
+			{
+				portrait.sprite = maleArchPortrait;
+				background.sprite = maleArchBackground;
+
+			} else
+			{
+				print ("name not regocnized");
 			}
 
-			if (Input.GetKeyDown (KeyCode.V))
-			{
-				TypeLine ("Data is corrupted", "FemaleArch");
-			}
-
-			if (Input.GetKeyDown (KeyCode.C))
-			{
-				TypeLine ("OMG... The bridge is kapot... What nu?", "MaleArch");
-			}
+			textComponent.text = "";
+			message = textToType;
+			portrait.SetNativeSize ();
+			StartCoroutine (TypeText (character));
 		}
 	}
 
@@ -96,10 +150,12 @@ public class MyText : MonoBehaviour
 			typing = true;
 			textComponent.text += letter;
 			//sound of character
-			if (playCharSound) {
+			if (playCharSound)
+			{
 				MainSoundScript.Instance.PlayTalkSFX (character);
 				playCharSound = false;
-			} else {
+			} else
+			{
 				playCharSound = true;
 			}
 				
@@ -107,44 +163,27 @@ public class MyText : MonoBehaviour
 			yield return 0;
 			yield return new WaitForSeconds (letterPause);
 		}
-		typing = false;
+
 
 		yield return new WaitForSeconds (4);
 
+
+		typing = false;
 		foreach (GameObject uiObject in uiGameobjects)
 		{
-			
+
 			uiObject.SetActive (false);
 			textComponent.color = invisible;
 		}
 
+		if (textsToType.Count > 0)
+		{
+			TypeLine (textsToType [0].textToType, textsToType [0].characterName);
+			textsToType.RemoveAt (0);
+			textsToType.Sort ();
+		}
+
+
 	}
-
-	/// <summary>
-	/// Types the line.
-	/// </summary>
-	/// <param name="textToType">Text to type.</param>
-	/// <param name="character">Name of the Character.</param>
-	public void TypeLine (string textToType, string character)
-	{
-		if (character == "Kenji")
-		{
-			portrait.sprite = kenjiPortrait;
-		}
-		if (character == "FemaleArch")
-		{
-			portrait.sprite = femArchPortrait;
-		}
-		if (character == "MaleArch")
-		{
-			portrait.sprite = maleArchPortrait;
-		}
-
-		textComponent.text = "";
-		message = textToType;
-		portrait.SetNativeSize ();
-		StartCoroutine (TypeText (character));
-	}
-
 
 }

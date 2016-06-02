@@ -7,26 +7,31 @@ public class Temple : MonoBehaviour
 {
 
 	private RestoreObject thisRO;
-
+	private TextSender thisTS;
+	private bool textHasBeenSent;
 	public List<SpriteRenderer> itemsToFadeAway = new List<SpriteRenderer> ();
 	public List<SpriteRenderer> itemsToFadeIn = new List<SpriteRenderer> ();
 	public List<GameObject> ObjectsToDeactivate = new List<GameObject> ();
 	public List<GameObject> ObjectsToActivate = new List<GameObject> ();
-
+	private NPCBehave femArch;
 	bool _changedMusic = false;
-
-
+	private MyText textTypeScript;
 
 	// Use this for initialization
 	void Start ()
 	{
-		thisRO = GetComponent <RestoreObject> ();
+		textTypeScript = GameObject.FindGameObjectWithTag ("Text").GetComponent <MyText> ();
 
+		textHasBeenSent = false;
+		thisRO = GetComponent <RestoreObject> ();
+		thisTS = GetComponent <TextSender> ();
 		foreach (Transform child in transform)
 		{
 			itemsToFadeAway.Add (child.GetComponent <SpriteRenderer> ());
 
 		}
+
+		femArch = GameObject.Find ("FemaleArch").GetComponent <NPCBehave> ();
 	}
 	
 	// Update is called once per frame
@@ -42,7 +47,8 @@ public class Temple : MonoBehaviour
 				color.a -= 0.03f;
 				sR.color = color;
 			}
-			if (!_changedMusic) {
+			if (!_changedMusic)
+			{
 				Invoke ("ChangeMusicState", 3.0f);
 				_changedMusic = true;
 			}
@@ -63,7 +69,16 @@ public class Temple : MonoBehaviour
 			{
 				Obj.SetActive (true);
 			}
+
+			if (textHasBeenSent == false)
+			{
+				femArch.GetComponent <Animator> ().SetTrigger ("Surprised");
+				thisTS.sendText = true;
+				textHasBeenSent = true;
+			}
 		}
+
+
 
 	
 	}
@@ -75,4 +90,7 @@ public class Temple : MonoBehaviour
 		MainSoundScript.Instance.currentAmbientMain = "Temple_Main";
 	
 	}
+
+
+
 }
