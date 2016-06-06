@@ -68,7 +68,12 @@ $RECYCLE.BIN/
 # Unity3D .gitignore file.
 # Store this file at the root of your local repository.
 .DS_Store
+.VolumeIcon.icns
+.fseventsd
 Temp
+ "Icon\r"
+Icon^M^M
+Iconr?
 *.csproj
 *.pidb
 *.sln
