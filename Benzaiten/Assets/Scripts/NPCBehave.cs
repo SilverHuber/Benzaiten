@@ -56,7 +56,7 @@ public class NPCBehave : MonoBehaviour
 				thisSpriteRenderer.flipX = false;
 			}
 
-			Debug.Log ("Wandering");
+		//	Debug.Log ("Wandering");
 			transform.position = Vector2.MoveTowards (transform.position, newPos, speed * Time.deltaTime);
 			thisAnimator.SetBool ("Walking", true);
 

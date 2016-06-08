@@ -23,6 +23,8 @@
 				<Event Id="4175340882" Name="Footstep_Stop"/>
 				<Event Id="3991942870" Name="Music"/>
 				<Event Id="3227181061" Name="Music_Stop"/>
+				<Event Id="3103472528" Name="Play_Intro"/>
+				<Event Id="1930240631" Name="Robot"/>
 				<Event Id="3674563696" Name="SFX_CityAmbience"/>
 				<Event Id="1481213823" Name="SFX_CityAmbience_Stop"/>
 				<Event Id="212976137" Name="SFX_Correct"/>
@@ -30,6 +32,8 @@
 				<Event Id="3225443594" Name="SFX_NotCorrect"/>
 				<Event Id="528352284" Name="SFX_OldMan"/>
 				<Event Id="1904851423" Name="SFX_Rain"/>
+				<Event Id="3025259066" Name="SFX_River_Play"/>
+				<Event Id="129374020" Name="SFX_River_Stop"/>
 				<Event Id="2443815734" Name="SFX_TempleAmbience"/>
 				<Event Id="3082996645" Name="SFX_TempleAmbience_Stop"/>
 				<Event Id="2379149370" Name="SFX_WaterStream"/>
@@ -44,11 +48,13 @@
 				<Event Id="741713019" Name="Shaku_G"/>
 				<Event Id="4207414713" Name="Shakuryu_Speak_Start"/>
 				<Event Id="3333863699" Name="Shakuryu_Speak_Stop"/>
+				<Event Id="1837763790" Name="Stop_Intro"/>
 				<Event Id="72131951" Name="Talk_Archeologist_Female"/>
 				<Event Id="126254636" Name="Talk_Archeologist_Male"/>
 				<Event Id="402657552" Name="Talk_Boy"/>
 				<Event Id="1052734239" Name="Talk_Kenji"/>
 				<Event Id="333759533" Name="Talk_Spirit"/>
+				<Event Id="691871507" Name="Talk_Toma"/>
 				<Event Id="2135324925" Name="Talk_Yanmei"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -83,6 +89,10 @@
 				<File Id="130970819" Language="SFX">
 					<ShortName>Nature_Crickets_Loop.wav</ShortName>
 					<Path>SFX\Nature_Crickets_Loop_E600AF7B.wem</Path>
+				</File>
+				<File Id="131963528" Language="SFX">
+					<ShortName>SW003_Robot_Voices_Creature_24_Robot_Speaking_Talking_Gibberish_Babbling_Low_Register_Constant_Pitch.wav</ShortName>
+					<Path>SFX\SW003_Robot_Voices_Creature_24_Robot_Speaking_Talking_Gibberish_Babbling_Low_Register_Constant_Pitch_6848314D.wem</Path>
 				</File>
 				<File Id="139266227" Language="SFX">
 					<ShortName>Shakuhachi_C_high - 1.wav</ShortName>
@@ -156,6 +166,10 @@
 					<ShortName>Shakuhachi_Bb_high - 1.wav</ShortName>
 					<Path>SFX\Shakuhachi_Bb_high - 1_A65A97ED.wem</Path>
 				</File>
+				<File Id="370048598" Language="SFX">
+					<ShortName>City_Boy Violin2.wav</ShortName>
+					<Path>SFX\City_Boy Violin2_6848314D.wem</Path>
+				</File>
 				<File Id="416858663" Language="SFX">
 					<ShortName>SFX_RainWind.wav</ShortName>
 					<Path>SFX\SFX_RainWind_1F561A99.wem</Path>
@@ -163,6 +177,14 @@
 				<File Id="440137585" Language="SFX">
 					<ShortName>Shakuhachi_D_High - 3.wav</ShortName>
 					<Path>SFX\Shakuhachi_D_High - 3_A65A97ED.wem</Path>
+				</File>
+				<File Id="446391149" Language="SFX">
+					<ShortName>Song_RestoreSuper_110BPM.wav</ShortName>
+					<Path>SFX\Song_RestoreSuper_110BPM_6848314D.wem</Path>
+				</File>
+				<File Id="461315857" Language="SFX">
+					<ShortName>nya.wav</ShortName>
+					<Path>SFX\nya_BD8333EB.wem</Path>
 				</File>
 				<File Id="474636387" Language="SFX">
 					<ShortName>Temple_Music_Introduction_Mystery.wav</ShortName>
@@ -208,6 +230,10 @@
 					<ShortName>Shakuhachi_G_high - 3.wav</ShortName>
 					<Path>SFX\Shakuhachi_G_high - 3_A65A97ED.wem</Path>
 				</File>
+				<File Id="647589794" Language="SFX">
+					<ShortName>River2.wav</ShortName>
+					<Path>SFX\River2_CD39E4D0.wem</Path>
+				</File>
 				<File Id="665453822" Language="SFX">
 					<ShortName>Shaku_Mordent_A - 1.wav</ShortName>
 					<Path>SFX\Shaku_Mordent_A - 1_A65A97ED.wem</Path>
@@ -244,10 +270,6 @@
 					<ShortName>Shakuhachi_B_high - 1.wav</ShortName>
 					<Path>SFX\Shakuhachi_B_high - 1_A65A97ED.wem</Path>
 				</File>
-				<File Id="826506812" Language="SFX">
-					<ShortName>YanmeiTheme_25_5.wav</ShortName>
-					<Path>SFX\YanmeiTheme_25_5_6848314D.wem</Path>
-				</File>
 				<File Id="841479861" Language="SFX">
 					<ShortName>Song_Healing_110BPM.wav</ShortName>
 					<Path>SFX\Song_Healing_110BPM_6848314D.wem</Path>
@@ -255,6 +277,14 @@
 				<File Id="855598409" Language="SFX">
 					<ShortName>StartFluteMode2.wav</ShortName>
 					<Path>SFX\StartFluteMode2_A65A97ED.wem</Path>
+				</File>
+				<File Id="863999685" Language="SFX">
+					<ShortName>IntroCinemetic_Audio.wav</ShortName>
+					<Path>SFX\IntroCinemetic_Audio_6848314D.wem</Path>
+				</File>
+				<File Id="872301346" Language="SFX">
+					<ShortName>YanmeiTheme_2_6.wav</ShortName>
+					<Path>SFX\YanmeiTheme_2_6_6848314D.wem</Path>
 				</File>
 				<File Id="895407349" Language="SFX">
 					<ShortName>hall ambiance people far st.wav</ShortName>

@@ -17,6 +17,8 @@ namespace AK
         static const AkUniqueID FOOTSTEP_STOP = 4175340882U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID MUSIC_STOP = 3227181061U;
+        static const AkUniqueID PLAY_INTRO = 3103472528U;
+        static const AkUniqueID ROBOT = 1930240631U;
         static const AkUniqueID SFX_CITYAMBIENCE = 3674563696U;
         static const AkUniqueID SFX_CITYAMBIENCE_STOP = 1481213823U;
         static const AkUniqueID SFX_CORRECT = 212976137U;
@@ -24,6 +26,8 @@ namespace AK
         static const AkUniqueID SFX_NOTCORRECT = 3225443594U;
         static const AkUniqueID SFX_OLDMAN = 528352284U;
         static const AkUniqueID SFX_RAIN = 1904851423U;
+        static const AkUniqueID SFX_RIVER_PLAY = 3025259066U;
+        static const AkUniqueID SFX_RIVER_STOP = 129374020U;
         static const AkUniqueID SFX_TEMPLEAMBIENCE = 2443815734U;
         static const AkUniqueID SFX_TEMPLEAMBIENCE_STOP = 3082996645U;
         static const AkUniqueID SFX_WATERSTREAM = 2379149370U;
@@ -38,11 +42,13 @@ namespace AK
         static const AkUniqueID SHAKU_G = 741713019U;
         static const AkUniqueID SHAKURYU_SPEAK_START = 4207414713U;
         static const AkUniqueID SHAKURYU_SPEAK_STOP = 3333863699U;
+        static const AkUniqueID STOP_INTRO = 1837763790U;
         static const AkUniqueID TALK_ARCHEOLOGIST_FEMALE = 72131951U;
         static const AkUniqueID TALK_ARCHEOLOGIST_MALE = 126254636U;
         static const AkUniqueID TALK_BOY = 402657552U;
         static const AkUniqueID TALK_KENJI = 1052734239U;
         static const AkUniqueID TALK_SPIRIT = 333759533U;
+        static const AkUniqueID TALK_TOMA = 691871507U;
         static const AkUniqueID TALK_YANMEI = 2135324925U;
     } // namespace EVENTS
 
@@ -59,6 +65,7 @@ namespace AK
                 static const AkUniqueID INTRO = 1125500713U;
                 static const AkUniqueID RAINSONG = 405763060U;
                 static const AkUniqueID RESTORATIONSONG = 2631709116U;
+                static const AkUniqueID RESTORATIONSUPER = 4018152828U;
                 static const AkUniqueID TEMPLE_MAIN = 2791456550U;
                 static const AkUniqueID TEMPLE_MYSTERY = 504713792U;
                 static const AkUniqueID YANMEI = 2829892590U;
@@ -86,6 +93,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID DISTANCETOVIOLIN = 2369384164U;
         static const AkUniqueID SS_AIR_FEAR = 1351367891U;
         static const AkUniqueID SS_AIR_FREEFALL = 3002758120U;
         static const AkUniqueID SS_AIR_FURY = 1029930033U;

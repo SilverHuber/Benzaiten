@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{E8536A81-0CEB-490A-B618-24711AA6A8AA}'
-    m_lastTimePsrt1: 1526263047
-    m_lastTimePart2: -1999403290
+    m_lastTimePsrt1: -1666685510
+    m_lastTimePart2: -1999400990
     List:
     - Name: Footstep_Start
       Path: Default Work Unit\SFX\Footsteps\Footstep_Start
@@ -70,6 +70,32 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1067786235
       Guid: 3f1b0d3af6f14944be0730548285d5d9
+      maxAttenuation: 0
+    - Name: Play_Intro
+      Path: Default Work Unit\Music\Play_Intro
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Play_Intro
+        ObjectType: 3
+      ID: -1191494768
+      Guid: 1beea40d56a25c469d8f08bb787bcd4d
+      maxAttenuation: 0
+    - Name: Robot
+      Path: Default Work Unit\SFX\Talk\Robot
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Talk
+        ObjectType: 4
+      - ElementName: Robot
+        ObjectType: 3
+      ID: 1930240631
+      Guid: 50ae39c65193544c8fbd42f4eb84f9f9
       maxAttenuation: 0
     - Name: SFX_CityAmbience
       Path: Default Work Unit\SFX\Ambience\SFX_CityAmbience
@@ -168,6 +194,34 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1904851423
       Guid: 87e392f2a3966f45a9acf9eff1e18122
+      maxAttenuation: 0
+    - Name: SFX_River_Play
+      Path: Default Work Unit\SFX\Ambience\SFX_River_Play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Ambience
+        ObjectType: 4
+      - ElementName: SFX_River_Play
+        ObjectType: 3
+      ID: -1269708230
+      Guid: 2a22e5fb89a76444bc098ff9f9a52674
+      maxAttenuation: 0
+    - Name: SFX_River_Stop
+      Path: Default Work Unit\SFX\Ambience\SFX_River_Stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Ambience
+        ObjectType: 4
+      - ElementName: SFX_River_Stop
+        ObjectType: 3
+      ID: 129374020
+      Guid: 12728b7e6c54214f92a8d6540d6700be
       maxAttenuation: 0
     - Name: SFX_TempleAmbience
       Path: Default Work Unit\SFX\Ambience\SFX_TempleAmbience
@@ -349,6 +403,18 @@ MonoBehaviour:
       ID: -961103597
       Guid: 1863a790ba8c3243a2caf6481ae6c378
       maxAttenuation: 0
+    - Name: Stop_Intro
+      Path: Default Work Unit\Music\Stop_Intro
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Stop_Intro
+        ObjectType: 3
+      ID: 1837763790
+      Guid: f4f7fac6dfeed743abf95a575466c57f
+      maxAttenuation: 0
     - Name: Talk_Archeologist_Female
       Path: Default Work Unit\SFX\Talk\Talk_Archeologist_Female
       PathAndIcons:
@@ -419,6 +485,20 @@ MonoBehaviour:
       ID: 333759533
       Guid: a7ac83fe61b09f4492058a4148a6a75f
       maxAttenuation: 0
+    - Name: Talk_Toma
+      Path: Default Work Unit\SFX\Talk\Talk_Toma
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Talk
+        ObjectType: 4
+      - ElementName: Talk_Toma
+        ObjectType: 3
+      ID: 691871507
+      Guid: a611427c1c70034989583fe4e969afcd
+      maxAttenuation: 0
     - Name: Talk_Yanmei
       Path: Default Work Unit\SFX\Talk\Talk_Yanmei
       PathAndIcons:
@@ -444,8 +524,8 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{9F5DDC3C-8182-4D84-86B0-FC7EFC28698E}'
-    m_lastTimePsrt1: -574583033
-    m_lastTimePart2: -1999402478
+    m_lastTimePsrt1: 1824447377
+    m_lastTimePart2: -1999402052
     List:
     - Name: Music_switch
       Path: Default Work Unit\Music_switch
@@ -463,6 +543,7 @@ MonoBehaviour:
       - None
       - RainSong
       - RestorationSong
+      - RestorationSuper
       - Temple_Main
       - Temple_Mystery
       - Yanmei
@@ -479,13 +560,15 @@ MonoBehaviour:
         ObjectType: 8
       - ElementName: RestorationSong
         ObjectType: 8
+      - ElementName: RestorationSuper
+        ObjectType: 8
       - ElementName: Temple_Main
         ObjectType: 8
       - ElementName: Temple_Mystery
         ObjectType: 8
       - ElementName: Yanmei
         ObjectType: 8
-      valueIDs: 902dcae75e9a03bb29c71543db3ba32cf4732f18bcb1dc9c263f62a64052151eeebbaca8
+      valueIDs: 902dcae75e9a03bb29c71543db3ba32cf4732f18bcb1dc9c7c2580ef263f62a64052151eeebbaca8
       ValueGuids:
       - bytes: 6aaa392fa92f0b4f8c9117c284fe9deb
       - bytes: 57343f497452f344b961149a963c2a31
@@ -493,6 +576,7 @@ MonoBehaviour:
       - bytes: 173d4d96b91a6e48822a0bdd462a57f0
       - bytes: d642786f27283340ab1bcf9db9054e22
       - bytes: f84809a2ff125c4cb6ccdf5782226c50
+      - bytes: 0e52f941f354ca4284e410042660a229
       - bytes: 9ca9b4570cc0954d8a7e33ccf94f7af6
       - bytes: 6cf4fbd4f28afe4d9c3e6a0256292953
       - bytes: 3894b36866a5174d8d8a19d3dc02ff01
@@ -548,7 +632,15 @@ MonoBehaviour:
         ObjectType: 7
       ID: -1133058374
       Guid: 0e09e257cbdfeb43b65fc62936defe2c
-  ExpandedItems: []
+  ExpandedItems:
+  - /Benzaiten
+  - /Benzaiten/Events
+  - /Benzaiten/Events/Default Work Unit
+  - /Benzaiten/Events/Default Work Unit/SFX
+  - /Benzaiten/Events/Default Work Unit/SFX/Ambience
+  - /Benzaiten/States
+  - /Benzaiten/States/Default Work Unit
+  - /Benzaiten/States/Default Work Unit/Music_switch
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

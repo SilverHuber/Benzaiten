@@ -104,9 +104,9 @@ public class MyText : MonoBehaviour
 		if (Input.GetKeyDown (KeyCode.T))
 			TypeLine ("kdjfkjdskfjdlfnsdlkfjkldjfkl", "MaleArch");
 			
-		Debug.Log (textsToType.Count);
+	//	Debug.Log (textsToType.Count);
 
-		print (textsToType [0]);
+	//	print (textsToType [0]);
 	}
 
 

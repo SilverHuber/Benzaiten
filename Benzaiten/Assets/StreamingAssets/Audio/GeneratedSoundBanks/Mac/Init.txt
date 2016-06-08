@@ -11,6 +11,7 @@ State	ID	Name	State Group			Notes
 	2829892590	Yanmei	Music_switch			
 	3137575518	HealingSong	Music_switch			
 	3888786832	City	Music_switch			
+	4018152828	RestorationSuper	Music_switch			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	

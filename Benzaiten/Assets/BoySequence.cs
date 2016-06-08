@@ -12,6 +12,7 @@ public class BoySequence : MonoBehaviour
 	public BiwaSequence bridgeseq;
 	private GameObject player;
 	private bool saidEncounterText;
+	public Sound_Boy boySoundScript;
 
 	void Start ()
 	{
@@ -22,6 +23,7 @@ public class BoySequence : MonoBehaviour
 		catAnimator = GameObject.Find ("Cat").GetComponent <Animator> ();
 		textTypeScript = GameObject.FindGameObjectWithTag ("Text").GetComponent <MyText> ();
 		player = GameObject.FindGameObjectWithTag ("Player");
+		boySoundScript = gameObject.GetComponent<Sound_Boy> ();
 	}
 	
 	// Update is called once per frame
@@ -43,6 +45,7 @@ public class BoySequence : MonoBehaviour
 		if (other.name == "Player" && saidEncounterText == false)
 		{
 			StartCoroutine (BoyEncounter ());
+			MainSoundScript.Instance.PlaySFX ("Footstep_Stop");
 			saidEncounterText = true;
 		}
 	}
@@ -77,6 +80,7 @@ public class BoySequence : MonoBehaviour
 		textTypeScript.TypeLine ("Woah! How did you do that? You must be Benzaiten; the goddess my grandma told me so many stories about!", "Boy");
 		textTypeScript.TypeLine ("Thank you so much!", "Boy");
 		textTypeScript.TypeLine ("Miauw!", "Toma");
+		boySoundScript.helpedBoy = true;
 		yield return new WaitForSeconds (10);
 		player.GetComponent <ButtonMovement> ().enabled = true;
 		player.GetComponent <FluteMode> ().enabled = true;

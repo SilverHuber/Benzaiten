@@ -100,7 +100,6 @@ public class FluteMode : MonoBehaviour
 			thisAnimator.SetBool ("SummonDrake", false);
 
 			MainSoundScript.Instance.PlaySFX ("SFX_FluteMode");
-
 			thisAnimator.SetBool ("PlayingFlute", true);
 		} else if ((Input.GetKeyDown (KeyCode.Q) && flutemode == true))
 		{
@@ -117,8 +116,9 @@ public class FluteMode : MonoBehaviour
 
 		
 
-			if (currentSequenceNote < 5)
+			if (currentSequenceNote < 7)
 			{
+				
 				if (Input.GetKeyDown (KeyCode.Alpha1) || Arduino1pressed)
 				{
 					
@@ -133,6 +133,7 @@ public class FluteMode : MonoBehaviour
 					currentSequence.Add (a);
 					currentSequenceNote++;
 					timeSinceLastNote = 0;
+					print (currentSequence.Count);
 
 				}
 
@@ -149,6 +150,7 @@ public class FluteMode : MonoBehaviour
 					currentSequence.Add (b);
 					currentSequenceNote++;
 					timeSinceLastNote = 0;
+					print (currentSequence.Count);
 				}
 
 				if (Input.GetKeyDown (KeyCode.Alpha3))
@@ -163,6 +165,7 @@ public class FluteMode : MonoBehaviour
 					currentSequence.Add (c);
 					currentSequenceNote++;
 					timeSinceLastNote = 0;
+					print (currentSequence.Count);
 				}
 				if (Input.GetKeyDown (KeyCode.Alpha4))
 				{
@@ -176,6 +179,7 @@ public class FluteMode : MonoBehaviour
 					currentSequence.Add (d);
 					currentSequenceNote++;
 					timeSinceLastNote = 0;
+					print (currentSequence.Count);
 				}
 
 				if (Input.GetKeyDown (KeyCode.Alpha5))
@@ -190,6 +194,7 @@ public class FluteMode : MonoBehaviour
 					currentSequence.Add (e);
 					currentSequenceNote++;
 					timeSinceLastNote = 0;
+					print (currentSequence.Count);
 				}
 
 
@@ -288,9 +293,9 @@ public class FluteMode : MonoBehaviour
 					thisAnimator.SetBool ("SummonDrake", true);
 
 					//Placeholder
-					MainSoundScript.Instance.SetMusicState ("RainSong", true, 3);
+					MainSoundScript.Instance.SetMusicState ("RestorationSuper", true, 3);
 					// ANIM: play sequence animation
-					print ("equal to build song // still a placeholder ");
+					print ("equal to build/Super song ");
 					SeqCorrect = true;
 					flutemode = false;
 
@@ -338,7 +343,7 @@ public class FluteMode : MonoBehaviour
 
 
 
-				if ((timeSinceLastNote > 1.5f && currentSequenceNote >= 6 && SeqCorrect == false) || timeSinceLastNote > 4.0f)
+				if ((timeSinceLastNote > 1.5f && currentSequenceNote > 6 && SeqCorrect == false) || timeSinceLastNote > 4.0f)
 				{
 					flutemode = false;
 					print ("sequence is wrong or waited to long");

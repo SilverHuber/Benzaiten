@@ -47,6 +47,7 @@ public class BridgeSequence : MonoBehaviour
 			if (other.name == "Player")
 			{
 				other.GetComponent <ButtonMovement> ().enabled = false;
+				MainSoundScript.Instance.PlaySFX ("Footstep_Stop");
 				other.GetComponent <FluteMode> ().enabled = false;
 				other.GetComponent <BoxCollider2D> ().enabled = false;
 				other.GetComponent <Animator> ().SetBool ("Walking", false);

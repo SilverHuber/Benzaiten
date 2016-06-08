@@ -12,10 +12,22 @@ public class AkTriggerEnter : AkTriggerBase
 {
 	void OnTriggerEnter(Collider in_other)
 	{
+		print ("enteredsoundtrigger!!!");
 		if(triggerDelegate != null) 
 		{
 			triggerDelegate(in_other.gameObject);
 		}
+	}
+	void OnTriggerEnter2D (Collider2D in_other)
+	{
+	
+	if(triggerDelegate != null) 
+	{
+			if (in_other.gameObject.name == "Player") {
+				print ("enteredsoundtrigger!!!");
+				triggerDelegate (in_other.gameObject);
+			}
+	}
 	}
 }
 

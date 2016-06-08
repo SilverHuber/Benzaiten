@@ -61,6 +61,15 @@ public class MainSoundScript : MonoBehaviour {
 			if (characterName == "MaleArch"){
 				AkSoundEngine.PostEvent ("Talk_Archeologist_Male", this.gameObject);
 			}
+			if (characterName == "Boy"){
+				AkSoundEngine.PostEvent ("Talk_Boy", this.gameObject);
+			}
+			if (characterName == "Yinmei"){
+				AkSoundEngine.PostEvent ("Talk_Yanmei", this.gameObject);
+			}
+			if (characterName == "Toma"){
+				AkSoundEngine.PostEvent ("Talk_Toma", this.gameObject);
+			}
 
 		}
 	}

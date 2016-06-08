@@ -1,12 +1,14 @@
 Event	ID	Name			Wwise Object Path	Notes
 	72131951	Talk_Archeologist_Female			\Default Work Unit\SFX\Talk\Talk_Archeologist_Female	
 	126254636	Talk_Archeologist_Male			\Default Work Unit\SFX\Talk\Talk_Archeologist_Male	
+	129374020	SFX_River_Stop			\Default Work Unit\SFX\Ambience\SFX_River_Stop	
 	212976137	SFX_Correct			\Default Work Unit\SFX\Other\SFX_Correct	
 	333759533	Talk_Spirit			\Default Work Unit\SFX\Talk\Talk_Spirit	
 	376566328	Shaku_Bb			\Default Work Unit\Shakuhachi\Shaku_Bb	
 	402657552	Talk_Boy			\Default Work Unit\SFX\Talk\Talk_Boy	
 	528352284	SFX_OldMan			\Default Work Unit\SFX\Characters\SFX_OldMan	
 	646107962	Footstep_Start			\Default Work Unit\SFX\Footsteps\Footstep_Start	
+	691871507	Talk_Toma			\Default Work Unit\SFX\Talk\Talk_Toma	
 	741713016	Shaku_D			\Default Work Unit\Shakuhachi\Shaku_D	
 	741713017	Shaku_E			\Default Work Unit\Shakuhachi\Shaku_E	
 	741713018	Shaku_F			\Default Work Unit\Shakuhachi\Shaku_F	
@@ -17,12 +19,16 @@ Event	ID	Name			Wwise Object Path	Notes
 	1052734239	Talk_Kenji			\Default Work Unit\SFX\Talk\Talk_Kenji	
 	1161576905	SFX_WaterStream_Stop			\Default Work Unit\SFX\Ambience\SFX_WaterStream_Stop	
 	1481213823	SFX_CityAmbience_Stop			\Default Work Unit\SFX\Ambience\SFX_CityAmbience_Stop	
+	1837763790	Stop_Intro			\Default Work Unit\Music\Stop_Intro	
 	1904851423	SFX_Rain			\Default Work Unit\SFX\Ambience\SFX_Rain	
+	1930240631	Robot			\Default Work Unit\SFX\Talk\Robot	
 	2135324925	Talk_Yanmei			\Default Work Unit\SFX\Talk\Talk_Yanmei	
 	2379149370	SFX_WaterStream			\Default Work Unit\SFX\Ambience\SFX_WaterStream	
 	2443815734	SFX_TempleAmbience			\Default Work Unit\SFX\Ambience\SFX_TempleAmbience	
 	2540880908	SFX_FluteMode			\Default Work Unit\SFX\Other\SFX_FluteMode	
+	3025259066	SFX_River_Play			\Default Work Unit\SFX\Ambience\SFX_River_Play	
 	3082996645	SFX_TempleAmbience_Stop			\Default Work Unit\SFX\Ambience\SFX_TempleAmbience_Stop	
+	3103472528	Play_Intro			\Default Work Unit\Music\Play_Intro	
 	3225443594	SFX_NotCorrect			\Default Work Unit\SFX\Other\SFX_NotCorrect	
 	3227181061	Music_Stop			\Default Work Unit\Music\Music_Stop	
 	3333863699	Shakuryu_Speak_Stop			\Default Work Unit\SFX\Talk\Shakuryu_Speak_Stop	
@@ -40,6 +46,9 @@ Switch	ID	Name	Switch Group			Notes
 	2323193050	Temple	Footstep			
 	4248645337	Grass	Footstep			
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2369384164	DistanceToViolin			\Default Work Unit\DistanceToViolin	
+
 Effect plug-ins	ID	Name	Type				Notes
 	514424553	Wwise Compressor (Custom)	Wwise Compressor			
 
@@ -52,6 +61,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	117042780	Intro	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Intro_6848314D.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Intro\Intro\Intro		4189156
 	128400035	Talk1	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Oldman1_pitched_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Oldman_Talk\Talk1		11399
 	130970819	Nature_Crickets_Loop	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Nature_Crickets_Loop_E600AF7B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Animals\Nature_Crickets_Loop		326251
+	131963528	SW003_Robot_Voices_Creature_24_Robot_Speaking_Talking_Gibberish_Babbling_Low_Register_Constant_Pitch	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\SW003_Robot_Voices_Creature_24_Robot_Speaking_Talking_Gibberish_Babbling_Low_Register_Constant_Pitch_6848314D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Talk\SW003_Robot_Voices_Creature_24_Robot_Speaking_Talking_Gibberish_Babbling_Low_Register_Constant_Pitch		10028092
 	139266227	Shakuhachi_C_high - 1	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Shakuhachi_C_high - 1_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_C\Shakuhachi_C_high - 1		16024
 	179520027	Talk_Dragon	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Talk_Dragon_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Talk\Talk7\Talk_Dragon		6888
 	199410004	Shakuhachi_C_high - 2	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Shakuhachi_C_high - 2_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_C\Shakuhachi_C_high - 2		16592
@@ -70,8 +80,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	344490364	Footsteps_Outside1	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Footsteps_Outside1_1953F9DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\FootSteps\Footstep\Grass\Footsteps_Outside1		70680
 	365121485	Rain_song	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Rain_song_6848314D.wem		\Interactive Music Hierarchy\Default Work Unit\Music\RainSong\RainSong\Rain_song		3079048
 	366939536	Shakuhachi_Bb_high - 1	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Shakuhachi_Bb_high - 1_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_Bb\Shakuhachi_Bb_high - 1		15342
+	370048598	City_Boy Violin2	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\City_Boy Violin2_6848314D.wem		\Interactive Music Hierarchy\Default Work Unit\Music\City\Ambiance\City_Boy Violin2		3351336
 	416858663	Rain	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\SFX_RainWind_1F561A99.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Weather\Rain		3589112
 	440137585	Shakuhachi_D_High - 3	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Shakuhachi_D_High - 3_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_D\Shakuhachi_D_High - 3		19229
+	446391149	Song_RestoreSuper_110BPM	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Song_RestoreSuper_110BPM_6848314D.wem		\Interactive Music Hierarchy\Default Work Unit\Music\RestorationSuper\1\Song_RestoreSuper_110BPM		2790392
+	461315857	nya	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\nya_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Talk\TalkCat\nya		24596
 	474636387	Temple_Music_Introduction_Mystery	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Temple_Music_Introduction_Mystery_6848314D.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Temple_Mystery\New Music Segment\Temple_Music_Introduction_Mystery		9408068
 	476700764	Talk_Neutral2	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Talk_Neutral2_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Talk\Talk3_High\Talk_Neutral2		14780
 	481415566	Shakuhachi_E_high - 1	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Shakuhachi_E_high - 1_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_E\Shakuhachi_E_high - 1		16670
@@ -83,6 +96,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	594977080	Footsteps_Outside2	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Footsteps_Outside2_1953F9DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\FootSteps\Footstep\Grass\Footsteps_Outside2		83324
 	624172329	Footsteps_Stone1	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Footsteps_Stone1_C613E930.wem		\Actor-Mixer Hierarchy\Default Work Unit\FootSteps\Footstep\Stone\Footsteps_Stone1		70736
 	640744220	Shakuhachi_G_high - 3	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Shakuhachi_G_high - 3_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_G\Shakuhachi_G_high - 3		17600
+	647589794	River2	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\River2_CD39E4D0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\River2		5792688
 	665453822	Shaku_Mordent_A - 1	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Shaku_Mordent_A - 1_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_A\Shaku_Mordent_A - 1		18107
 	672656860	Footsteps_Bridge1	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Footsteps_Bridge1_698C128B.wem		\Actor-Mixer Hierarchy\Default Work Unit\FootSteps\Footstep\Bridge\Footsteps_Bridge1		25080
 	687693962	Footsteps_Outside4	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Footsteps_Outside4_1953F9DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\FootSteps\Footstep\Grass\Footsteps_Outside4		74892
@@ -92,9 +106,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	760930338	Shaku_Mordent_E - 1	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Shaku_Mordent_E - 1_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_E\Shaku_Mordent_E - 1		22579
 	774050759	Shakuhachi_A_high - 3	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Shakuhachi_A_high - 3_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_A\Shakuhachi_A_high - 3		17897
 	779752323	Shakuhachi_B_high - 1	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Shakuhachi_B_high - 1_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shakuhachi\Shakuhachi_B\Shakuhachi_B_high - 1		12950
-	826506812	YanmeiTheme_25_5	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\YanmeiTheme_25_5_6848314D.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Yanmei\1\YanmeiTheme_25_5		8555996
 	841479861	Song_Healing_110BPM	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\Song_Healing_110BPM_6848314D.wem		\Interactive Music Hierarchy\Default Work Unit\Music\HealingSong\1\Song_Healing_110BPM		2501740
 	855598409	StartFluteMode2	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\StartFluteMode2_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Other\StartFluteMode\StartFluteMode2		15390
+	863999685	IntroCinemetic_Audio	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\IntroCinemetic_Audio_6848314D.wem		\Interactive Music Hierarchy\Default Work Unit\Intro\IntroCinemetic_Audio		10744428
+	872301346	YanmeiTheme_25_5	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\YanmeiTheme_2_6_6848314D.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Yanmei\1\YanmeiTheme_25_5		8681096
 	895407349	hall ambiance people far st	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\hall ambiance people far st_A5DB62F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\hall ambiance people far st		835206
 	896207261	SFX_Crickets	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\SFX_Crickets_6848314D.wem		\Interactive Music Hierarchy\Default Work Unit\Music\City\Ambiance\SFX_Crickets		363862
 	897381903	StartFluteMode1	F:\OneDrive\WwiseBenzaiten\.cache\Windows\SFX\StartFluteMode1_A65A97ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Other\StartFluteMode\StartFluteMode1		18724

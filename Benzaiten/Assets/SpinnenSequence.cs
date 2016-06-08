@@ -35,6 +35,8 @@ public class SpinnenSequence : MonoBehaviour
 			if (other.name == "Player")
 			{
 				other.GetComponent <ButtonMovement> ().enabled = false;
+				MainSoundScript.Instance.PlaySFX ("Footstep_Stop");
+
 				other.GetComponent <FluteMode> ().enabled = false;
 				other.GetComponent <BoxCollider2D> ().enabled = false;
 				other.GetComponent <Animator> ().SetBool ("Walking", false);
@@ -46,6 +48,8 @@ public class SpinnenSequence : MonoBehaviour
 
 	IEnumerator BridgeScene (GameObject player)
 	{
+
+		MainSoundScript.Instance.SetMusicState ("Yanmei", false, 0);
 		scenePlayed = true;
 		kenji.GetComponent <SpriteRenderer> ().flipX = false;
 
@@ -79,6 +83,8 @@ public class SpinnenSequence : MonoBehaviour
 		player.GetComponent <BoxCollider2D> ().enabled = true;
 		mainCam.GetComponent <CameraScript> ().target = player.transform;
 		Destroy (yinmei.gameObject);
+		MainSoundScript.Instance.SetMusicState ("City", false, 0);
+
 
 
 

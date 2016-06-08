@@ -47,6 +47,8 @@ public class BiwaSequence : MonoBehaviour
 
 	IEnumerator BridgeScene (GameObject player)
 	{
+		MainSoundScript.Instance.PlaySFX ("Footstep_Stop");
+
 		scenePlayed = true;
 		Destroy (roadblock);
 		player.GetComponent <ButtonMovement> ().enabled = false;

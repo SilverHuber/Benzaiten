@@ -24,6 +24,8 @@ public class MusicStateSwitch : MonoBehaviour
 				MainSoundScript.Instance.SetMusicState ("City", false, 2);
 				MainSoundScript.Instance.currentAmbientMain = "City";
 				print ("changed state to" + ChangeToState);
+				AkSoundEngine.PostEvent("SFX_River_Stop", gameObject);
+
 			}
 			if (ChangeToState == "Temple_Main")
 			{
