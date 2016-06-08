@@ -9,11 +9,8 @@ public class RestoreObject : MonoBehaviour
 	{
 		blessed = false;
 		this.gameObject.tag = "RestoreObject";
-	}
-	
-	// Update is called once per frame
-	void Update ()
-	{
 	
 	}
+	
+
 }

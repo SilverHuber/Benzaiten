@@ -94,6 +94,7 @@
      <None Include="Assets\StreamingAssets\desc.txt" />
      <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\SoundbanksInfo.xml" />
      <None Include="Assets\WwiseSettings.xml" />
+     <None Include="Assets\Art\Characters\Tengu\Tengu  Note.txt" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>

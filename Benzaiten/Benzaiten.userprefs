@@ -1,21 +1,28 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Portal.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/FluteMode.cs">
     <Files>
-      <File FileName="Assets/Scripts/CameraScript.cs" Line="104" Column="5" />
-      <File FileName="Assets/BridgeSequence.cs" Line="92" Column="3" />
-      <File FileName="Assets/Bridge.cs" Line="1" Column="1" />
-      <File FileName="Assets/IntroText.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/TextSender.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/MyText.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Temple.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/NPCBehave.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Arduino.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/FluteMode.cs" Line="122" Column="61" />
+      <File FileName="Assets/Scripts/Arduino.cs" Line="68" Column="25" />
+      <File FileName="Assets/Scripts/MyText.cs" Line="149" Column="33" />
+      <File FileName="Assets/Scripts/CameraScript.cs" Line="1" Column="1" />
       <File FileName="Assets/Wwise/Deployment/Components/AkGameObj.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/MainSoundScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/FluteMode.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Tree.cs" Line="21" Column="106" />
-      <File FileName="Assets/Scripts/Portal.cs" Line="59" Column="97" />
+      <File FileName="Assets/Scripts/Tree.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Portal.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Tengu.cs" Line="1" Column="1" />
+      <File FileName="Assets/Cat.cs" Line="1" Column="1" />
+      <File FileName="Assets/BoySequence.cs" Line="79" Column="35" />
+      <File FileName="Assets/BiwaSequence.cs" Line="66" Column="43" />
+      <File FileName="Assets/Scripts/BridgeSequence.cs" Line="100" Column="76" />
+      <File FileName="Assets/collapseBridge.cs" Line="1" Column="1" />
+      <File FileName="Assets/FinalBridge.cs" Line="13" Column="39" />
+      <File FileName="Assets/Final.cs" Line="30" Column="1" />
+      <File FileName="Assets/Ghost.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/IntroText.cs" Line="21" Column="16" />
+      <File FileName="Assets/Scripts/TextSender.cs" Line="1" Column="1" />
+      <File FileName="Assets/SpinnenSequence.cs" Line="57" Column="3" />
+      <File FileName="Assets/Scripts/ButtonMovement.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

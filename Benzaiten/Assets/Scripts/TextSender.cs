@@ -20,7 +20,8 @@ public class TextSender : MonoBehaviour
 		textHasBeenSended = false;
 		if (colliderNeeded)
 		{
-			thisCollider = GetComponent <Collider2D> ();
+			if (thisCollider == null)
+				thisCollider = GetComponent <Collider2D> ();
 		}
 		textTypeScript = GameObject.FindGameObjectWithTag ("Text").GetComponent <MyText> ();
 

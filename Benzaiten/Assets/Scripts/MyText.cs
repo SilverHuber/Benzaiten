@@ -28,11 +28,22 @@ public class MyText : MonoBehaviour
 	public Sprite kenjiPortrait;
 	public Sprite femArchPortrait;
 	public Sprite maleArchPortrait;
+	public Sprite boyPortrait;
+	public Sprite yinmeiPortrait;
+	public Sprite catPortrait;
+
+
+
 
 	public Sprite benzaitenBackground;
 	public Sprite kenjiBackground;
 	public Sprite femArchBackground;
 	public Sprite maleArchBackground;
+	public Sprite boyBackground;
+	public Sprite yinmeiBackground;
+	public Sprite catBackground;
+
+
 
 	public List<GameObject> uiGameobjects;
 
@@ -123,9 +134,25 @@ public class MyText : MonoBehaviour
 				portrait.sprite = maleArchPortrait;
 				background.sprite = maleArchBackground;
 
+			} else if (character == "Benzaiten")
+			{
+				portrait.sprite = benzaitenPortrait;
+				background.sprite = benzaitenBackground;
+			} else if (character == "Boy")
+			{
+				portrait.sprite = boyPortrait;
+				background.sprite = boyBackground;
+			} else if (character == "Yinmei")
+			{
+				portrait.sprite = yinmeiPortrait;
+				background.sprite = yinmeiBackground;
+			} else if (character == "Toma")
+			{
+				portrait.sprite = catPortrait;
+				background.sprite = catBackground;
 			} else
 			{
-				print ("name not regocnized");
+				Debug.LogError ("name not regocnized");
 			}
 
 			textComponent.text = "";

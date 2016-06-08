@@ -24,6 +24,8 @@ public class FluteMode : MonoBehaviour
 	public bool Arduino3pressed;
 	public bool Arduino4pressed;
 
+	public bool Arduino1pressedBuffer;
+
 	// de sequence die door de speler word ingetypt
 	public List<string> currentSequence = new List <string> ();
 
@@ -210,6 +212,13 @@ public class FluteMode : MonoBehaviour
 					MainSoundScript.Instance.SetMusicState ("HealingSong", true, 3);
 					MainSoundScript.Instance.PlaySFX ("SFX_Correct");
 
+					foreach (GameObject restoreObject in interactiveObjects)
+					{
+						if (restoreObject.name == "Boy")
+							StartCoroutine (RestoreObjects (restoreObject));
+					}
+
+
 					for (int i = 0; i < currentSequence.Count; i++)
 					{
 						if (currentSequence [i] == "A")
@@ -247,7 +256,8 @@ public class FluteMode : MonoBehaviour
 
 					foreach (GameObject restoreObject in interactiveObjects)
 					{
-						restoreObject.GetComponent <RestoreObject> ().blessed = true;
+						if (restoreObject.name != "Boy")
+							StartCoroutine (RestoreObjects (restoreObject));
 					}
 
 					for (int i = 0; i < currentSequence.Count; i++)
@@ -267,6 +277,10 @@ public class FluteMode : MonoBehaviour
 
 				}
 
+
+
+
+
 				if (IsListEqual (currentSequence, buildSequence))
 				{
 					// SOUND : Play restore sequence
@@ -279,6 +293,27 @@ public class FluteMode : MonoBehaviour
 					print ("equal to build song // still a placeholder ");
 					SeqCorrect = true;
 					flutemode = false;
+
+					foreach (GameObject restoreObject in interactiveObjects)
+					{
+						if (restoreObject.name == "Bridge")
+							StartCoroutine (RestoreObjects (restoreObject));
+					}
+
+					for (int i = 0; i < currentSequence.Count; i++)
+					{
+						if (currentSequence [i] == "A")
+							NoteSymbols [i].sprite = succesNotes [0];
+						if (currentSequence [i] == "B")
+							NoteSymbols [i].sprite = succesNotes [1];
+						if (currentSequence [i] == "C")
+							NoteSymbols [i].sprite = succesNotes [2];
+						if (currentSequence [i] == "D")
+							NoteSymbols [i].sprite = succesNotes [3];
+						if (currentSequence [i] == "E")
+							NoteSymbols [i].sprite = succesNotes [4];
+					}
+					StartCoroutine (FadeSymbols ());
 
 				}
 
@@ -349,11 +384,20 @@ public class FluteMode : MonoBehaviour
 
 		}
 
+		if (Arduino1pressedBuffer != Arduino1pressed)
+		{
+			Arduino1pressedBuffer = Arduino1pressed;
+		} 
+
 	}
 
 
 
-
+	IEnumerator RestoreObjects (GameObject objectToRestore)
+	{
+		yield return new WaitForSeconds (3.5f);
+		objectToRestore.GetComponent <RestoreObject> ().blessed = true;
+	}
 
 
 	private bool IsListEqual<T> (List<T> x, List<T> y)

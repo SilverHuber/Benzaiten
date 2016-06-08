@@ -16,12 +16,12 @@ public class Temple : MonoBehaviour
 	private NPCBehave femArch;
 	bool _changedMusic = false;
 	private MyText textTypeScript;
-
+	private GameObject player;
 	// Use this for initialization
 	void Start ()
 	{
 		textTypeScript = GameObject.FindGameObjectWithTag ("Text").GetComponent <MyText> ();
-
+		player = GameObject.FindGameObjectWithTag ("Player");
 		textHasBeenSent = false;
 		thisRO = GetComponent <RestoreObject> ();
 		thisTS = GetComponent <TextSender> ();
@@ -40,6 +40,7 @@ public class Temple : MonoBehaviour
 	
 		if (thisRO.blessed == true)
 		{
+			player.GetComponent <Ghost> ().currentColor = player.GetComponent <Ghost> ().halfRestoredColor;
 			//print ("leaves");
 			foreach (SpriteRenderer sR in itemsToFadeAway)
 			{
@@ -75,7 +76,10 @@ public class Temple : MonoBehaviour
 				femArch.GetComponent <Animator> ().SetTrigger ("Surprised");
 				thisTS.sendText = true;
 				textHasBeenSent = true;
+				StartCoroutine (DisableThis ());
+
 			}
+
 		}
 
 
@@ -91,6 +95,12 @@ public class Temple : MonoBehaviour
 	
 	}
 
+	IEnumerator DisableThis ()
+	{
+		yield return new WaitForSeconds (7);
+		textTypeScript.TypeLine ("It seems that the more the humans of this world believe in me, the more I become part of it.", "Benzaiten");
+		this.enabled = false;
+	}
 
 
 }
