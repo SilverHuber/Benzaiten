@@ -15,10 +15,10 @@ public class Final : MonoBehaviour
 	{
 		if (close)
 		{
-			while (blackscreen.color.a > 0f)
+			while (blackscreen.color.a < 0.99f)
 			{
 				Color color = blackscreen.color;
-				color.a -= 0.03f;
+				color.a += 0.03f;
 				blackscreen.color = color;
 			}
 		}
@@ -27,7 +27,20 @@ public class Final : MonoBehaviour
 
 	void OnTriggerEnter2D (Collider2D other)
 	{
+		print ("Entered");
 		if (other.name == "Player")
-			close = true;
+			StartCoroutine (Transportplayer (other.transform));
+	}
+
+	IEnumerator Transportplayer (Transform player)
+	{
+
+		while (blackscreen.color.a < 0.99f)
+		{
+			Color color = blackscreen.color;
+			color.a += 0.03f;
+			blackscreen.color = color;
+			yield return null;
+		}
 	}
 }

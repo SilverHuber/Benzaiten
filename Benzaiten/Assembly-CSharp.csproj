@@ -50,6 +50,7 @@
      <Compile Include="Assets\Cat.cs" />
      <Compile Include="Assets\Final.cs" />
      <Compile Include="Assets\FinalBridge.cs" />
+     <Compile Include="Assets\FullScreenGameWindow.cs" />
      <Compile Include="Assets\Ghost.cs" />
      <Compile Include="Assets\Scripts\Arduino.cs" />
      <Compile Include="Assets\Scripts\Audio_FootStepScript.cs" />
@@ -62,6 +63,7 @@
      <Compile Include="Assets\Scripts\FluteMode.cs" />
      <Compile Include="Assets\Scripts\InterActionScanner.cs" />
      <Compile Include="Assets\Scripts\IntroText.cs" />
+     <Compile Include="Assets\Scripts\LineRenderScript.cs" />
      <Compile Include="Assets\Scripts\MainSoundScript.cs" />
      <Compile Include="Assets\Scripts\MusicStateSwitch.cs" />
      <Compile Include="Assets\Scripts\MyText.cs" />
@@ -70,13 +72,19 @@
      <Compile Include="Assets\Scripts\Portal.cs" />
      <Compile Include="Assets\Scripts\RestoreObject.cs" />
      <Compile Include="Assets\Scripts\StartMusicTemp.cs" />
+     <Compile Include="Assets\Scripts\Tail.cs" />
      <Compile Include="Assets\Scripts\Temple.cs" />
      <Compile Include="Assets\Scripts\Tengu.cs" />
      <Compile Include="Assets\Scripts\TextSender.cs" />
      <Compile Include="Assets\Scripts\Tree.cs" />
+     <Compile Include="Assets\Scripts\addforcetest.cs" />
      <Compile Include="Assets\Scripts\movie.cs" />
      <Compile Include="Assets\Scripts\textLerp.cs" />
+     <Compile Include="Assets\Sound_Boy.cs" />
+     <Compile Include="Assets\Sound_River.cs" />
      <Compile Include="Assets\SpinnenSequence.cs" />
+     <Compile Include="Assets\StartGame.cs" />
+     <Compile Include="Assets\TriggerBox.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AKRESULT.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkActionOnEventType.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkAudioFormat.cs" />

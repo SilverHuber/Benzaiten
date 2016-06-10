@@ -61,8 +61,8 @@ public class BoySequence : MonoBehaviour
 		player.GetComponent <Animator> ().SetBool ("Walking", false);
 		textTypeScript.TypeLine ("Oh poor Toma, I wish I could help you!", "Boy");
 		textTypeScript.TypeLine ("Oh miss- My poor cat is dying!", "Boy");
-		textTypeScript.TypeLine ("My grandma told me to play this melody whenever someone is ill. But it's not working...", "Boy");
-		yield return new WaitForSeconds (12);
+		textTypeScript.TypeLine ("My grandma told me to play this melody whenever someone is ill. But it's not working... I must be doing something wrong", "Boy");
+		yield return new WaitForSeconds (13);
 		player.GetComponent <ButtonMovement> ().enabled = true;
 		player.GetComponent <FluteMode> ().enabled = true;
 		player.GetComponent <BoxCollider2D> ().enabled = true;

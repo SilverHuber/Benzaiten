@@ -23,8 +23,21 @@ public class FluteMode : MonoBehaviour
 	public bool Arduino2pressed;
 	public bool Arduino3pressed;
 	public bool Arduino4pressed;
+	public bool Arduino5pressed;
+	public bool Arduino6pressed;
+	public bool Arduino7pressed;
+	public bool Arduino8pressed;
+	public bool Arduino9pressed;
 
-	public bool Arduino1pressedBuffer;
+	public bool Arduino1buffer;
+	public bool Arduino2buffer;
+	public bool Arduino3buffer;
+	public bool Arduino4buffer;
+	public bool Arduino5buffer;
+	public bool Arduino6buffer;
+	public bool Arduino7buffer;
+	public bool Arduino8buffer;
+	public bool Arduino9buffer;
 
 	// de sequence die door de speler word ingetypt
 	public List<string> currentSequence = new List <string> ();
@@ -60,12 +73,28 @@ public class FluteMode : MonoBehaviour
 	{
 		thisAnimator = GetComponent <Animator> ();
 		thisButtonMovement = GetComponent <ButtonMovement> ();
+		thisAnimator.SetBool ("SummonDrake", false);
 
 		currentSequenceNote = 0;
 		Arduino1pressed = false;
 		Arduino2pressed = false;
 		Arduino3pressed = false;
 		Arduino4pressed = false;
+		Arduino5pressed = false;
+		Arduino6pressed = false;
+		Arduino7pressed = false;
+		Arduino8pressed = false;
+		Arduino9pressed = false;
+
+		Arduino1buffer = false;
+		Arduino2buffer = false;
+		Arduino3buffer = false;
+		Arduino4buffer = false;
+		Arduino5buffer = false;
+		Arduino6buffer = false;
+		Arduino7buffer = false;
+		Arduino8buffer = false;
+		Arduino9buffer = false;
 
 		playedNotes.AddRange (Resources.LoadAll<Sprite> ("Symbols/Played/"));
 		succesNotes.AddRange (Resources.LoadAll<Sprite> ("Symbols/Succes/"));
@@ -90,21 +119,16 @@ public class FluteMode : MonoBehaviour
 	{
 		thisButtonMovement.enabled = true;
 
-		if (Input.GetKeyDown (KeyCode.Q) && flutemode == false)
+		if (Input.GetKeyDown (KeyCode.Q) || Arduino5buffer || Arduino4buffer || Arduino3buffer || Arduino2buffer || Arduino1buffer && flutemode == false)
 		{
 			flutemode = true;
-			currentSequenceNote = 0;
-			currentSequence.Clear ();
-			SeqCorrect = false;
-			timeSinceLastNote = 0;
-			thisAnimator.SetBool ("SummonDrake", false);
 
-			MainSoundScript.Instance.PlaySFX ("SFX_FluteMode");
+
+			//MainSoundScript.Instance.PlaySFX ("SFX_FluteMode");
 			thisAnimator.SetBool ("PlayingFlute", true);
 		} else if ((Input.GetKeyDown (KeyCode.Q) && flutemode == true))
 		{
 			flutemode = false;
-			thisAnimator.SetBool ("PlayingFlute", false);
 			StartCoroutine (FadeSymbols ());
 		}
 
@@ -119,7 +143,7 @@ public class FluteMode : MonoBehaviour
 			if (currentSequenceNote < 7)
 			{
 				
-				if (Input.GetKeyDown (KeyCode.Alpha1) || Arduino1pressed)
+				if (Input.GetKeyDown (KeyCode.Alpha1) || Arduino5buffer)
 				{
 					
 					//SOUND: play Note A
@@ -137,7 +161,7 @@ public class FluteMode : MonoBehaviour
 
 				}
 
-				if (Input.GetKeyDown (KeyCode.Alpha2) || Arduino2pressed)
+				if (Input.GetKeyDown (KeyCode.Alpha2) || Arduino4buffer)
 				{
 				
 					//SOUND: play Note B
@@ -153,7 +177,7 @@ public class FluteMode : MonoBehaviour
 					print (currentSequence.Count);
 				}
 
-				if (Input.GetKeyDown (KeyCode.Alpha3))
+				if (Input.GetKeyDown (KeyCode.Alpha3) || Arduino3buffer)
 				{
 					//SOUND: play Note C
 					MainSoundScript.Instance.PlaySFX ("Shaku_G");
@@ -167,7 +191,7 @@ public class FluteMode : MonoBehaviour
 					timeSinceLastNote = 0;
 					print (currentSequence.Count);
 				}
-				if (Input.GetKeyDown (KeyCode.Alpha4))
+				if (Input.GetKeyDown (KeyCode.Alpha4) || Arduino2buffer)
 				{
 					//SOUND: play Note D
 					MainSoundScript.Instance.PlaySFX ("Shaku_A");
@@ -182,7 +206,7 @@ public class FluteMode : MonoBehaviour
 					print (currentSequence.Count);
 				}
 
-				if (Input.GetKeyDown (KeyCode.Alpha5))
+				if (Input.GetKeyDown (KeyCode.Alpha5) || Arduino1buffer)
 				{
 					//SOUND: play Note E
 					MainSoundScript.Instance.PlaySFX ("Shaku_C");
@@ -389,10 +413,7 @@ public class FluteMode : MonoBehaviour
 
 		}
 
-		if (Arduino1pressedBuffer != Arduino1pressed)
-		{
-			Arduino1pressedBuffer = Arduino1pressed;
-		} 
+	
 
 	}
 
@@ -430,6 +451,11 @@ public class FluteMode : MonoBehaviour
 
 	private IEnumerator FadeSymbols ()
 	{
+		currentSequenceNote = 0;
+		currentSequence.Clear ();
+		SeqCorrect = false;
+		timeSinceLastNote = 0;
+
 		yield return new WaitForSeconds (0.7f);
 		while (NoteSymbols [NoteSymbols.Count - 1].color.a > 0.01f)
 		{

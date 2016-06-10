@@ -31,6 +31,7 @@ public class CameraScript : MonoBehaviour
 
 	private void FixedUpdate ()
 	{
+		Cursor.visible = false;
 
 
 		switch (currentCameraMode)

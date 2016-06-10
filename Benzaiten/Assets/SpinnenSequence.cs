@@ -48,10 +48,11 @@ public class SpinnenSequence : MonoBehaviour
 
 	IEnumerator BridgeScene (GameObject player)
 	{
-
+		
 		MainSoundScript.Instance.SetMusicState ("Yanmei", false, 0);
 		scenePlayed = true;
 		kenji.GetComponent <SpriteRenderer> ().flipX = false;
+		player.GetComponent <ButtonMovement> ().enabled = false;
 
 		player.GetComponent <FluteMode> ().enabled = false;
 		player.GetComponent <BoxCollider2D> ().enabled = false;
@@ -60,6 +61,8 @@ public class SpinnenSequence : MonoBehaviour
 		kenji.GetComponent <SpriteRenderer> ().flipX = false;
 
 		yinmei.GetComponent <Animator> ().SetBool ("Beckon", true);
+		player.GetComponent <ButtonMovement> ().enabled = false;
+		player.GetComponent <Animator> ().SetBool ("Walking", false);
 		textTypeScript.TypeLine ("Hear my voice and fall into my arms, Kenji Miyamoto", "Yinmei");
 		textTypeScript.TypeLine ("Hnng-", "Kenji");
 		textTypeScript.TypeLine ("Come to me and I will play the Biwa for you.", "Yinmei");

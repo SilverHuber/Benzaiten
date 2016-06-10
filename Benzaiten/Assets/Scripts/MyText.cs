@@ -31,7 +31,8 @@ public class MyText : MonoBehaviour
 	public Sprite boyPortrait;
 	public Sprite yinmeiPortrait;
 	public Sprite catPortrait;
-
+	public Sprite tenguPortrait;
+	public Sprite NpcChickPortrait;
 
 
 
@@ -42,6 +43,10 @@ public class MyText : MonoBehaviour
 	public Sprite boyBackground;
 	public Sprite yinmeiBackground;
 	public Sprite catBackground;
+	public Sprite tenguBackground;
+	public Sprite NpcChickBackground;
+
+
 
 
 
@@ -95,18 +100,18 @@ public class MyText : MonoBehaviour
 
 	void Update ()
 	{
-		if (Input.GetKeyDown (KeyCode.Space))
-			TypeLine ("i just wanna love you", "FemaleArch");
-
-		if (Input.GetKeyDown (KeyCode.R))
-			TypeLine ("inshalallalala", "Kenji");
-
-		if (Input.GetKeyDown (KeyCode.T))
-			TypeLine ("kdjfkjdskfjdlfnsdlkfjkldjfkl", "MaleArch");
+//		if (Input.GetKeyDown (KeyCode.Space))
+//			TypeLine ("i just wanna love you", "FemaleArch");
+//
+//		if (Input.GetKeyDown (KeyCode.R))
+//			TypeLine ("inshalallalala", "Kenji");
+//
+//		if (Input.GetKeyDown (KeyCode.T))
+//			TypeLine ("kdjfkjdskfjdlfnsdlkfjkldjfkl", "MaleArch");
 			
-	//	Debug.Log (textsToType.Count);
+		//	Debug.Log (textsToType.Count);
 
-	//	print (textsToType [0]);
+		//	print (textsToType [0]);
 	}
 
 
@@ -150,6 +155,14 @@ public class MyText : MonoBehaviour
 			{
 				portrait.sprite = catPortrait;
 				background.sprite = catBackground;
+			} else if (character == "Tengu")
+			{
+				portrait.sprite = tenguPortrait;
+				background.sprite = tenguBackground;
+			} else if (character == "NpcChick")
+			{
+				portrait.sprite = NpcChickPortrait;
+				background.sprite = NpcChickBackground;
 			} else
 			{
 				Debug.LogError ("name not regocnized");

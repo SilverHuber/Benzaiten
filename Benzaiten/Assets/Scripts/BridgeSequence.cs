@@ -103,7 +103,7 @@ public class BridgeSequence : MonoBehaviour
 		kenji.GetComponent <NPCBehave> ().centerOfWalkingRadius = finalRoadDestination;
 		maleArch.GetComponent <NPCBehave> ().centerOfWalkingRadius = finalRoadDestination;
 		yield return new WaitForSeconds (3);
-		textTypeScript.TypeLine ("This seems like the work of an unpure spirit.", "Benzaiten");
+		textTypeScript.TypeLine ("(This seems like the work of an unpure spirit.)", "Benzaiten");
 		player.GetComponent <SpriteRenderer> ().flipX = false;
 		player.GetComponent <ButtonMovement> ().enabled = true;
 		player.GetComponent <FluteMode> ().enabled = true;

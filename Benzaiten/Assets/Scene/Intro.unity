@@ -173,14 +173,14 @@ RectTransform:
   m_GameObject: {fileID: 440753245}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.42149276, y: 0.42149258, z: 0.42149258}
   m_Children: []
   m_Father: {fileID: 1645437885}
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.000010967255, y: 1}
-  m_SizeDelta: {x: 571.04, y: 321}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &440753247
 MonoBehaviour:
@@ -201,7 +201,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 15200000, guid: 17c1ff173c276483ab93e4a6ca14c53a, type: 3}
+  m_Texture: {fileID: 15200000, guid: b648f0a9c12c441cbb2fe7e546f985ad, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -223,7 +223,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 17c1ff173c276483ab93e4a6ca14c53a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b648f0a9c12c441cbb2fe7e546f985ad, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -311,6 +311,7 @@ GameObject:
   - 92: {fileID: 1321483710}
   - 124: {fileID: 1321483709}
   - 114: {fileID: 1321483708}
+  - 81: {fileID: 1321483713}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -390,6 +391,13 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!81 &1321483713
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1321483707}
+  m_Enabled: 1
 --- !u!1 &1645437881
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,7 +443,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -453,7 +461,7 @@ Canvas:
   m_GameObject: {fileID: 1645437881}
   m_Enabled: 1
   serializedVersion: 2
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 1321483711}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
